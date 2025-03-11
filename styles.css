@@ -1,0 +1,541 @@
+/* Base styles */
+:root {
+  --primary-color: #3498db;
+  --text-color: #333;
+  --background-color: #fff;
+  --border-color: #eee;
+  --hover-color: #2980b9;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.nav {
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li {
+  margin-right: 30px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.nav a:hover {
+  color: var(--hover-color);
+}
+
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Main content */
+main {
+  max-width: 900px;
+  margin: 100px auto 50px;
+  padding: 0 20px;
+}
+
+/* Introduction */
+.intro-animation {
+  margin-bottom: 60px;
+}
+
+.explanation table {
+  border-collapse: collapse;
+}
+
+.primary {
+  color: var(--primary-color);
+  font-weight: 700;
+}
+
+.intro {
+  font-size: 3rem;
+  margin: 10px 0;
+}
+
+.description {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+/* Experience section */
+.resume {
+  margin-bottom: 60px;
+}
+
+.resume-info {
+  margin-bottom: 20px;
+}
+
+.second-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.label-emoji {
+  font-size: 1.8rem;
+}
+
+.workplace-wrap {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.workplace {
+  list-style: none;
+}
+
+.workplace-name a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.workplace-name a:hover {
+  color: var(--primary-color);
+}
+
+.work-info {
+  margin-top: 10px;
+}
+
+.work-role {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.work-sub-info {
+  color: #888;
+  margin: 5px 0;
+}
+
+.work-skill span {
+  display: inline-block;
+  background-color: #f0f8ff;
+  color: var(--primary-color);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+.view-all-projects {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.view-all-projects:hover {
+  background-color: #ebebeb;
+}
+
+.view-all-projects svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+}
+
+/* Thesis section */
+.resume {
+  margin-bottom: 60px;
+}
+
+.resume-info {
+  margin-bottom: 20px;
+}
+
+.second-label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+
+.label-emoji {
+  font-size: 1.8rem;
+}
+
+.thesis-wrap {
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 20px;
+}
+
+.thesis {
+  list-style: none;
+}
+
+.thesis-name a {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.thesis-name a:hover {
+  color: var(--primary-color);
+}
+
+.thesis-info {
+  margin-top: 10px;
+}
+
+.thesis-name {
+  font-weight: 500;
+  margin: 5px 0;
+}
+
+.thesis-sub-info {
+  color: #888;
+  margin: 5px 0;
+}
+
+.thesis-skill span {
+  display: inline-block;
+  background-color: #f0f8ff;
+  color: var(--primary-color);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+
+
+/* Skills section */
+.skill ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skill_name {
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  padding: 5px 15px;
+  margin: 0 10px 10px 0;
+}
+
+.skill_name.framework {
+  background-color: #e1f5fe;
+}
+
+.skill_name.language {
+  background-color: #e8f5e9;
+}
+
+/* Footer */
+footer {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+  margin-top: 80px;
+}
+
+.footer_wrap {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  font-style: normal;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.myname {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.accounts {
+  display: flex;
+}
+
+.accounts a {
+  margin-right: 15px;
+}
+
+.accounts svg {
+  width: 24px;
+  height: 24px;
+  fill: #555;
+  transition: fill 0.3s;
+}
+
+.accounts svg:hover {
+  fill: var(--primary-color);
+}
+
+.copyright {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+.loading-animation {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.intro-animation {
+  animation: slideIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideIn {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .intro {
+    font-size: 2.5rem;
+  }
+  
+  .skill ul {
+    justify-content: center;
+  }
+}
+
+/* Project Page Styling */
+
+/* 프로젝트 섹션 */
+.project {
+  margin-bottom: 60px;
+}
+
+/* 프로젝트 개별 항목 */
+.project-info {
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+/* 프로젝트 이미지 */
+.project-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* 플랫폼 (Business Analytics, Predictive Analytics 등) */
+.project-platform {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+/* 프로젝트 제목 */
+.project-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  color: var(--text-color);
+}
+
+/* 프로젝트 설명 */
+.project-description {
+  color: #666;
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+/* 프로젝트 진행 기간 */
+.project-date {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+/* 역할 목록 */
+.project-role {
+  list-style: none;
+  padding: 0;
+}
+
+.project-role li {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+/* 언어 및 기술 태그 */
+.project-language,
+.project-skill {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.project-language div,
+.project-skill div {
+  background-color: #f0f8ff;
+  color: var(--primary-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+/* 프로젝트 애니메이션 */
+.loading-animation {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+  .project-title {
+    font-size: 1.3rem;
+  }
+
+  .project-description {
+    font-size: 1rem;
+  }
+}
+
+
+/* Blog Page Styling */
+
+/* 블로그 전체 섹션 */
+.blog {
+  margin-bottom: 60px;
+}
+
+/* 개별 블로그 포스트 */
+.blog-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-color);
+  padding: 20px 0;
+}
+
+/* 블로그 텍스트 컨텐츠 */
+.blog-content {
+  flex: 1;
+  max-width: 70%;
+}
+
+/* 카테고리 (Life 등) */
+.blog-category {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+/* 블로그 제목 */
+.blog-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 5px 0;
+}
+
+/* 블로그 메타 정보 */
+.blog-meta {
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+}
+
+/* 블로그 요약 */
+.blog-summary {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* 블로그 이미지 */
+.blog-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-left: 20px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .blog-post {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-content {
+    max-width: 100%;
+  }
+
+  .blog-img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .blog-title {
+    font-size: 1.2rem;
+  }
+
+  .blog-summary {
+    font-size: 0.9rem;
+  }
+}
