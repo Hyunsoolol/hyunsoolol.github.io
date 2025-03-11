@@ -54,7 +54,9 @@
             <td class="description">Data Analyst</td>
           </tr>
         </table>
-        <td class="description"> <span class="updated">updated: @March 11, 2025</span></td>
+        <td class="description">
+          <span class="updated" id="updated-date"></span>
+        </td>
       </section>
       </tr>
     </div>
@@ -75,7 +77,7 @@
               </p>
               <div class="work-info">
                 <p class="work-role">Data Analyst</p>
-                <p class="work-sub-info">2022.04 - Present</p>
+                <p class="work-sub-info">2022.04 - Present (<span id="ncsoft-tenure"></span>)</p>
                 <p class="work-skill">
                   <span>#Management Analytics</span>
                   <span>#Financial Data Analytics</span>
@@ -229,6 +231,40 @@
     </div>
   </main>
   
+   <!-- ✅ 업데이트 일자 -->
+  <script>
+    function getCurrentDate() {
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        return new Date().toLocaleDateString('en-US', options);
+    }
+  
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("updated-date").textContent = `updated: @${getCurrentDate()}`;
+    });
+  </script>
+
+  <!-- ✅ 재직 기간 -->
+  <script>
+    function calculateTenure(startYear, startMonth) {
+        const startDate = new Date(startYear, startMonth - 2); // 월은 0부터 시작
+        const today = new Date();
+        
+        let years = today.getFullYear() - startDate.getFullYear();
+        let months = today.getMonth() - startDate.getMonth();
+  
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+  
+        return `${years}y ${months}m`;
+    }
+  
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("ncsoft-tenure").textContent = calculateTenure(2022, 4);
+    });
+  </script>
+
   <footer>
     <address class="footer_wrap">
       <div class="information">
