@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Noto Sans KR', sans-serif;
+  font-size: 16x;
   line-height: 1.6;
   color: var(--text-color);
   background-color: var(--background-color);
