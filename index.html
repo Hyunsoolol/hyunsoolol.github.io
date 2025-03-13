@@ -38,6 +38,34 @@
     gtag('config', 'G-G93YP5KK16');
   </script>
   
+  <!-- 업데이트 일자 -->
+  <script>
+    async function getLastCommitDate() {
+        const username = "hyunsoolol";  // 👉 본인 GitHub 계정명으로 변경
+        const repo = "hyunsoolol.github.io"; // 👉 본인 GitHub 저장소명으로 변경
+        const apiUrl = `https://api.github.com/repos/${username}/${repo}/commits`;
+  
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+            
+            const data = await response.json();
+            if (data.length > 0) {
+                const commitDate = new Date(data[0].commit.committer.date);
+                const options = { year: 'numeric', month: 'long', day: 'numeric' };
+                document.getElementById("updated-date").textContent = `updated: @${commitDate.toLocaleDateString('en-US', options)}`;
+            } else {
+                document.getElementById("updated-date").textContent = "updated: @Unknown";
+            }
+        } catch (error) {
+            console.error("Failed to fetch commit date:", error);
+            document.getElementById("updated-date").textContent = "updated: @Error";
+        }
+    }
+  
+    document.addEventListener("DOMContentLoaded", getLastCommitDate);
+  </script>
+  
 </head>
 <body>
   <nav class="nav">
@@ -242,40 +270,6 @@
     </div>
   </main>
   
-   <!-- ✅ 업데이트 일자 -->
-  <script>
-    function getCurrentDate() {
-        const options = { year: 'numeric', month: 'long', day: 'numeric' };
-        return new Date().toLocaleDateString('en-US', options);
-    }
-  
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("updated-date").textContent = `updated: @${getCurrentDate()}`;
-    });
-  </script>
-
-  <!-- ✅ 재직 기간 -->
-  <script>
-    function calculateTenure(startYear, startMonth) {
-        const startDate = new Date(startYear, startMonth - 2); // 월은 0부터 시작
-        const today = new Date();
-        
-        let years = today.getFullYear() - startDate.getFullYear();
-        let months = today.getMonth() - startDate.getMonth();
-  
-        if (months < 0) {
-            years--;
-            months += 12;
-        }
-  
-        return `${years}y ${months}m`;
-    }
-  
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("ncsoft-tenure").textContent = calculateTenure(2022, 4);
-    });
-  </script>
-
   <footer>
     <address class="footer_wrap">
       <div class="information">
