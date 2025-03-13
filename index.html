@@ -38,34 +38,6 @@
     gtag('config', 'G-G93YP5KK16');
   </script>
   
-  <!-- 업데이트 일자 -->
-  <script>
-    async function getLastCommitDate() {
-        const username = "hyunsoolol";  // 👉 본인 GitHub 계정명으로 변경
-        const repo = "hyunsoolol.github.io"; // 👉 본인 GitHub 저장소명으로 변경
-        const apiUrl = `https://api.github.com/repos/${username}/${repo}/commits`;
-  
-        try {
-            const response = await fetch(apiUrl);
-            if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-            
-            const data = await response.json();
-            if (data.length > 0) {
-                const commitDate = new Date(data[0].commit.committer.date);
-                const options = { year: 'numeric', month: 'long', day: 'numeric' };
-                document.getElementById("updated-date").textContent = `updated: @${commitDate.toLocaleDateString('en-US', options)}`;
-            } else {
-                document.getElementById("updated-date").textContent = "updated: @Unknown";
-            }
-        } catch (error) {
-            console.error("Failed to fetch commit date:", error);
-            document.getElementById("updated-date").textContent = "updated: @Error";
-        }
-    }
-  
-    document.addEventListener("DOMContentLoaded", getLastCommitDate);
-  </script>
-  
   <!-- ✅ 재직 기간 -->
   <script>
     function calculateTenure(startYear, startMonth) {
@@ -116,7 +88,7 @@
           </tr>
         </table>
         <td class="description">
-          <span class="updated" id="updated-date"></span>
+          <span class="updated">updated: @March 12, 2025</span>
         </td>
       </section>
       </tr>
