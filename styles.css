@@ -185,7 +185,7 @@ main {
   margin-left: 8px;
 }
 
-/* Thesis section */
+/* journals section */
 .resume {
   margin-bottom: 60px;
 }
@@ -205,42 +205,42 @@ main {
   font-size: 1.8rem;
 }
 
-.thesis-wrap {
+.journals-wrap {
   margin-bottom: 30px;
   border-bottom: 1px solid var(--border-color);
   padding-bottom: 20px;
 }
 
-.thesis {
+.journals {
   list-style: none;
 }
 
-.thesis-name a {
+.journals-name a {
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--text-color);
   text-decoration: none;
 }
 
-.thesis-name a:hover {
+.journals-name a:hover {
   color: var(--primary-color);
 }
 
-.thesis-info {
+.journals-info {
   margin-top: 10px;
 }
 
-.thesis-name {
+.journals-name {
   font-weight: 500;
   margin: 5px 0;
 }
 
-.thesis-sub-info {
+.journals-sub-info {
   color: #888;
   margin: 5px 0;
 }
 
-.thesis-skill span {
+.journals-skill span {
   display: inline-block;
   background-color: #f0f8ff;
   color: var(--primary-color);
