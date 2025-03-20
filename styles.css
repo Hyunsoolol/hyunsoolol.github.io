@@ -11,7 +11,7 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 16x;
   line-height: 1.6;
-  color: var(--text-color);
+  color: var(--text-color); 
   background-color: var(--background-color);
   margin: 0;
   padding: 0;
@@ -185,7 +185,7 @@ main {
   margin-left: 8px;
 }
 
-/* journals section */
+/* Journals section */
 .resume {
   margin-bottom: 60px;
 }
@@ -606,4 +606,15 @@ footer {
   .blog-summary {
     font-size: 0.9rem;
   }
+}
+
+#disqus_thread a {
+  color:#EA4B67;
+  font-weight:bold;
+  text-decoration:underline;
+  font-size:15px !important
+}
+
+#disqus_thread p{
+  color:green
 }
