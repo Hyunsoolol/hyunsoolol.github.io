@@ -1,1 +1,294 @@
-<!-- Updated on Fri Mar 21 01:42:48 UTC 2025 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>데이터분석가 신현수 블로그 👨‍💻 </title>
+  <meta name="description" content="Welcome to my personal blog">
+
+  <!-- SEO Meta Tags -->
+  <meta itemprop="name" content="데이터분석가 신현수 블로그 👨‍💻">
+  <meta itemprop="description" content="Welcome to my personal blog">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="데이터분석가 신현수 블로그 👨‍💻">
+  <meta property="og:description" content="Welcome to my personal blog">
+  <meta property="og:image" content="/meta/cover.png">
+
+  <!-- Twitter Meta Tags -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="데이터분석가 신현수 블로그 👨‍💻">
+  <meta name="twitter:description" content="Welcome to my personal blog">
+  <meta name="twitter:image" content="/meta/cover.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+   <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-G93YP5KK16"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-G93YP5KK16');
+  </script>
+  
+  <!-- ✅ 재직 기간 -->
+  <script>
+    function calculateTenure(startYear, startMonth) {
+        const startDate = new Date(startYear, startMonth - 2); // 월은 0부터 시작
+        const today = new Date();
+        
+        let years = today.getFullYear() - startDate.getFullYear();
+        let months = today.getMonth() - startDate.getMonth();
+  
+        if (months < 0) {
+            years--;
+            months += 12;
+        }
+  
+        return `${years}y ${months}m`;
+    }
+  
+    document.addEventListener("DOMContentLoaded", function() {
+        document.getElementById("ncsoft-tenure").textContent = calculateTenure(2022, 4);
+    });
+  </script>
+  
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-container">
+      <ul>
+        <li class="transition"><a href="index" class="active">Home</a></li>
+        <li class="transition"><a href="project">Project</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <main>
+    <div class="intro-animation">
+      <section class="explanation">
+        <table>
+          <tr>
+            <td rowspan="3"></td>
+            <td><span class="primary">@hyunsoolol</span></td>
+          </tr>
+          <tr>
+            <td><h1 class="intro">신현수 (Hyunsoo Shin)</h1></td>
+          </tr>
+          <tr>
+            <td class="description">Data Analyst</td>
+          </tr>
+        </table>
+        <td class="description">
+          <span class="updated">updated: @March 12, 2025</span>
+        </td>
+      </section>
+      </tr>
+    </div>
+
+    <div class="loading-animation">
+      <section class="resume">
+        <div class="resume-info">
+          <p class="second-label">
+            <span class="label-emoji">👨‍💻</span>
+            &nbsp; Work Experience
+          </p>
+        </div>
+        <ul>
+          <div class="workplace-wrap">
+            <li class="workplace">
+              <p class="workplace-name">
+                <a target="_blank" href="http://www.ncsoft.com" class="transition">NCSOFT</a>
+              </p>
+              <div class="work-info">
+                <p class="work-role">Data Analyst</p>
+                <p class="work-sub-info">2022.04 - Present (<span id="ncsoft-tenure"></span>)</p>
+                <p class="work-skill">
+                  <span>#Management Analytics</span>
+                  <span>#Business Analytics</span>
+                  <span>#Financial Data Analytics</span>
+                  <span>#Marketing Analytics</span>
+                  <span>#People Analytics</span>
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="workplace-wrap">
+            <li class="workplace">
+              <p class="workplace-name">
+                <a target="_blank" href="http://www.midasit.com" class="transition">MIDAS IT</a>
+              </p>
+              <div class="work-info">
+                <p class="work-role">Data Analyst</p>
+                <p class="work-sub-info">2021.08 - 2022.04 (9m)</p>
+                <p class="work-skill">
+                  <span>#HR Analytics</span>
+                  <span>#Product Analytics</span>
+                  <span>#HRIS SaaS Solution</span>
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="workplace-wrap">
+            <li class="workplace">
+              <p class="workplace-name">
+                <a target="_blank" href="http://www.seahholdings.co.kr" class="transition">SeAH Holdings</a>
+              </p>
+              <div class="work-info">
+                <p class="work-role">Data Analyst</p>
+                <p class="work-sub-info">2019.05 - 2021.07 (2y 3m)</p>
+                <p class="work-skill">
+                  <span>#Data-Driven HR</span>
+                  <span>#HR Analytics</span>
+                  <span>#HRM</span>
+                  <span>#HRIS</span>
+                </p>
+              </div>
+            </li>
+          </div>
+          <!-- Add more workplace entries as needed -->
+        </ul>
+
+        <a href="project" class="transition">
+          <div class="view-all-projects transition">
+              <span>Project list</span>
+              <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;}</style></defs><path d="M7.2,17.9l6.1-6.1L7.2,5.6,9,3.8l8,8-8,8Z" /><path class="cls-1" d="M.1-.2h24v24H.1Z" /></svg>
+          </div>
+      </a>
+  
+      </section>
+
+      <section class="journals">
+        <div class="journals-info">
+          <p class="second-label">
+            <span class="label-emoji">📝</span>
+            &nbsp; Journals
+          </p>
+        </div>
+        <ul>
+          <div class="journals-wrap">
+            <li class="journals">
+              <p class="journals-name">
+                <a target="_blank" href="https://koreascience.or.kr/article/JAKO201910861318138.pdf" class="transition">Latent class model for mixed variables with applications to text data</a>
+              </p>
+              <div class="journals-info">
+                <p class="journals-place">The Korea Journal of Applied Statistics</p>
+                <p class="journals-sub-info">2019.10</p>
+                <p class="journals-skill">
+                  <span>#latent class analysis</span>
+                  <span>#mixture model</span>
+                  <span>#clustering</span>
+                  <span>#text mining</span>
+                </p>
+              </div>
+            </li>
+          </div>
+          <div class="journals-wrap">
+            <li class="journals">
+              <p class="journals-name">
+                <a target="_blank" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002280834" class="transition">Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach</a>
+              </p>
+              <div class="journals-info">
+                <p class="journals-place">Journal of The Korean Data Analysis Society</p>
+                <p class="journals-sub-info">2017.10</p>
+                <p class="journals-skill">
+                  <span>#Particulate matter</span>
+                  <span>#Time series regression,</span>
+                  <span>#ARIMA</span>
+                  <span>#Exponential smoothing state space</span>
+                  <span>#Seasonal trend decomposition using loess</span>
+                </p>
+              </div>
+            </li>
+          </div>
+          <!-- Add more workplace entries as needed -->
+        </ul>
+        <section class="award">
+          <div class="award-info">
+            <p class="second-label">
+              <span class="label-emoji">🏆</span>
+              &nbsp; Awards
+            </p>
+          </div>
+          <ul>
+            <div class="award-wrap">
+              <li class="award">
+                <p class="award-name">
+                  <a target="_blank" href="http://koreaict.or.kr/kicta/html/bodo_view.asp?idx=348&page=4&keyword1=&keyword2=" class="transition">Small business credit scoring with gentrification</a>
+                </p>
+                <div class="award-info">
+                  <p class="award-place">Excellence Award, KODATA</p>
+                  <p class="award-sub-info">2019.02</p>
+                  <p class="award-skill">
+                    <span>#credit scoring</span>
+                    <span>#geographic analytics</span>
+                    <span>#clustering</span>
+                    <span>#text mining</span>
+                  </p>
+                </div>
+              </li>
+            </div>
+            <!-- Add more workplace entries as needed -->
+          </ul>
+
+      <section class="skill">
+        <div class="resume-info">
+          <p class="second-label">
+            <span class="label-emoji">💪</span>
+            &nbsp; Skills
+          </p>
+        </div>
+        <ul>
+          <!-- 프레임워크 -->
+          <li class="skill_name framework"><span>R</span></li>
+          <li class="skill_name framework"><span>Python</span></li>
+          <li class="skill_name framework"><span>SQL</span></li>
+          <!-- 프로그래밍 언어 -->
+          <li class="skill_name language"><span>Tidyverse</span></li>
+          <li class="skill_name language"><span>ggplot2</span></li>
+          <li class="skill_name language"><span>Shiny</span></li>
+          <li class="skill_name language"><span>Quarto</span></li>
+          <li class="skill_name language"><span>Pandas</span></li>
+          <li class="skill_name language"><span>Scikit-learn</span></li>
+          <li class="skill_name language"><span>TensorFlow</span></li>
+          <!-- Add more skills as needed -->
+        </ul>
+      </section>
+    </div>
+  </main>
+  
+  <footer>
+    <address class="footer_wrap">
+      <div class="information">
+        <div class="myname">데이터분석가 신현수 블로그
+          <span class="label-emoji">👨‍💻</span>
+        </div>
+        <div class="accounts">
+          <a href="http://github.com/hyunsoolol" target="_blank" class="transition">
+            <svg viewBox="0 0 32.6 31.8">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"></path>
+            </svg>
+          </a>
+          <a href="http://www.linkedin.com/in/hyunsoolol/" target="_blank" class="transition">
+            <svg viewBox="0 0 38.3 38.3">
+              <rect x="0.8" y="12.8" width="7.9" height="25.5"></rect>
+              <ellipse cx="4.7" cy="4.7" rx="4.7" ry="4.7"></ellipse>
+              <path d="M21.3,24.9c0-3.6,1.7-5.7,4.8-5.7c2.9,0,4.3,2.1,4.3,5.7c0,3.7,0,13.4,0,13.4h7.9c0,0,0-9.3,0-16.2c0-6.8-3.9-10.1-9.3-10.1s-7.7,4.2-7.7,4.2v-3.4h-7.6v25.5h7.6C21.3,38.3,21.3,28.8,21.3,24.9z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span>&copy; hyunsoolol. <time datetime="2025-03-11">2025</time></span>
+      </div>    
+    </address>
+  </footer>
+</body>
+</html>
