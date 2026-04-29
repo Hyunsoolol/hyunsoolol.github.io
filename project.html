@@ -24,11 +24,25 @@
   <meta name="twitter:description" content="Data Analyst Portfolio">
   <meta name="twitter:image" content="/meta/meta_image.png">
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="styles.css">
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Page-level image adjustment -->
+  <style>
+    .project-img.project-img--compact {
+      width: 100%;
+      max-width: 520px;
+      height: auto;
+      display: block;
+      margin: 0 auto 1rem;
+      object-fit: contain;
+    }
+  </style>
 </head>
 
 <body>
@@ -37,7 +51,7 @@
     <div class="nav-container">
       <ul>
         <li class="transition"><a href="index" class="normal">Home</a></li>
-        <li class="transition"><a href="project" class="active">Project</a></li>
+        <li class="transition"><a href="project" class="active" aria-current="page">Project</a></li>
       </ul>
     </div>
   </nav>
@@ -45,17 +59,18 @@
   <main>
     <div class="project">
 
-	      <!-- 📌 프로젝트 25-03: AION2 신규 론칭 및 개발 지원 -->
+      <!-- 📌 프로젝트 25-03: AION2 신규 론칭 및 개발 지원 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="img/project_2503.png" style="max-width:250px; height:auto; display:block; margin:0 auto;" />
+        <img class="project-img project-img--compact" src="img/project_2503.png" alt="AION2 신규 론칭 및 개발 지원 프로젝트 이미지" decoding="async" />
         <div class="project-platform">Service Launch & Infrastructure Analytics @NCSOFT</div>
         <h1 class="project-title">AION2 신규 론칭 및 개발 지원</h1>
         <div class="project-description">신규 서비스 론칭을 위한 인프라·운영 데이터 기반 현황 관리 및 의사결정 지원</div>
         <div class="project-date">2025.01 - 2025.11</div>
         <ul class="project-role">
-          <li>- AION2 신규 론칭 및 개발 과정의 인프라 지원 업무 수행</li>
+          <li>- 전사인프라본부 소속으로 AION2 신규 론칭 및 개발 과정의 인프라 지원 업무 수행</li>
           <li>- 개발 및 론칭 단계에서 필요한 리소스 현황, 운영 지표, 이슈 데이터를 정리하여 유관 부서 의사결정 지원</li>
-          <li>- 개발, 서비스, 인프라 조직 간 협업 과정에서 요청사항과 현황을 구조화하고, 실행 우선순위 및 리스크 파악 지원</li>
+          <li>- 개발, 서비스, 인프라 조직 간 협업 과정에서 요청사항과 현황을 구조화하고 실행 우선순위 및 리스크 파악 지원</li>
+          <li>- AION2 Credits ‘AION2를 만든 사람들’에 Infra CP 기여자로 등재</li>
         </ul>
         <span class="project-language radius">
           <div>#Data Analysis</div>
@@ -70,11 +85,10 @@
           <div>#Decision Support</div>
         </span>
       </div>
-      
-      
+
       <!-- 📌 프로젝트 25-01: 유휴 리소스 감지 시스템 구축 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="img/project_2501.png" />
+        <img class="project-img" src="img/project_2501.png" alt="유휴 리소스 감지 시스템 구축 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Infrastructure Analytics @NCSOFT</div>
         <h1 class="project-title">유휴 리소스 감지 시스템 구축</h1>
         <div class="project-description">Atlas 적재 메트릭 기반 유휴 리소스 감지 및 리소스 최적화</div>
@@ -95,9 +109,10 @@
           <div>#Grafana</div>
         </span>
       </div>
+
       <!-- 📌 프로젝트 24-04: NC HQ 비용 상세 분석 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="img/project_2404.png" />
+        <img class="project-img" src="img/project_2404.png" alt="HQ 비용 상세 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Management Analytics @NCSOFT</div>
         <h1 class="project-title">HQ 비용 상세 분석</h1>
         <div class="project-description">관리회계 비용 구조 분석 및 최적화를 통한 투명성 및 효율성 개선</div>
@@ -119,13 +134,13 @@
 
       <!-- 📌 프로젝트 24-03: 마케팅 최적화 모델 개발 기획 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="img/project_2403.png" />
+        <img class="project-img" src="img/project_2403.png" alt="마케팅 최적화 모델 개발 기획 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Marketing Analytics @NCSOFT</div>
         <h1 class="project-title">마케팅 최적화 모델 개발 기획</h1>
-        <div class="project-description">회사의 데이터와 상황에 최적화된 MMM 모델 개발을 기획</div>
+        <div class="project-description">회사의 데이터와 상황에 최적화된 MMM 모델 개발 기획</div>
         <div class="project-date">2024.08 - 2024.12</div>
         <ul class="project-role">
-          <li>- 레퍼런스(Robyn, @Meta)를 참고하여 데이터와 비즈니스 상황에 맞는 모델을 기획, 마케팅 성과 예측 및 최적화 체계 마련</li>
+          <li>- 레퍼런스(Robyn, @Meta)를 참고하여 데이터와 비즈니스 상황에 맞는 모델을 기획하고 마케팅 성과 예측 및 최적화 체계 마련</li>
           <li>- 핵심 변수와 성과 지표를 정의하고, 모델 개발 방향과 시각화 자료를 제공하여 효율적 개발 지원</li>
         </ul>
         <span class="project-language radius">
@@ -141,17 +156,19 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 24-02: 자사 리니지IP 사용자 수 예측 -->
+      <!-- 📌 프로젝트 24-02: 리니지IP 사용자 수 및 매출 예측 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2402.png" />
+        <img class="project-img" src="img/project_2402.png" alt="리니지IP 사용자 수 및 매출 예측 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Predictive Analytics @NCSOFT</div>
-        <h1 class="project-title"> 리니지IP 사용자 수 및 매출 예측</h1>
-        <div class="project-description">GAM 모델을 활용한 게임 트렌드 예측</div>
+        <h1 class="project-title">리니지IP 사용자 수 및 매출 예측</h1>
+        <div class="project-description">GAM 모델을 활용한 게임 트렌드 예측 및 업데이트 성과 분석</div>
         <div class="project-date">2024.07 - 2024.12</div>
         <ul class="project-role">
           <li>- Generalized Additive Model (GAM) 기반 시계열 모형을 활용한 DAU 및 매출 예측</li>
           <li>- 리니지M 에피소드제로, 리니지2M 신서버에덴, 리니지W 해골 업데이트 효과 분석</li>
-          <li>- 고객 유형 분석을 통한 마케팅 지표 생성 및 지표 관리 </li>
+          <li>- 예측 기준선과 실제 성과를 비교하여 업데이트 효과, 이용자 반응, 매출 변화 해석</li>
+          <li>- 분석 결과를 CEO 및 경영진 보고 자료로 정리하여 서비스 성과 진단과 후속 전략 수립 지원</li>
+          <li>- 고객 유형 분석을 통한 마케팅 지표 생성 및 지표 관리</li>
         </ul>
         <span class="project-language radius">
           <div>#R</div>
@@ -167,9 +184,9 @@
 
       <!-- 📌 프로젝트 24-01: 리니지2M 고객 표준 모형 개발 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2401.png" />
+        <img class="project-img" src="img/project_2401.png" alt="리니지2M 고객 표준 모형 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Business Analytics @NCSOFT</div>
-        <h1 class="project-title"> 리니지2M 고객 표준 모형 개발</h1>
+        <h1 class="project-title">리니지2M 고객 표준 모형 개발</h1>
         <div class="project-description">데이터 기반 과금 유형 및 주기별 유저 세분화를 통한 고객 분석</div>
         <div class="project-date">2024.06 - 2024.10</div>
         <ul class="project-role">
@@ -188,7 +205,7 @@
 
       <!-- 📌 프로젝트 23-04: 관리회계 데이터 기반 분기 리포트 개발 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2304.png" />
+        <img class="project-img" src="img/project_2304.png" alt="관리회계 데이터 기반 분기 리포트 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Management Analytics @NCSOFT</div>
         <h1 class="project-title">관리회계 데이터 기반 분기 리포트 개발</h1>
         <div class="project-description">관리회계 및 경영 지표 분석을 통한 의사결정 지원</div>
@@ -209,10 +226,9 @@
         </span>
       </div>
 
-
       <!-- 📌 프로젝트 23-03: 마케팅 비용 한계 효용 분석 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2303.png" />
+        <img class="project-img" src="img/project_2303.png" alt="마케팅 비용 한계 효용 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Marketing Analytics @NCSOFT</div>
         <h1 class="project-title">마케팅 비용 한계 효용 분석</h1>
         <div class="project-description">마케팅 비용과 매출 간의 관계 분석을 통한 최적 예산 배분 전략 수립</div>
@@ -233,13 +249,12 @@
           <div>#optim</div>
           <div>#ROI</div>
           <div>#tidyverse</div>
-          <div>#Nonlinear regression analysis</div>
+          <div>#Nonlinear Regression</div>
         </span>
       </div>
 
-      <!-- 📌 프로젝트 23-02:  HR 정보 기반 인구통계 현황 리포트 -->
+      <!-- 📌 프로젝트 23-02: HR 정보 기반 인구통계 현황 리포트 -->
       <div class="project-info loading-animation">
-        <!-- <img class="project-img" src="/img/project_2302.png" /> -->
         <div class="project-platform">HR Analytics @NCSOFT</div>
         <h1 class="project-title">HR 정보 기반 인구통계 현황 리포트</h1>
         <div class="project-description">HR 데이터와 프로젝트 투입 정보를 결합한 인력 운영 분석</div>
@@ -260,17 +275,17 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 23-01:  일별 시설별 식수량 과소 예측 보정 -->
+      <!-- 📌 프로젝트 23-01: 일별 시설별 식수량 과소 예측 보정 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2301.png" />
+        <img class="project-img" src="img/project_2301.png" alt="일별 시설별 식수량 과소 예측 보정 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @NCSOFT</div>
         <h1 class="project-title">일별 시설별 식수량 과소 예측 보정</h1>
         <div class="project-description">예측 모델 개선을 통한 Sold Out 문제 해소 및 발주 최적화</div>
         <div class="project-date">2023.05 - 2023.12</div>
         <ul class="project-role">
-          <li>- 기존 과소 예측 문제를 보완하여 Sold Out 문제 완화
+          <li>- 기존 과소 예측 문제를 보완하여 Sold Out 문제 완화</li>
           <li>- 랜덤포레스트(Random Forest) 모델 적용, 과다 예측을 유도하는 편향 조정 기법 활용</li>
-          <li>- RMSE 166 → 110, 과소 추정 비율 89.5% → 29.0% 감소 </li>
+          <li>- RMSE 166 → 110, 과소 추정 비율 89.5% → 29.0% 감소</li>
           <li>- 예측 보정된 식수량 데이터가 하반기 위탁 업체 발주량 결정에 활용</li>
         </ul>
         <span class="project-language radius">
@@ -285,9 +300,9 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 22-02:  재택근무 근로 패턴 분석-->
+      <!-- 📌 프로젝트 22-02: 재택근무 근로 패턴 분석 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2202.png" />
+        <img class="project-img" src="img/project_2202.png" alt="재택근무 근로 패턴 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @NCSOFT</div>
         <h1 class="project-title">재택근무 근로 패턴 분석</h1>
         <div class="project-description">재택근무 정책 변화에 따른 근무 패턴 및 업무 효율성 분석</div>
@@ -308,9 +323,9 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 22-01:  HR SaaS 솔루션 기획 및 개발-->
+      <!-- 📌 프로젝트 22-01: HR SaaS 솔루션 기획 및 개발 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2201.png" />
+        <img class="project-img" src="img/project_2201.png" alt="HR SaaS 솔루션 기획 및 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Product Manager @MIDAS IT</div>
         <h1 class="project-title">HR SaaS 솔루션 기획 및 개발</h1>
         <div class="project-description">데이터 기반 HR 성과관리 솔루션 기획 및 대시보드 개발</div>
@@ -326,9 +341,9 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 21-02:  AI 역량검사 데이터 기반 예측모형 개발-->
+      <!-- 📌 프로젝트 21-02: AI 역량검사 데이터 기반 예측모형 개발 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2102.png" />
+        <img class="project-img" src="img/project_2102.png" alt="AI 역량검사 데이터 기반 예측모형 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @MIDAS IT</div>
         <h1 class="project-title">AI 역량검사 데이터 기반 예측모형 개발</h1>
         <div class="project-description">머신러닝을 활용한 역량 평가 데이터 분석 및 예측 모델 구축</div>
@@ -350,9 +365,9 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 21-01:  조직 네트워크 분석 및 커뮤니케이션 개선-->
+      <!-- 📌 프로젝트 21-01: 조직 네트워크 분석 및 커뮤니케이션 개선 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2101.png" />
+        <img class="project-img" src="img/project_2101.png" alt="조직 네트워크 분석 및 커뮤니케이션 개선 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @MIDAS IT</div>
         <h1 class="project-title">조직 네트워크 분석 및 커뮤니케이션 개선</h1>
         <div class="project-description">소통 데이터 기반 네트워크 분석을 통한 조직 내 협업 강화 및 인사이트 제공</div>
@@ -374,16 +389,16 @@
         </span>
       </div>
 
-      <!-- 📌 프로젝트 20-02:  HR 데이터 기반 경영 의사결정 지원-->
+      <!-- 📌 프로젝트 20-02: HR 데이터 기반 경영 의사결정 지원 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2002.png" />
+        <img class="project-img" src="img/project_2002.png" alt="HR 데이터 기반 경영 의사결정 지원 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">HR 데이터 기반 경영 의사결정 지원</h1>
         <div class="project-description">경영진 의사결정을 위한 HR 데이터 분석 및 인사이트 도출</div>
         <div class="project-date">2020.01 - 2021.07</div>
         <ul class="project-role">
           <li>- HR 데이터 분석을 통해 경영진 대상 인사이트 제공 및 의사결정 지원</li>
-          <li>- 조직 내 평가 데이터 및 다면진단 결과를 활용한 분석 모델 구축 및 Insight 도출</li>
+          <li>- 조직 내 평가 데이터 및 다면진단 결과를 활용한 분석 모델 구축 및 인사이트 도출</li>
           <li>- 데이터 기반 인재 관리 및 후계자 선정 지원을 위한 주요 지표 개발</li>
         </ul>
         <span class="project-language radius">
@@ -397,15 +412,15 @@
         </span>
       </div>
           
-      <!-- 📌 프로젝트 20-01:  데이터 기반 인재 관리 및 조직 최적화-->
+      <!-- 📌 프로젝트 20-01: 데이터 기반 인재 관리 및 조직 최적화 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_2001.png" />
+        <img class="project-img" src="img/project_2001.png" alt="데이터 기반 인재 관리 및 조직 최적화 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">데이터 기반 인재 관리 및 조직 최적화</h1>
         <div class="project-description">HR 데이터 분석을 활용한 직무 적합성 및 이탈 예측 모델 개발</div>
         <div class="project-date">2020.01 - 2020.04</div>
         <ul class="project-role">
-          <li>- R 기반 직무추천모형 개발을 통해 개인별 직무 적합성 평가 (정확도 90%)</li>
+          <li>- R 기반 직무추천모형 개발을 통해 개인별 직무 적합성 평가, 정확도 90% 달성</li>
           <li>- 우수인력 선별 및 퇴사 예측 모델 구축을 통한 조직 관리 고도화</li>
           <li>- 분석 모델을 HRIS에 적용하여 실무 활용성 증대</li>
         </ul>
@@ -420,9 +435,8 @@
         </span>
       </div>  
 
-      <!-- 📌 프로젝트 19-02:  근태 시스템 개선 및 운영-->
+      <!-- 📌 프로젝트 19-02: 근태 시스템 개선 및 운영 -->
       <div class="project-info loading-animation">
-        <!--<img class="project-img" src="/img/project_1902.png" />-->
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">근태 시스템 개선 및 운영</h1>
         <div class="project-description">근태 데이터 기반의 법적 리스크 관리 및 주 52시간제 정착을 위한 시스템 도입</div>
@@ -443,9 +457,9 @@
         </span>
       </div>  
 
-      <!-- 📌 프로젝트 19-01:  HRIS 기반 데이터 혁신 및 성과 관리 최적화-->
+      <!-- 📌 프로젝트 19-01: HRIS 기반 데이터 혁신 및 성과 관리 최적화 -->
       <div class="project-info loading-animation">
-        <img class="project-img" src="/img/project_1901.png" />
+        <img class="project-img" src="img/project_1901.png" alt="HRIS 기반 데이터 혁신 및 성과 관리 최적화 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">HRIS 기반 데이터 혁신 및 성과 관리 최적화</h1>
         <div class="project-description">HR 시스템 활용 극대화를 통한 조직 운영 효율성 증대</div>
@@ -466,17 +480,18 @@
   <footer>
     <address class="footer_wrap">
       <div class="information">
-        <div class="myname">데이터분석가 신현수 블로그
+        <div class="myname">
+          데이터분석가 신현수 블로그
           <span class="label-emoji">👨‍💻</span>
         </div>
         <div class="accounts">
-          <a href="http://github.com/hyunsoolol" target="_blank" class="transition">
-            <svg viewBox="0 0 32.6 31.8">
+          <a href="https://github.com/hyunsoolol" target="_blank" rel="noopener noreferrer" class="transition" aria-label="GitHub">
+            <svg viewBox="0 0 32.6 31.8" aria-hidden="true">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"></path>
             </svg>
           </a>
-          <a href="http://www.linkedin.com/in/hyunsoolol/" target="_blank" class="transition">
-            <svg viewBox="0 0 38.3 38.3">
+          <a href="https://www.linkedin.com/in/hyunsoolol/" target="_blank" rel="noopener noreferrer" class="transition" aria-label="LinkedIn">
+            <svg viewBox="0 0 38.3 38.3" aria-hidden="true">
               <rect x="0.8" y="12.8" width="7.9" height="25.5"></rect>
               <ellipse cx="4.7" cy="4.7" rx="4.7" ry="4.7"></ellipse>
               <path d="M21.3,24.9c0-3.6,1.7-5.7,4.8-5.7c2.9,0,4.3,2.1,4.3,5.7c0,3.7,0,13.4,0,13.4h7.9c0,0,0-9.3,0-16.2c0-6.8-3.9-10.1-9.3-10.1s-7.7,4.2-7.7,4.2v-3.4h-7.6v25.5h7.6C21.3,38.3,21.3,28.8,21.3,24.9z"></path>
@@ -489,7 +504,6 @@
       </div>    
     </address>
   </footer>
+
 </body>
 </html>
-
-
