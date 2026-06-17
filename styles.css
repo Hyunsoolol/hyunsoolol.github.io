@@ -9,6 +9,8 @@
   --border-color: #D8E0E7;
   --soft-border-color: rgba(0, 0, 0, 0.07);
   --framework-color: rgb(137, 66, 244);
+  --ai-color: #0f8b8d;
+  --ai-surface-color: #f2fbfb;
 }
 
 * {
@@ -418,7 +420,9 @@ section.skill li.skill_name {
   font-family: "Source Sans 3", "Source Sans Pro", sans-serif;
   font-size: 14px;
   margin: 0 8px 14px 0;
+  max-width: 100%;
   padding: 4px 14px;
+  overflow-wrap: anywhere;
 }
 
 section.skill li.skill_name.framework {
@@ -429,6 +433,11 @@ section.skill li.skill_name.framework {
 section.skill li.skill_name.language {
   border-color: var(--primary-color);
   color: var(--primary-color);
+}
+
+section.skill li.skill_name.ai {
+  border-color: var(--ai-color);
+  color: var(--ai-color);
 }
 
 /* Project page */
@@ -483,6 +492,12 @@ section.skill li.skill_name.language {
   margin: 15px 0;
   padding: 40px 20px;
   scroll-margin-top: 90px;
+}
+
+.project-info--featured {
+  background: var(--ai-surface-color);
+  border-top: 1px solid rgba(15, 139, 141, 0.18);
+  margin-top: 0;
 }
 
 .project-info.is-hidden {
@@ -553,8 +568,9 @@ section.skill li.skill_name.language {
   display: inline-block;
   font-size: 12px;
   margin: 0 4px 5px 0;
+  max-width: 100%;
   padding: 2px 15px;
-  white-space: nowrap;
+  white-space: normal;
 }
 
 .project-language div {
@@ -732,6 +748,13 @@ footer .copyright span {
 
   .project-info {
     padding: 34px 0;
+  }
+
+  .project-info--featured {
+    margin-left: -5%;
+    margin-right: -5%;
+    padding-left: 5%;
+    padding-right: 5%;
   }
 
   .project-title {
