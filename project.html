@@ -63,8 +63,21 @@
   <main>
     <div class="project">
 
+      <div class="project-filter loading-animation" aria-label="Project filters">
+        <p class="project-filter-label">Filter by focus</p>
+        <div class="project-filter-list">
+          <button type="button" class="project-filter-button active" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" class="project-filter-button" data-filter="management" aria-pressed="false">Management</button>
+          <button type="button" class="project-filter-button" data-filter="hr-people" aria-pressed="false">HR/People</button>
+          <button type="button" class="project-filter-button" data-filter="marketing" aria-pressed="false">Marketing</button>
+          <button type="button" class="project-filter-button" data-filter="forecasting" aria-pressed="false">Forecasting</button>
+          <button type="button" class="project-filter-button" data-filter="dashboard" aria-pressed="false">Dashboard</button>
+          <button type="button" class="project-filter-button" data-filter="optimization" aria-pressed="false">Optimization</button>
+        </div>
+      </div>
+
       <!-- 📌 프로젝트 25-03: AION2 신규 론칭 및 개발 지원 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-aion2-launch" data-category="management infrastructure">
         <img class="project-img" src="img/project_2503.png" />
         <div class="project-platform">Service Launch &amp; Infrastructure Analytics @NCSOFT</div>
         <h1 class="project-title">AION2 신규 론칭 및 개발 지원</h1>
@@ -87,7 +100,7 @@
       </div>
 
       <!-- 📌 프로젝트 25-01: 유휴 리소스 감지 시스템 구축 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-idle-resource" data-category="infrastructure optimization">
         <img class="project-img" src="img/project_2501.png" alt="유휴 리소스 감지 시스템 구축 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Infrastructure Analytics @NCSOFT</div>
         <h1 class="project-title">유휴 리소스 감지 시스템 구축</h1>
@@ -111,7 +124,7 @@
       </div>
 
       <!-- 📌 프로젝트 24-04: NC HQ 비용 상세 분석 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-hq-cost" data-category="management">
         <img class="project-img" src="img/project_2404.png" alt="HQ 비용 상세 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Management Analytics @NCSOFT</div>
         <h1 class="project-title">HQ 비용 상세 분석</h1>
@@ -135,7 +148,7 @@
       </div>
 
       <!-- 📌 프로젝트 24-03: 마케팅 최적화 모델 개발 기획 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-marketing-mmm" data-category="marketing optimization">
         <img class="project-img" src="img/project_2403.png" alt="마케팅 최적화 모델 개발 기획 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Marketing Analytics @NCSOFT</div>
         <h1 class="project-title">마케팅 최적화 모델 개발 기획</h1>
@@ -158,7 +171,7 @@
       </div>
 
       <!-- 📌 프로젝트 24-02: 리니지IP 사용자 수 및 매출 예측 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-lineage-forecast" data-category="forecasting marketing">
         <img class="project-img" src="img/project_2402.png" alt="리니지IP 사용자 수 및 매출 예측 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Predictive Analytics @NCSOFT</div>
         <h1 class="project-title">리니지IP 사용자 수 및 매출 예측</h1>
@@ -184,7 +197,7 @@
       </div>
 
       <!-- 📌 프로젝트 24-01: 리니지2M 고객 표준 모형 개발 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-customer-segmentation" data-category="management marketing">
         <img class="project-img" src="img/project_2401.png" alt="리니지2M 고객 표준 모형 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Business Analytics @NCSOFT</div>
         <h1 class="project-title">리니지2M 고객 표준 모형 개발</h1>
@@ -206,7 +219,7 @@
       </div>
 
       <!-- 📌 프로젝트 23-04: 관리회계 데이터 기반 분기 리포트 개발 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-management-report" data-category="management dashboard">
         <img class="project-img" src="img/project_2304.png" alt="관리회계 데이터 기반 분기 리포트 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Management Analytics @NCSOFT</div>
         <h1 class="project-title">관리회계 데이터 기반 분기 리포트 개발</h1>
@@ -230,7 +243,7 @@
       </div>
 
       <!-- 📌 프로젝트 23-03: 마케팅 비용 한계 효용 분석 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-marketing-roi" data-category="marketing optimization">
         <img class="project-img" src="img/project_2303.png" alt="마케팅 비용 한계 효용 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Marketing Analytics @NCSOFT</div>
         <h1 class="project-title">마케팅 비용 한계 효용 분석</h1>
@@ -255,7 +268,7 @@
       </div>
 
       <!-- 📌 프로젝트 23-02: HR 정보 기반 인구통계 현황 리포트 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-hr-demographics" data-category="hr-people dashboard">
         <div class="project-platform">HR Analytics @NCSOFT</div>
         <h1 class="project-title">HR 정보 기반 인구통계 현황 리포트</h1>
         <div class="project-description">HR 데이터와 프로젝트 투입 정보를 결합한 인력 운영 분석</div>
@@ -278,7 +291,7 @@
       </div>
 
       <!-- 📌 프로젝트 23-01: 일별 시설별 식수량 과소 예측 보정 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-meal-forecast" data-category="hr-people forecasting optimization">
         <img class="project-img" src="img/project_2301.png" alt="일별 시설별 식수량 과소 예측 보정 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @NCSOFT</div>
         <h1 class="project-title">일별 시설별 식수량 과소 예측 보정</h1>
@@ -303,7 +316,7 @@
       </div>
 
       <!-- 📌 프로젝트 22-02: 재택근무 근로 패턴 분석 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-remote-work" data-category="hr-people">
         <img class="project-img" src="img/project_2202.png" alt="재택근무 근로 패턴 분석 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @NCSOFT</div>
         <h1 class="project-title">재택근무 근로 패턴 분석</h1>
@@ -326,7 +339,7 @@
       </div>
 
       <!-- 📌 프로젝트 22-01: HR SaaS 솔루션 기획 및 개발 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-hr-saas" data-category="hr-people dashboard">
         <img class="project-img" src="img/project_2201.png" alt="HR SaaS 솔루션 기획 및 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">Product Manager @MIDAS IT</div>
         <h1 class="project-title">HR SaaS 솔루션 기획 및 개발</h1>
@@ -350,7 +363,7 @@
       </div>
 
       <!-- 📌 프로젝트 21-02: AI 역량검사 데이터 기반 예측모형 개발 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-ai-assessment" data-category="hr-people forecasting">
         <img class="project-img" src="img/project_2102.png" alt="AI 역량검사 데이터 기반 예측모형 개발 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @MIDAS IT</div>
         <h1 class="project-title">AI 역량검사 데이터 기반 예측모형 개발</h1>
@@ -374,7 +387,7 @@
       </div>
 
       <!-- 📌 프로젝트 21-01: 조직 네트워크 분석 및 커뮤니케이션 개선 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-network-analysis" data-category="hr-people">
         <img class="project-img" src="img/project_2101.png" alt="조직 네트워크 분석 및 커뮤니케이션 개선 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">People Analytics @MIDAS IT</div>
         <h1 class="project-title">조직 네트워크 분석 및 커뮤니케이션 개선</h1>
@@ -399,7 +412,7 @@
       </div>
 
       <!-- 📌 프로젝트 20-02: HR 데이터 기반 경영 의사결정 지원 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-hr-decision" data-category="hr-people management">
         <img class="project-img" src="img/project_2002.png" alt="HR 데이터 기반 경영 의사결정 지원 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">HR 데이터 기반 경영 의사결정 지원</h1>
@@ -423,7 +436,7 @@
       </div>
           
       <!-- 📌 프로젝트 20-01: 데이터 기반 인재 관리 및 조직 최적화 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-talent-optimization" data-category="hr-people optimization forecasting">
         <img class="project-img" src="img/project_2001.png" alt="데이터 기반 인재 관리 및 조직 최적화 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">데이터 기반 인재 관리 및 조직 최적화</h1>
@@ -447,7 +460,7 @@
       </div>  
 
       <!-- 📌 프로젝트 19-02: 근태 시스템 개선 및 운영 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-attendance-system" data-category="hr-people dashboard">
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">근태 시스템 개선 및 운영</h1>
         <div class="project-description">근태 데이터 기반의 법적 리스크 관리 및 주 52시간제 정착을 위한 시스템 도입</div>
@@ -470,7 +483,7 @@
       </div>  
 
       <!-- 📌 프로젝트 19-01: HRIS 기반 데이터 혁신 및 성과 관리 최적화 -->
-      <div class="project-info loading-animation">
+      <div class="project-info loading-animation" id="project-hris-performance" data-category="hr-people">
         <img class="project-img" src="img/project_1901.png" alt="HRIS 기반 데이터 혁신 및 성과 관리 최적화 프로젝트 이미지" loading="lazy" decoding="async" />
         <div class="project-platform">HR Analytics @SeAH Holdings</div>
         <h1 class="project-title">HRIS 기반 데이터 혁신 및 성과 관리 최적화</h1>
@@ -521,6 +534,31 @@
       </div>    
     </address>
   </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const filterButtons = document.querySelectorAll(".project-filter-button");
+      const projects = document.querySelectorAll(".project-info[data-category]");
+
+      filterButtons.forEach(function (button) {
+        button.addEventListener("click", function () {
+          const filter = button.dataset.filter;
+
+          filterButtons.forEach(function (item) {
+            const isActive = item === button;
+            item.classList.toggle("active", isActive);
+            item.setAttribute("aria-pressed", isActive ? "true" : "false");
+          });
+
+          projects.forEach(function (project) {
+            const categories = (project.dataset.category || "").split(" ");
+            const isVisible = filter === "all" || categories.includes(filter);
+            project.classList.toggle("is-hidden", !isVisible);
+          });
+        });
+      });
+    });
+  </script>
 
 </body>
 </html>
