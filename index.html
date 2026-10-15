@@ -1,421 +1,371 @@
 <!DOCTYPE html>
- <html lang="ko">
- <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>데이터 사이언티스트 신현수 포트폴리오</title>
-   <meta name="description" content="Data Scientist Portfolio focused on business AX/DX, applied statistics, AI-assisted analytics automation, People Analytics, and BI reporting.">
- 
-   <!-- SEO Meta Tags -->
-   <meta itemprop="name" content="데이터 사이언티스트 신현수 포트폴리오">
-   <meta itemprop="description" content="Data Scientist Portfolio focused on business AX/DX, applied statistics, AI-assisted analytics automation, People Analytics, and BI reporting.">
- 
-   <!-- Open Graph / Facebook -->
-   <meta property="og:type" content="website">
-   <meta property="og:title" content="데이터 사이언티스트 신현수 포트폴리오">
-   <meta property="og:description" content="Business AX/DX, applied statistics, AI-assisted analytics automation, People Analytics, and BI reporting.">
-   <meta property="og:image" content="/meta/cover.png">
- 
-   <!-- Twitter Meta Tags -->
-   <meta name="twitter:card" content="summary_large_image">
-   <meta name="twitter:title" content="데이터 사이언티스트 신현수 포트폴리오">
-   <meta name="twitter:description" content="Business AX/DX, applied statistics, AI-assisted analytics automation, People Analytics, and BI reporting.">
-   <meta name="twitter:image" content="/meta/cover.png">
-   
-   <!-- Pretendard preload -->
-   <link rel="preload" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.woff2" as="font" type="font/woff2" crossorigin>
-
-   <!-- Fonts -->
-   <link rel="preconnect" href="https://fonts.googleapis.com">
-   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&amp;family=Source+Sans+3:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css?display=swap">
-
-   <!-- CSS -->
-   <link rel="stylesheet" href="styles.css?v=20260618-ai-tf">
- 
-    <!-- Google Analytics -->
-   <script async src="https://www.googletagmanager.com/gtag/js?id=G-G93YP5KK16"></script>
-   <script>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 사이언티스트 신현수 포트폴리오</title>
+    <meta name="description" content="데이터 분석가 신현수의 포트폴리오. 매출 예측, 마케팅 분석, 비용 분석과 리포트 자동화 경험을 소개합니다.">
+    <meta itemprop="name" content="데이터 사이언티스트 신현수 포트폴리오">
+    <meta itemprop="description" content="데이터 분석가 신현수의 포트폴리오. 매출 예측, 마케팅 분석, 비용 분석과 리포트 자동화 경험을 소개합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="데이터 사이언티스트 신현수 포트폴리오">
+    <meta property="og:description" content="데이터 분석가 신현수의 포트폴리오. 매출 예측, 마케팅 분석, 비용 분석과 리포트 자동화 경험을 소개합니다.">
+    <meta property="og:image" content="/meta/cover.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="데이터 사이언티스트 신현수 포트폴리오">
+    <meta name="twitter:description" content="데이터 분석가 신현수의 포트폴리오. 매출 예측, 마케팅 분석, 비용 분석과 리포트 자동화 경험을 소개합니다.">
+    <meta name="twitter:image" content="/meta/cover.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css?display=swap">
+    <link rel="stylesheet" href="styles.css?v=20261015-refined">
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-G93YP5KK16"></script>
+    <script>
      window.dataLayer = window.dataLayer || [];
      function gtag(){dataLayer.push(arguments);}
      gtag('js', new Date());
- 
+
      gtag('config', 'G-G93YP5KK16');
    </script>
-   
-   <!-- ✅ 재직 기간 -->
-   <script>
-     function calculateTenure(startYear, startMonth) {
-         const startDate = new Date(startYear, startMonth - 2); // 월은 0부터 시작
-         const today = new Date();
-         
-         let years = today.getFullYear() - startDate.getFullYear();
-         let months = today.getMonth() - startDate.getMonth();
-   
-         if (months < 0) {
-             years--;
-             months += 12;
-         }
-   
-         return `${years}y ${months}m`;
-     }
-   
-     document.addEventListener("DOMContentLoaded", function() {
-         document.getElementById("ncsoft-tenure").textContent = calculateTenure(2022, 4);
-     });
-   </script>
-   
- </head>
- <body>
-   <nav class="nav">
-     <div class="nav-container">
-       <ul>
-         <li class="transition"><a href="index.html" class="active">Home</a></li>
-         <li class="transition"><a href="project.html">Project</a></li>
-       </ul>
-     </div>
-   </nav>
-   
-   <main>
-     <div class="intro-animation">
-       <section class="explanation">
-         <table>
-           <tr>
-             <td rowspan="3"></td>
-             <td><span class="primary">@hyunsoolol</span></td>
-           </tr>
-           <tr>
-             <td><h1 class="intro">신현수 (Hyunsoo Shin)</h1></td>
-           </tr>
-           <tr>
-             <td class="description">Data Analyst · Data Scientist · Statistics · AI Automation</td>
-           </tr>
-         </table>
-         <p class="updated">updated: @June, 2026</p>
-       </section>
-     </div>
- 
-     <div class="loading-animation">
-       <section class="resume">
-         <div class="resume-info">
-           <p class="second-label">
-             <span class="label-emoji">👨‍💻</span>
-             &nbsp; Work Experience
-           </p>
-         </div>
-         <ul>
-           <div class="workplace-wrap">
-             <li class="workplace">
-               <p class="workplace-name">
-                 <a target="_blank" href="http://www.ncsoft.com" class="transition">NCSOFT</a>
-               </p>
-               <div class="work-info">
-                 <p class="work-role">Data Analyst / Data Scientist</p>
-                 <p class="work-sub-info">2022.04 - Present (<span id="ncsoft-tenure"></span>)</p>
-                 <p class="work-skill">
-                   <span>#AI TF</span>
-                   <span>#AI-assisted Analytics Automation</span>
-                   <span>#Management Analytics</span>
-                   <span>#Business AX/DX</span>
-                   <span>#Business Analytics</span>
-                   <span>#Marketing Analytics</span>
-                   <span>#People Analytics</span>
-                   <span>#BI/AI Reporting</span>
-                 </p>
-               </div>
-             </li>
-           </div>
-           <div class="workplace-wrap">
-             <li class="workplace">
-               <p class="workplace-name">
-                 <a target="_blank" href="http://www.midasit.com" class="transition">MIDAS IT</a>
-               </p>
-               <div class="work-info">
-                 <p class="work-role">Data Analyst</p>
-                 <p class="work-sub-info">2021.08 - 2022.04 (9m)</p>
-                 <p class="work-skill">
-                   <span>#HR Analytics</span>
-                   <span>#Product Analytics</span>
-                   <span>#SaaS Planning</span>
-                   <span>#Dashboard</span>
-                   <span>#People Analytics</span>
-                 </p>
-               </div>
-             </li>
-           </div>
-           <div class="workplace-wrap">
-             <li class="workplace">
-               <p class="workplace-name">
-                 <a target="_blank" href="https://www.seah.co.kr/about/seah" class="transition">SeAH Holdings</a>
-               </p>
-               <div class="work-info">
-                 <p class="work-role">Data Analyst</p>
-                 <p class="work-sub-info">2019.05 - 2021.07 (2y 3m)</p>
-                 <p class="work-skill">
-                   <span>#HR Analytics</span>
-                   <span>#People Analytics</span>
-                   <span>#HRIS</span>
-                   <span>#Talent Analytics</span>
-                   <span>#Process Improvement</span>
-                 </p>
-               </div>
-             </li>
-           </div>
-           <div class="workplace-wrap">
-             <li class="workplace">
-               <p class="workplace-name">
-                 <a target="_blank" href="https://www.skku.edu" class="transition">Sungkyunkwan University</a>
-               </p>
-               <div class="work-info">
-                 <p class="work-role">Research Assistant, Statistics Mixture Lab</p>
-                 <p class="work-sub-info">2018.04 - 2019.05 (1y 2m)</p>
-                 <p class="work-skill">
-                   <span>#Applied Statistics</span>
-                   <span>#Statistical Modeling</span>
-                   <span>#Latent Class Model</span>
-                   <span>#Mixture Model</span>
-                   <span>#Text Data Analysis</span>
-                 </p>
-               </div>
-             </li>
-           </div>
-           <!-- Add more workplace entries as needed -->
-         </ul>
- 
-         <a href="project.html" class="transition">
-           <div class="view-all-projects transition">
-               <span>Project list</span>
-               <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><defs><style>.cls-1{fill:none;}</style></defs><path d="M7.2,17.9l6.1-6.1L7.2,5.6,9,3.8l8,8-8,8Z" /><path class="cls-1" d="M.1-.2h24v24H.1Z" /></svg>
-           </div>
-       </a>
-
-        <section class="featured-projects">
-          <p class="second-label">Featured Projects</p>
-          <ul class="featured-project-list">
-            <li class="featured-project-item">
-              <div class="featured-project-copy">
-                <p class="featured-project-title">
-                  <a href="project.html#project-ai-tf-automation" class="transition">사업 AX/DX 리포팅 자동화 및 분석 프로세스 개선</a>
+    <script src="site.js?v=20261015-refined" defer=""></script>
+  </head>
+  <body class="home-page">
+    <a class="skip-link" href="#main-content">본문으로 바로가기</a>
+    <nav class="nav" aria-label="주 메뉴">
+      <div class="nav-container">
+        <a class="nav-brand" href="index.html">Hyunsoo Shin</a>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li class="nav-external"><a href="https://github.com/hyunsoolol" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
+        </ul>
+      </div>
+    </nav>
+    <main id="main-content" tabindex="-1">
+      <section class="explanation" aria-labelledby="intro-title">
+        <p class="eyebrow">@hyunsoolol</p>
+        <h1 class="intro" id="intro-title">신현수 <span>Hyunsoo Shin</span></h1>
+        <p class="description"><span>Data Analyst</span><span>Data Scientist</span><span>Statistics</span><span>AI Automation</span></p>
+        <div class="intro-bottom">
+          <p class="current-role">NCSOFT <span>마케팅데이터분석팀 / AI TF</span></p>
+          <a class="text-link primary-link" href="project.html">프로젝트 보기 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg></a>
+        </div>
+      </section>
+      <section class="featured-projects" id="featured-projects">
+        <div class="section-header">
+          <h2 class="second-label">Featured Projects</h2>
+          <a class="text-link" href="project.html">전체 프로젝트 <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+        </div>
+        <ul class="featured-project-list">
+          <li class="featured-project-item">
+            <a class="featured-media" href="project.html#project-ai-tf-automation" tabindex="-1" aria-hidden="true"><img src="img/project_ai_assistants.png" alt="" width="1254" height="1254" loading="eager" decoding="async"></a>
+            <div class="featured-project-copy">
+              <h3 class="featured-project-title">
+                  <a href="project.html#project-ai-tf-automation" class="transition">사업 AX/DX 리포팅 자동화 및 분석 프로세스 개선<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                </h3>
+              <p class="featured-project-summary">사업과 마케팅 데이터를 분석하고 정기 리포트를 작성합니다. 반복 코드 작성, 데이터 정리, 리포트 초안과 시각화에 Claude Code와 Codex를 활용합니다.</p>
+              <p class="featured-tags">
+                  <span>Claude Code</span>
+                  <span>AI-assisted Analytics Automation</span>
                 </p>
-                <p class="featured-project-summary">Claude Code, ChatGPT, Codex를 활용해 반복 분석 코드 작성, 데이터 정리, 리포트 초안, 시각화 산출물 생성을 표준화하고 있습니다.</p>
-                <p class="featured-tags">
-                  <span>#Claude Code</span>
-                  <span>#AI-assisted Analytics Automation</span>
+            </div>
+          </li>
+          <li class="featured-project-item">
+            <a class="featured-media featured-media--typographic" href="project.html#project-hr-demographics" tabindex="-1" aria-hidden="true"><span class="media-label">PEOPLE ANALYTICS</span><span class="media-title">Workforce<br>Analytics</span><span class="media-caption">NCSOFT</span></a>
+            <div class="featured-project-copy">
+              <h3 class="featured-project-title">
+                  <a href="project.html#project-hr-demographics" class="transition">HR 정보 기반 인구통계 현황 리포트<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                </h3>
+              <p class="featured-project-summary">인사 정보와 프로젝트 투입 데이터를 연결해 직종, 경력, 근속연수별 인력 구성을 분석했습니다. 투입 MM 데이터의 정확성도 확인했습니다.</p>
+              <p class="featured-tags">
+                  <span>People Analytics</span>
+                  <span>HR Data Strategy</span>
+                  <span>Data Quality</span>
                 </p>
+            </div>
+          </li>
+          <li class="featured-project-item">
+            <a class="featured-media" href="project.html#project-management-report" tabindex="-1" aria-hidden="true"><img src="img/project_2304.png" alt="" width="432" height="432" loading="eager" decoding="async"></a>
+            <div class="featured-project-copy">
+              <h3 class="featured-project-title">
+                  <a href="project.html#project-management-report" class="transition">관리회계 데이터 기반 분기 리포트 개발<svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a>
+                </h3>
+              <p class="featured-project-summary">관리회계, 인사, 게임 데이터를 모아 서비스와 프로젝트별 비용을 분석했습니다. Shiny와 Quarto로 분기 리포트와 대시보드를 만들었습니다.</p>
+              <p class="featured-tags">
+                  <span>Business AX/DX</span>
+                  <span>Dashboard Automation</span>
+                  <span>Decision Support</span>
+                </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="focus-highlights detail-section">
+        <h2 class="second-label">What I Focus On</h2>
+        <ul class="focus-list">
+          <li class="focus-item">
+            <svg class="icon focus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 0-5.997.125 4 4 0 0 0-2.526 5.77 4 4 0 0 0 .556 6.588A4 4 0 1 0 12 18Z"></path><path d="M9 13a4.5 4.5 0 0 0 3-4"></path><path d="M6.003 5.125A3 3 0 0 0 6.401 6.5"></path><path d="M3.477 10.896a4 4 0 0 1 .585-.396"></path><path d="M6 18a4 4 0 0 1-1.967-.516"></path><path d="M12 13h4"></path><path d="M12 18h6a2 2 0 0 1 2 2v1"></path><path d="M12 8h8"></path><path d="M16 8V5a2 2 0 0 1 2-2"></path><circle cx="16" cy="13" r=".5"></circle><circle cx="18" cy="3" r=".5"></circle><circle cx="20" cy="21" r=".5"></circle><circle cx="20" cy="8" r=".5"></circle></svg>
+            <h3 class="focus-title">AI/AX</h3>
+            <p class="focus-description">사업과 마케팅 분석에 Claude Code와 Codex를 활용합니다. 반복 분석 코드와 리포트 초안을 작성하는 데 주로 사용합니다.</p>
+          </li>
+          <li class="focus-item">
+            <svg class="icon focus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 16v5"></path><path d="M16 14v7"></path><path d="M20 10v11"></path><path d="m22 3-8.646 8.646a.5.5 0 0 1-.708 0L9.354 8.354a.5.5 0 0 0-.707 0L2 15"></path><path d="M4 18v3"></path><path d="M8 14v7"></path></svg>
+            <h3 class="focus-title">Applied Statistics &amp; Modeling</h3>
+            <p class="focus-description">통계학 석사를 마치고 박사 과정에 재학 중입니다. 시계열 예측, 고객 세분화, 혼합모형을 주로 다룹니다.</p>
+          </li>
+          <li class="focus-item">
+            <svg class="icon focus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83z"></path><path d="M2 12a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 12"></path><path d="M2 17a1 1 0 0 0 .58.91l8.6 3.91a2 2 0 0 0 1.65 0l8.58-3.9A1 1 0 0 0 22 17"></path></svg>
+            <h3 class="focus-title">Cross-domain Analytics</h3>
+            <p class="focus-description">경영, 마케팅, 서비스, 회계, HR, 인프라 데이터를 분석해 왔습니다. 업무 목적에 맞게 지표를 정하고 결과를 해석합니다.</p>
+          </li>
+          <li class="focus-item">
+            <svg class="icon focus-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+            <h3 class="focus-title">Automation &amp; BI Reporting</h3>
+            <p class="focus-description">SQL로 데이터를 정리하고 Shiny와 Quarto로 대시보드와 정기 리포트를 만듭니다.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="resume detail-section">
+        <div class="resume-info">
+          <h2 class="second-label">Work Experience</h2>
+        </div>
+        <ul>
+          <li class="workplace-wrap">
+            <div class="workplace">
+              <p class="workplace-name">
+                 <a target="_blank" href="http://www.ncsoft.com" class="transition" rel="noopener noreferrer">NCSOFT</a>
+               </p>
+              <div class="work-info">
+                <p class="work-role">Data Analyst / Data Scientist</p>
+                <p class="work-sub-info">2022.04 - Present (<span id="ncsoft-tenure"></span>)</p>
+                <p class="work-skill">
+                   <span>AI TF</span>
+                   <span>AI-assisted Analytics Automation</span>
+                   <span>Management Analytics</span>
+                   <span>Business AX/DX</span>
+                   <span>Business Analytics</span>
+                   <span>Marketing Analytics</span>
+                   <span>People Analytics</span>
+                   <span>BI/AI Reporting</span>
+                 </p>
               </div>
-            </li>
-            <li class="featured-project-item">
-              <div class="featured-project-copy">
-                <p class="featured-project-title">
-                  <a href="project.html#project-hr-demographics" class="transition">HR 정보 기반 인구통계 현황 리포트</a>
-                </p>
-                <p class="featured-project-summary">HR 정보와 프로젝트 투입 데이터를 결합해 인력 운영 현황, 투입 패턴, 데이터 품질을 점검했습니다.</p>
-                <p class="featured-tags">
-                  <span>#People Analytics</span>
-                  <span>#HR Data Strategy</span>
-                  <span>#Data Quality</span>
-                </p>
-              </div>
-            </li>
-            <li class="featured-project-item">
-              <div class="featured-project-copy">
-                <p class="featured-project-title">
-                  <a href="project.html#project-management-report" class="transition">관리회계 데이터 기반 분기 리포트 개발</a>
-                </p>
-                <p class="featured-project-summary">관리회계, HR, 게임 데이터를 결합해 서비스/프로젝트 단위 비용과 KPI를 자동화 리포트로 정리했습니다.</p>
-                <p class="featured-tags">
-                  <span>#Business AX/DX</span>
-                  <span>#Dashboard Automation</span>
-                  <span>#Decision Support</span>
-                </p>
-              </div>
-            </li>
-          </ul>
-        </section>
-
-        <section class="focus-highlights">
-          <p class="second-label">What I Focus On</p>
-          <ul class="focus-list">
-            <li class="focus-item">
-              <p class="focus-title">AI/AX Transformation</p>
-              <p class="focus-description">사업, 마케팅, 운영 데이터를 AI 도구와 자동화 흐름에 연결해 분석 과제 정의, 리포팅, 의사결정 지원을 고도화합니다.</p>
-            </li>
-            <li class="focus-item">
-              <p class="focus-title">Applied Statistics &amp; Modeling</p>
-              <p class="focus-description">통계학 석사·박사 과정 기반의 모델링 역량으로 예측, 세분화, 실험적 분석을 설계합니다.</p>
-            </li>
-            <li class="focus-item">
-              <p class="focus-title">Cross-domain Analytics</p>
-              <p class="focus-description">경영, 마케팅, 서비스, 회계, HR, 인프라 데이터를 넘나들며 다양한 도메인의 분석 과제와 지표를 설계합니다.</p>
-            </li>
-            <li class="focus-item">
-              <p class="focus-title">Automation &amp; BI Reporting</p>
-              <p class="focus-description">Claude Code, ChatGPT, Codex로 반복 분석, 데이터 품질 점검, KPI 리포팅을 자동화합니다.</p>
-            </li>
-          </ul>
-        </section>
-   
-       </section>
- 
-       <section class="journals">
-         <div class="journals-info">
-           <p class="second-label">
-             <span class="label-emoji">📝</span>
-             &nbsp; Journals
-           </p>
-         </div>
-         <ul>
-           <div class="journals-wrap">
-             <li class="journals">
-               <p class="journals-name">
-                 <a target="_blank" href="https://koreascience.or.kr/article/JAKO201910861318138.pdf" class="transition">Latent class model for mixed variables with applications to text data</a>
+            </div>
+          </li>
+          <li class="workplace-wrap">
+            <div class="workplace">
+              <p class="workplace-name">
+                 <a target="_blank" href="http://www.midasit.com" class="transition" rel="noopener noreferrer">MIDAS IT</a>
                </p>
-               <div class="journals-info">
-                 <p class="journals-place">The Korea Journal of Applied Statistics</p>
-                 <p class="journals-sub-info">2019.10</p>
-                 <p class="journals-skill">
-                   <span>#latent class analysis</span>
-                   <span>#mixture model</span>
-                   <span>#clustering</span>
-                   <span>#text mining</span>
+              <div class="work-info">
+                <p class="work-role">Data Analyst</p>
+                <p class="work-sub-info">2021.08 - 2022.04 (9m)</p>
+                <p class="work-skill">
+                   <span>HR Analytics</span>
+                   <span>Product Analytics</span>
+                   <span>SaaS Planning</span>
+                   <span>Dashboard</span>
+                   <span>People Analytics</span>
                  </p>
-               </div>
-             </li>
-           </div>
-           <div class="journals-wrap">
-             <li class="journals">
-               <p class="journals-name">
-                 <a target="_blank" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002280834" class="transition">Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach</a>
+              </div>
+            </div>
+          </li>
+          <li class="workplace-wrap">
+            <div class="workplace">
+              <p class="workplace-name">
+                 <a target="_blank" href="https://www.seah.co.kr/about/seah" class="transition" rel="noopener noreferrer">SeAH Holdings</a>
                </p>
-               <div class="journals-info">
-                 <p class="journals-place">Journal of The Korean Data Analysis Society</p>
-                 <p class="journals-sub-info">2017.10</p>
-                 <p class="journals-skill">
-                   <span>#Particulate matter</span>
-                   <span>#Time series regression,</span>
-                   <span>#ARIMA</span>
-                   <span>#Exponential smoothing state space</span>
-                   <span>#Seasonal trend decomposition using loess</span>
+              <div class="work-info">
+                <p class="work-role">Data Analyst</p>
+                <p class="work-sub-info">2019.05 - 2021.07 (2y 3m)</p>
+                <p class="work-skill">
+                   <span>HR Analytics</span>
+                   <span>People Analytics</span>
+                   <span>HRIS</span>
+                   <span>Talent Analytics</span>
+                   <span>Process Improvement</span>
                  </p>
-               </div>
-             </li>
-           </div>
-           <!-- Add more workplace entries as needed -->
-         </ul>
-         <section class="award">
-           <div class="award-info">
-             <p class="second-label">
-               <span class="label-emoji">🏆</span>
-               &nbsp; Awards
-             </p>
-           </div>
-           <ul>
-            <div class="award-wrap">
-                <li class="award">
-                  <p class="award-name">
-                    <a target="_blank" href="https://dacon.io/competitions/official/236606/codeshare/13191?page=1&amp;dtype=random&amp;keyword1=&amp;keyword2" class="transition">2025 News &amp; Broadcasting Reader Data Analysis Idea Contest</a>
+              </div>
+            </div>
+          </li>
+          <li class="workplace-wrap">
+            <div class="workplace">
+              <p class="workplace-name">
+                 <a target="_blank" href="https://www.skku.edu" class="transition" rel="noopener noreferrer">Sungkyunkwan University</a>
+               </p>
+              <div class="work-info">
+                <p class="work-role">Research Assistant, Statistics Mixture Lab</p>
+                <p class="work-sub-info">2018.04 - 2019.05 (1y 2m)</p>
+                <p class="work-skill">
+                   <span>Applied Statistics</span>
+                   <span>Statistical Modeling</span>
+                   <span>Latent Class Model</span>
+                   <span>Mixture Model</span>
+                   <span>Text Data Analysis</span>
+                 </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="skill detail-section">
+        <div class="resume-info">
+          <h2 class="second-label">Skills</h2>
+        </div>
+        <div class="skill-groups">
+          <div class="skill-group">
+            <h3>Languages &amp; Data</h3>
+            <ul>
+              <li class="skill_name framework"><span>R</span></li>
+              <li class="skill_name framework"><span>Python</span></li>
+              <li class="skill_name framework"><span>SQL</span></li>
+              <li class="skill_name framework"><span>Hive</span></li>
+              <li class="skill_name language"><span>Tidyverse</span></li>
+              <li class="skill_name language"><span>Pandas</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Analytics &amp; Modeling</h3>
+            <ul>
+              <li class="skill_name framework"><span>Statistics</span></li>
+              <li class="skill_name framework"><span>Statistical Modeling</span></li>
+              <li class="skill_name framework"><span>Applied Statistics</span></li>
+              <li class="skill_name language"><span>Scikit-learn</span></li>
+              <li class="skill_name language"><span>TensorFlow</span></li>
+              <li class="skill_name language"><span>People Analytics</span></li>
+              <li class="skill_name language"><span>HR Data Strategy</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Reporting &amp; BI</h3>
+            <ul>
+              <li class="skill_name language"><span>ggplot2</span></li>
+              <li class="skill_name language"><span>Shiny</span></li>
+              <li class="skill_name language"><span>Quarto</span></li>
+              <li class="skill_name language"><span>Power BI</span></li>
+              <li class="skill_name language"><span>Grafana</span></li>
+              <li class="skill_name language"><span>PromQL</span></li>
+              <li class="skill_name language"><span>BI/AI Reporting</span></li>
+              <li class="skill_name language"><span>Data Quality</span></li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>AI Tools</h3>
+            <ul>
+              <li class="skill_name ai"><span>Claude Code</span></li>
+              <li class="skill_name ai"><span>ChatGPT</span></li>
+              <li class="skill_name ai"><span>OpenAI Codex</span></li>
+              <li class="skill_name ai"><span>AI-assisted analytics automation</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="journals detail-section">
+        <div class="journals-info">
+          <h2 class="second-label">Journals</h2>
+        </div>
+        <ul>
+          <li class="journals-wrap">
+            <div class="journals">
+              <p class="journals-name">
+                 <a target="_blank" href="https://koreascience.or.kr/article/JAKO201910861318138.pdf" class="transition" rel="noopener noreferrer">Latent class model for mixed variables with applications to text data</a>
+               </p>
+              <div class="journals-info">
+                <p class="journals-place">The Korea Journal of Applied Statistics</p>
+                <p class="journals-sub-info">2019.10</p>
+                <p class="journals-skill">
+                   <span>latent class analysis</span>
+                   <span>mixture model</span>
+                   <span>clustering</span>
+                   <span>text mining</span>
+                 </p>
+              </div>
+            </div>
+          </li>
+          <li class="journals-wrap">
+            <div class="journals">
+              <p class="journals-name">
+                 <a target="_blank" href="https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002280834" class="transition" rel="noopener noreferrer">Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach</a>
+               </p>
+              <div class="journals-info">
+                <p class="journals-place">Journal of The Korean Data Analysis Society</p>
+                <p class="journals-sub-info">2017.10</p>
+                <p class="journals-skill">
+                   <span>Particulate matter</span>
+                   <span>Time series regression,</span>
+                   <span>ARIMA</span>
+                   <span>Exponential smoothing state space</span>
+                   <span>Seasonal trend decomposition using loess</span>
+                 </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="award detail-section">
+        <div class="award-info">
+          <h2 class="second-label">Awards</h2>
+        </div>
+        <ul>
+          <li class="award-wrap">
+            <div class="award">
+              <p class="award-name">
+                    <a target="_blank" href="https://dacon.io/competitions/official/236606/codeshare/13191?page=1&amp;dtype=random&amp;keyword1=&amp;keyword2" class="transition" rel="noopener noreferrer">2025 News &amp; Broadcasting Reader Data Analysis Idea Contest</a>
                   </p>
-                  <div class="award-info">
-                    <p class="award-place">Excellence Award, Korea Press Foundation</p>
-                    <p class="award-sub-info">2025.12</p>
-                    <p class="award-skill">
-                      <span>#LDA</span>
-                      <span>#MMM</span>
-                      <span>#Recommendation System</span>
+              <div class="award-info">
+                <p class="award-place">Excellence Award, Korea Press Foundation</p>
+                <p class="award-sub-info">2025.12</p>
+                <p class="award-skill">
+                      <span>LDA</span>
+                      <span>MMM</span>
+                      <span>Recommendation System</span>
                     </p>
-                  </div>
-                </li>
               </div>
-            
-             <div class="award-wrap">
-               <li class="award">
-                 <p class="award-name">
-                   <a target="_blank" href="http://koreaict.or.kr/kicta/html/bodo_view.asp?idx=348&amp;page=4&amp;keyword1=&amp;keyword2=" class="transition">Big Data–Based Corporate Information Utilization Idea Contest</a>
+            </div>
+          </li>
+          <li class="award-wrap">
+            <div class="award">
+              <p class="award-name">
+                   <a target="_blank" href="http://koreaict.or.kr/kicta/html/bodo_view.asp?idx=348&amp;page=4&amp;keyword1=&amp;keyword2=" class="transition" rel="noopener noreferrer">Big Data–Based Corporate Information Utilization Idea Contest</a>
                  </p>
-                 <div class="award-info">
-                   <p class="award-place">Excellence Award, Korea Rating &amp; Data</p>
-                   <p class="award-sub-info">2019.02</p>
-                   <p class="award-skill">
-                     <span>#credit scoring</span>
-                     <span>#geographic analytics</span>
-                     <span>#clustering</span>
-                     <span>#text mining</span>
+              <div class="award-info">
+                <p class="award-place">Excellence Award, Korea Rating &amp; Data</p>
+                <p class="award-sub-info">2019.02</p>
+                <p class="award-skill">
+                     <span>credit scoring</span>
+                     <span>geographic analytics</span>
+                     <span>clustering</span>
+                     <span>text mining</span>
                    </p>
-                 </div>
-               </li>
-             </div>
-             <!-- Add more workplace entries as needed -->
-           </ul>
-         </section>
-       </section>
- 
-       <section class="skill">
-         <div class="resume-info">
-           <p class="second-label">
-             <span class="label-emoji">💪</span>
-             &nbsp; Skills
-           </p>
-         </div>
-         <ul>
-           <!-- 프레임워크 -->
-           <li class="skill_name framework"><span>R</span></li>
-           <li class="skill_name framework"><span>Python</span></li>
-           <li class="skill_name framework"><span>SQL</span></li>
-           <li class="skill_name framework"><span>Hive</span></li>
-           <li class="skill_name framework"><span>Statistics</span></li>
-           <li class="skill_name framework"><span>Statistical Modeling</span></li>
-           <li class="skill_name framework"><span>Applied Statistics</span></li>
-           <li class="skill_name ai"><span>Claude Code</span></li>
-           <li class="skill_name ai"><span>ChatGPT</span></li>
-           <li class="skill_name ai"><span>OpenAI Codex</span></li>
-           <li class="skill_name ai"><span>AI-assisted analytics automation</span></li>
-           <!-- 프로그래밍 언어 -->
-           <li class="skill_name language"><span>Tidyverse</span></li>
-           <li class="skill_name language"><span>ggplot2</span></li>
-           <li class="skill_name language"><span>Shiny</span></li>
-           <li class="skill_name language"><span>Quarto</span></li>
-           <li class="skill_name language"><span>Power BI</span></li>
-           <li class="skill_name language"><span>Grafana</span></li>
-           <li class="skill_name language"><span>PromQL</span></li>
-           <li class="skill_name language"><span>Pandas</span></li>
-           <li class="skill_name language"><span>Scikit-learn</span></li>
-           <li class="skill_name language"><span>TensorFlow</span></li>
-           <li class="skill_name language"><span>People Analytics</span></li>
-           <li class="skill_name language"><span>HR Data Strategy</span></li>
-           <li class="skill_name language"><span>BI/AI Reporting</span></li>
-           <li class="skill_name language"><span>Data Quality</span></li>
-           <!-- Add more skills as needed -->
-         </ul>
-       </section>
-     </div>
-   </main>
-   
-   <footer>
-     <address class="footer_wrap">
-       <div class="information">
-         <div class="myname">데이터 사이언티스트 신현수 포트폴리오
-           <span class="label-emoji">👨‍💻</span>
-         </div>
-         <div class="accounts">
-           <a href="http://github.com/hyunsoolol" target="_blank" class="transition">
-             <svg viewBox="0 0 32.6 31.8">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <address class="footer_wrap">
+        <div class="information">
+          <div class="myname">
+            Hyunsoo Shin
+          </div>
+          <div class="accounts">
+            <a href="https://github.com/hyunsoolol" target="_blank" class="transition" rel="noopener noreferrer" aria-label="GitHub (새 창)">
+             <svg viewBox="0 0 32.6 31.8" aria-hidden="true">
                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.3,0C7.3,0,0,7.3,0,16.3c0,7.2,4.7,13.3,11.1,15.5c0.8,0.1,1.1-0.4,1.1-0.8c0-0.4,0-1.4,0-2.8c-4.5,1-5.5-2.2-5.5-2.2c-0.7-1.9-1.8-2.4-1.8-2.4c-1.5-1,0.1-1,0.1-1c1.6,0.1,2.5,1.7,2.5,1.7c1.5,2.5,3.8,1.8,4.7,1.4c0.1-1.1,0.6-1.8,1-2.2c-3.6-0.4-7.4-1.8-7.4-8.1c0-1.8,0.6-3.2,1.7-4.4C7.4,10.7,6.8,9,7.7,6.8c0,0,1.4-0.4,4.5,1.7c1.3-0.4,2.7-0.5,4.1-0.5c1.4,0,2.8,0.2,4.1,0.5c3.1-2.1,4.5-1.7,4.5-1.7c0.9,2.2,0.3,3.9,0.2,4.3c1,1.1,1.7,2.6,1.7,4.4c0,6.3-3.8,7.6-7.4,8c0.6,0.5,1.1,1.5,1.1,3c0,2.2,0,3.9,0,4.5c0,0.4,0.3,0.9,1.1,0.8c6.5-2.2,11.1-8.3,11.1-15.5C32.6,7.3,25.3,0,16.3,0z"></path>
              </svg>
            </a>
-           <a href="http://www.linkedin.com/in/hyunsoolol/" target="_blank" class="transition">
-             <svg viewBox="0 0 38.3 38.3">
+            <a href="https://www.linkedin.com/in/hyunsoolol/" target="_blank" class="transition" rel="noopener noreferrer" aria-label="LinkedIn (새 창)">
+             <svg viewBox="0 0 38.3 38.3" aria-hidden="true">
                <rect x="0.8" y="12.8" width="7.9" height="25.5"></rect>
                <ellipse cx="4.7" cy="4.7" rx="4.7" ry="4.7"></ellipse>
                <path d="M21.3,24.9c0-3.6,1.7-5.7,4.8-5.7c2.9,0,4.3,2.1,4.3,5.7c0,3.7,0,13.4,0,13.4h7.9c0,0,0-9.3,0-16.2c0-6.8-3.9-10.1-9.3-10.1s-7.7,4.2-7.7,4.2v-3.4h-7.6v25.5h7.6C21.3,38.3,21.3,28.8,21.3,24.9z"></path>
              </svg>
            </a>
-         </div>
-       </div>
-       <div class="copyright">
-         <span>&copy; hyunsoolol. <time datetime="2026-04-29">2026</time></span>
-       </div>    
-     </address>
-   </footer>
- </body>
- </html>
+          </div>
+        </div>
+        <div class="copyright">
+          <span>© 2026 Hyunsoo Shin</span>
+        </div>
+        <a href="#main-content" class="back-to-top" aria-label="맨 위로" title="맨 위로"><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12 7-7 7 7"></path><path d="M12 19V5"></path></svg></a>
+      </address>
+    </footer>
+  </body>
+</html>
