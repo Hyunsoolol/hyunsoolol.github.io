@@ -8,13 +8,13 @@
 - Figure 4.1 on page 846 (PDF page 10), extracted without changing the plotted data.
 - Included at the author's request to illustrate their research. Copyright remains with the original rights holders; this repository does not grant a separate reuse license.
 
-## project_pm10_paper_preview.png
+## project_pm10_forecast.png
 
 - Source: Jongmin Oh, Hyunsoo Shin, Yeseul Shin, and Hyeongcheol Jeong (2017), "Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach", Journal of the Korean Data Analysis Society 19(5), 2457-2468.
 - DOI: https://doi.org/10.37727/jkdas.2017.19.5.2457
-- Public preview: https://www.kci.go.kr/kciportal/ci/sereArticleSearch/artiPreView.kci?sereArticleSearchBean.artiId=ART002280834&v=2019
-- Title and abstract excerpt from the public first-page preview. This is not a results figure. The full-paper figure was not available through the checked public sources.
-- Author contact information and affiliation addresses are outside the extracted region.
+- Figure 4 on page 2465 (PDF page 9), extracted from the full paper supplied by the author.
+- Shows observed and estimated monthly PM10 concentrations in Seoul for 2014 and 2015 across six time-series models. All twelve panels, axes, legends, year labels and the original figure caption are preserved without changing the plotted data.
+- Rendered directly from the PDF at 432 dpi and cropped to the figure (2400 x 2070 pixels). The source PDF and author contact information are not published with the image.
 - Included at the author's request. Copyright remains with the original rights holders; this repository does not grant a separate reuse license.
 
 ## project_vmf_distribution.png
