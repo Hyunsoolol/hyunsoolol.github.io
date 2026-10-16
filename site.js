@@ -60,9 +60,13 @@
       button.classList.toggle('active', active);
       button.setAttribute('aria-pressed', String(active));
     }
-    const ordered = projects.slice().sort((a, b) => sort.value === 'oldest'
-      ? a.dataset.start.localeCompare(b.dataset.start)
-      : b.dataset.start.localeCompare(a.dataset.start));
+    const ordered = projects.slice().sort((a, b) => {
+      // Undated ongoing research stays discoverable without inventing a start date.
+      const ongoing = Number(b.dataset.status === 'ongoing') - Number(a.dataset.status === 'ongoing');
+      return sort.value === 'oldest'
+        ? -ongoing || a.dataset.start.localeCompare(b.dataset.start)
+        : ongoing || b.dataset.start.localeCompare(a.dataset.start);
+    });
     grid.append(...ordered);
     count.textContent = filter === 'all' && skill === 'all' && !terms.length
       ? `전체 ${projects.length}개 프로젝트`

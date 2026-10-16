@@ -155,6 +155,13 @@ main:focus { outline: none; }
 .project-info:target { outline: 2px solid #e3b4bf; outline-offset: 10px; }
 .project-media { position: relative; display: flex; align-items: center; justify-content: center; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
 .project-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
+.project-figure { margin: 0; }
+.project-info--research .project-media { aspect-ratio: 4 / 3; background: #fff; }
+.project-figure figcaption { margin-top: 8px; color: var(--muted); font-size: 11px; line-height: 1.7; overflow-wrap: anywhere; }
+.project-figure figcaption a, .project-publication a { text-decoration: underline; text-underline-offset: 3px; }
+.project-publication { display: grid; gap: 5px; margin-top: 20px; color: var(--muted); font-size: 12px; line-height: 1.7; overflow-wrap: anywhere; }
+.project-publication strong { color: var(--ink); font-weight: 600; }
+.journal-project-link { display: inline-block; margin-top: 10px; font-size: 12px; }
 .project-badge { position: absolute; top: 12px; left: 12px; padding: 4px 9px; color: var(--teal); background: #f0f6f4; border: 1px solid #d4e4de; border-radius: 4px; font-size: 10px; font-weight: 600; }
 .project-copy { padding-top: 18px; }
 .project-meta { display: flex; flex-wrap: wrap; gap: 4px 12px; margin-bottom: 10px; }
