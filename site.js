@@ -16,6 +16,7 @@
   const clear = document.getElementById('clear-search');
   const sort = document.getElementById('project-sort');
   const category = document.getElementById('project-category');
+  const skillSelect = document.getElementById('project-skill');
   const count = document.getElementById('project-count');
   const empty = document.getElementById('project-empty');
   document.querySelector('.project-toolbar').hidden = false;
@@ -23,12 +24,15 @@
   document.querySelector('.project-workspace').classList.add('is-interactive');
   document.querySelector('.project-results-bar').hidden = false;
   const validFilters = new Set(buttons.map(button => button.dataset.filter));
+  const validSkills = new Set(Array.from(skillSelect.options, option => option.value));
+  const projectSkills = new Map(projects.map(project => [project, new Set((project.dataset.skills || '').split(/\s+/).filter(Boolean))]));
   const searchableText = new Map(projects.map(project => [project, project.textContent.normalize('NFKC').toLocaleLowerCase()]));
   let filter = 'all';
+  let skill = 'all';
 
   function updateUrl(push = false) {
     const url = new URL(location.href);
-    const values = { category: filter === 'all' ? '' : filter, q: search.value.trim(), sort: sort.value === 'newest' ? '' : sort.value };
+    const values = { category: filter === 'all' ? '' : filter, skill: skill === 'all' ? '' : skill, q: search.value.trim(), sort: sort.value === 'newest' ? '' : sort.value };
     for (const [key, value] of Object.entries(values)) {
       if (value) url.searchParams.set(key, value);
       else url.searchParams.delete(key);
@@ -41,12 +45,14 @@
 
   function render() {
     category.value = filter;
+    skillSelect.value = skill;
     const terms = search.value.normalize('NFKC').toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
     let visible = 0;
     for (const project of projects) {
       const matchesCategory = filter === 'all' || project.dataset.category.split(' ').includes(filter);
+      const matchesSkill = skill === 'all' || projectSkills.get(project).has(skill);
       const matchesSearch = terms.every(term => searchableText.get(project).includes(term));
-      project.hidden = !(matchesCategory && matchesSearch);
+      project.hidden = !(matchesCategory && matchesSkill && matchesSearch);
       if (!project.hidden) visible++;
     }
     for (const button of buttons) {
@@ -58,7 +64,7 @@
       ? a.dataset.start.localeCompare(b.dataset.start)
       : b.dataset.start.localeCompare(a.dataset.start));
     grid.append(...ordered);
-    count.textContent = filter === 'all' && !terms.length
+    count.textContent = filter === 'all' && skill === 'all' && !terms.length
       ? `전체 ${projects.length}개 프로젝트`
       : `${projects.length}개 중 ${visible}개 프로젝트`;
     empty.hidden = visible !== 0;
@@ -68,6 +74,7 @@
   function readUrl() {
     const params = new URLSearchParams(location.search);
     filter = validFilters.has(params.get('category')) ? params.get('category') : 'all';
+    skill = validSkills.has(params.get('skill')) ? params.get('skill') : 'all';
     search.value = params.get('q') || '';
     sort.value = params.get('sort') === 'oldest' ? 'oldest' : 'newest';
     render();
@@ -81,6 +88,7 @@
     // Featured links reveal their destination even after a filtered history entry.
     if (project.hidden) {
       filter = 'all';
+      skill = 'all';
       search.value = '';
       render();
       updateUrl();
@@ -107,6 +115,12 @@
     render();
     updateUrl(true);
   });
+  skillSelect.addEventListener('change', () => {
+    skill = skillSelect.value;
+    removeHash();
+    render();
+    updateUrl(true);
+  });
   search.addEventListener('input', () => { removeHash(); render(); updateUrl(); });
   clear.addEventListener('click', () => {
     search.value = '';
@@ -117,6 +131,7 @@
   sort.addEventListener('change', () => { render(); updateUrl(true); });
   document.getElementById('reset-projects').addEventListener('click', () => {
     filter = 'all';
+    skill = 'all';
     search.value = '';
     sort.value = 'newest';
     render();
