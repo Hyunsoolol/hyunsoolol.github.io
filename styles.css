@@ -206,6 +206,15 @@ footer { border-top: 1px solid var(--line); }
 .back-to-top { display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); }
 .back-to-top:hover { color: var(--ink); background: var(--surface); }
 
+@media screen and (min-width: 601px) {
+  .project-info--research .project-media { aspect-ratio: 16 / 9; }
+  @supports (grid-template-rows: subgrid) {
+    /* Share the media row and five content rows across each card pair. */
+    .project-info { display: grid; grid-template-rows: subgrid; grid-row: span 6; row-gap: 0; align-self: stretch; }
+    .project-copy { display: grid; grid-template-rows: subgrid; grid-row: span 5; row-gap: 0; align-items: start; }
+  }
+}
+
 @media (max-width: 1000px) {
   .detail-section { grid-template-columns: 160px minmax(0, 1fr); gap: 32px; }
   .featured-project-list { grid-template-columns: minmax(0, 1fr); gap: 28px; }
