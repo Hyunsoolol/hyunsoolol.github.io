@@ -139,7 +139,7 @@ main:focus { outline: none; }
 .project-skill select { width: 100%; }
 .project-sort select, .project-category-mobile select, .project-skill select { min-height: 44px; max-width: 100%; padding: 8px 10px; border: 1px solid var(--line); border-radius: 6px; background: #fff; font-size: 13px; }
 .project-workspace { display: block; }
-.project-workspace.is-interactive { display: grid; grid-template-columns: 160px minmax(0, 1fr); align-items: start; gap: 40px; }
+.project-workspace.is-interactive { display: grid; grid-template-columns: 192px minmax(0, 1fr); align-items: start; gap: 32px; }
 .project-filter { position: sticky; top: 92px; }
 .filter-heading { margin: 0 12px 12px; color: var(--muted); font-size: 12px; font-weight: 500; }
 .project-filter-list { display: flex; flex-direction: column; gap: 4px; }
@@ -242,7 +242,7 @@ footer { border-top: 1px solid var(--line); }
   .detail-section { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 48px; padding-top: 28px; }
   .featured-projects { margin-top: 48px; padding-top: 28px; }
   .project-grid { gap: 32px 22px; }
-  .project-toolbar { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .project-toolbar { grid-template-columns: minmax(0, 1fr) auto; }
   .project-search { grid-column: 1 / -1; }
   .project-search input { font-size: 16px; }
   .project-category-mobile { grid-column: 1; grid-row: 2; }
@@ -308,6 +308,11 @@ footer { border-top: 1px solid var(--line); }
   .information { grid-column: 1 / -1; justify-content: space-between; }
 }
 
+@media (max-width: 400px) {
+  .project-toolbar { grid-template-columns: minmax(0, 1fr); }
+  .project-category-mobile, .project-skill, .project-sort { grid-column: auto; grid-row: auto; }
+}
+
 @media (max-width: 360px) {
   .intro > span { display: block; margin: 8px 0 0; }
   .nav-links { gap: 16px; }
@@ -317,8 +322,6 @@ footer { border-top: 1px solid var(--line); }
   .project-media--typographic .media-title { font-size: 22px; }
   .featured-media--typographic { padding: 20px; }
   .featured-media--typographic .media-title { font-size: 24px; }
-  .project-toolbar { grid-template-columns: minmax(0, 1fr); }
-  .project-category-mobile, .project-skill, .project-sort { grid-column: auto; grid-row: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {

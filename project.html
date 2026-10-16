@@ -18,17 +18,17 @@
     <meta name="twitter:description" content="신현수가 진행한 매출 예측, 마케팅 분석, 인프라 운영, HR 분석, 리포트 자동화 프로젝트와 통계학 연구입니다.">
     <meta name="twitter:image" content="/meta/cover.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css?display=swap">
-    <link rel="stylesheet" href="styles.css?v=20261016-grid">
-    <script src="site.js?v=20261016-research" defer=""></script>
+    <link rel="stylesheet" href="styles.css?v=20261016-domains">
+    <script src="site.js?v=20261016-domains" defer=""></script>
   </head>
   <body class="projects-page">
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
     <nav class="nav" aria-label="주 메뉴">
       <div class="nav-container">
-        <a class="nav-brand" href="index.html?v=20261016-research">Hyunsoo Shin</a>
+        <a class="nav-brand" href="index.html?v=20261016-domains">Hyunsoo Shin</a>
         <ul class="nav-links">
-          <li><a href="index.html?v=20261016-research">Home</a></li>
-          <li><a href="project.html?v=20261016-research" class="active" aria-current="page">Projects</a></li>
+          <li><a href="index.html?v=20261016-domains">Home</a></li>
+          <li><a href="project.html?v=20261016-domains" class="active" aria-current="page">Projects</a></li>
           <li class="nav-external"><a href="https://github.com/hyunsoolol" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
         </ul>
       </div>
@@ -49,7 +49,14 @@
           </div>
           <div class="project-category-mobile">
             <label class="sr-only" for="project-category">프로젝트 분야</label>
-            <select id="project-category" aria-controls="project-grid"><option value="all">전체 분야 (22)</option><option value="management">Management (5)</option><option value="business-axdx">Business AX/DX (5)</option><option value="ai-automation">AI Automation (2)</option><option value="hr-people">HR/People (10)</option><option value="marketing">Marketing (5)</option><option value="forecasting">Forecasting (5)</option><option value="dashboard">Dashboard (6)</option><option value="optimization">Optimization (5)</option><option value="infrastructure">Infrastructure (2)</option><option value="research">Research (3)</option></select>
+            <select id="project-category" aria-controls="project-grid">
+              <option value="all">전체 분야 (22)</option>
+              <option value="business-finance">Business &amp; Finance (4)</option>
+              <option value="marketing-customer">Marketing &amp; Customer (4)</option>
+              <option value="people-analytics">People Analytics (9)</option>
+              <option value="infrastructure">Infrastructure (2)</option>
+              <option value="research">Statistical Research (3)</option>
+            </select>
           </div>
           <div class="project-skill">
             <label class="sr-only" for="project-skill">프로젝트 스킬</label>
@@ -90,16 +97,11 @@
             <h2 class="filter-heading">분야</h2>
             <div class="project-filter-list" role="group" aria-label="분야별 필터">
               <button type="button" class="project-filter-button active" data-filter="all" aria-pressed="true" aria-controls="project-grid">전체<span class="filter-count" aria-hidden="true">22</span></button>
-              <button type="button" class="project-filter-button" data-filter="management" aria-pressed="false" aria-controls="project-grid">Management<span class="filter-count" aria-hidden="true">5</span></button>
-              <button type="button" class="project-filter-button" data-filter="business-axdx" aria-pressed="false" aria-controls="project-grid">Business AX/DX<span class="filter-count" aria-hidden="true">5</span></button>
-              <button type="button" class="project-filter-button" data-filter="ai-automation" aria-pressed="false" aria-controls="project-grid">AI Automation<span class="filter-count" aria-hidden="true">2</span></button>
-              <button type="button" class="project-filter-button" data-filter="hr-people" aria-pressed="false" aria-controls="project-grid">HR/People<span class="filter-count" aria-hidden="true">10</span></button>
-              <button type="button" class="project-filter-button" data-filter="marketing" aria-pressed="false" aria-controls="project-grid">Marketing<span class="filter-count" aria-hidden="true">5</span></button>
-              <button type="button" class="project-filter-button" data-filter="forecasting" aria-pressed="false" aria-controls="project-grid">Forecasting<span class="filter-count" aria-hidden="true">5</span></button>
-              <button type="button" class="project-filter-button" data-filter="dashboard" aria-pressed="false" aria-controls="project-grid">Dashboard<span class="filter-count" aria-hidden="true">6</span></button>
-              <button type="button" class="project-filter-button" data-filter="optimization" aria-pressed="false" aria-controls="project-grid">Optimization<span class="filter-count" aria-hidden="true">5</span></button>
+              <button type="button" class="project-filter-button" data-filter="business-finance" aria-pressed="false" aria-controls="project-grid">Business &amp; Finance<span class="filter-count" aria-hidden="true">4</span></button>
+              <button type="button" class="project-filter-button" data-filter="marketing-customer" aria-pressed="false" aria-controls="project-grid">Marketing &amp; Customer<span class="filter-count" aria-hidden="true">4</span></button>
+              <button type="button" class="project-filter-button" data-filter="people-analytics" aria-pressed="false" aria-controls="project-grid">People Analytics<span class="filter-count" aria-hidden="true">9</span></button>
               <button type="button" class="project-filter-button" data-filter="infrastructure" aria-pressed="false" aria-controls="project-grid">Infrastructure<span class="filter-count" aria-hidden="true">2</span></button>
-              <button type="button" class="project-filter-button" data-filter="research" aria-pressed="false" aria-controls="project-grid">Research<span class="filter-count" aria-hidden="true">3</span></button>
+              <button type="button" class="project-filter-button" data-filter="research" aria-pressed="false" aria-controls="project-grid">Statistical Research<span class="filter-count" aria-hidden="true">3</span></button>
             </div>
           </aside>
           <div class="project-collection">
@@ -107,7 +109,7 @@
               <p id="project-count" role="status" aria-live="polite" aria-atomic="true">전체 22개 프로젝트</p>
             </div>
             <div class="project-grid" id="project-grid">
-              <article id="project-ai-tf-automation" class="project-info project-info--featured" data-category="ai-automation business-axdx marketing dashboard" aria-labelledby="project-ai-tf-automation-title" data-start="2026.04" data-status="ongoing" data-skills="r python sql bigquery applied-statistics quarto bi-ai-reporting data-quality claude-code openai-codex ai-automation">
+              <article id="project-ai-tf-automation" class="project-info project-info--featured" data-category="marketing-customer" aria-labelledby="project-ai-tf-automation-title" data-start="2026.04" data-status="ongoing" data-skills="r python sql bigquery applied-statistics quarto bi-ai-reporting data-quality claude-code openai-codex ai-automation">
                 <div class="project-media">
                   <img class="project-img" src="img/project_ai_automation.png" alt="Claude Code와 Codex를 활용한 데이터 분석과 리포팅 흐름의 개념 이미지" loading="eager" decoding="async" width="1672" height="941">
                   <span class="project-badge">AI TF 진행 중</span>
@@ -154,7 +156,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-aion2-launch" class="project-info" data-category="management business-axdx infrastructure" aria-labelledby="project-aion2-launch-title" data-start="2025.01" data-skills="sql grafana">
+              <article id="project-aion2-launch" class="project-info" data-category="infrastructure" aria-labelledby="project-aion2-launch-title" data-start="2025.01" data-skills="sql grafana">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2503.png" alt="AION2 신규 론칭 및 개발 지원 프로젝트 이미지" loading="lazy" decoding="async" width="1672" height="941">
                 </div>
@@ -193,7 +195,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-idle-resource" class="project-info" data-category="infrastructure optimization business-axdx dashboard ai-automation" aria-labelledby="project-idle-resource-title" data-start="2025.04" data-skills="python grafana promql ai-automation data-quality bi-ai-reporting">
+              <article id="project-idle-resource" class="project-info" data-category="infrastructure" aria-labelledby="project-idle-resource-title" data-start="2025.04" data-skills="python grafana promql ai-automation data-quality bi-ai-reporting">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2501.png" alt="AI 기반 유휴 리소스 감지 시스템 구축 프로젝트 이미지" loading="eager" decoding="async" width="354" height="220">
                 </div>
@@ -235,7 +237,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-hq-cost" class="project-info" data-category="management" aria-labelledby="project-hq-cost-title" data-start="2024.01" data-skills="r sql quarto bi-ai-reporting">
+              <article id="project-hq-cost" class="project-info" data-category="business-finance" aria-labelledby="project-hq-cost-title" data-start="2024.01" data-skills="r sql quarto bi-ai-reporting">
                 <div class="project-media">
                   <img class="project-img" src="img/project_hq_cost_allocation.png" alt="HQ 비용 구성과 인력 투입 공수(MM)의 배분 관계를 표현한 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
                 </div>
@@ -272,7 +274,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-marketing-mmm" class="project-info" data-category="marketing optimization" aria-labelledby="project-marketing-mmm-title" data-start="2024.08" data-skills="r python statistics statistical-modeling applied-statistics mmm">
+              <article id="project-marketing-mmm" class="project-info" data-category="marketing-customer" aria-labelledby="project-marketing-mmm-title" data-start="2024.08" data-skills="r python statistics statistical-modeling applied-statistics mmm">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2403.png" alt="마케팅 최적화 모델 개발 기획 프로젝트 이미지" loading="lazy" decoding="async" width="640" height="319">
                 </div>
@@ -308,7 +310,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-lineage-forecast" class="project-info" data-category="forecasting marketing" aria-labelledby="project-lineage-forecast-title" data-start="2024.07" data-skills="r python sql statistics statistical-modeling applied-statistics">
+              <article id="project-lineage-forecast" class="project-info" data-category="business-finance" aria-labelledby="project-lineage-forecast-title" data-start="2024.07" data-skills="r python sql statistics statistical-modeling applied-statistics">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2402.png" alt="리니지IP 사용자 수 및 매출 예측 프로젝트 이미지" loading="lazy" decoding="async" width="1412" height="717">
                 </div>
@@ -346,7 +348,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-customer-segmentation" class="project-info" data-category="management marketing" aria-labelledby="project-customer-segmentation-title" data-start="2024.06" data-skills="r sql statistics applied-statistics">
+              <article id="project-customer-segmentation" class="project-info" data-category="marketing-customer" aria-labelledby="project-customer-segmentation-title" data-start="2024.06" data-skills="r sql statistics applied-statistics">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2401.png" alt="리니지2M 고객 표준 모형 개발 프로젝트 이미지" loading="lazy" decoding="async" width="345" height="345">
                 </div>
@@ -381,7 +383,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-management-report" class="project-info" data-category="management business-axdx dashboard" aria-labelledby="project-management-report-title" data-start="2022.10" data-skills="r sql shiny quarto ggplot2 bi-ai-reporting">
+              <article id="project-management-report" class="project-info" data-category="business-finance" aria-labelledby="project-management-report-title" data-start="2022.10" data-skills="r sql shiny quarto ggplot2 bi-ai-reporting">
                 <div class="project-media">
                   <img class="project-img" src="img/project_financial_reporting.png" alt="분기별 비용 추이와 배분 내역을 표현한 관리회계 리포트 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
                 </div>
@@ -420,7 +422,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-marketing-roi" class="project-info" data-category="marketing optimization" aria-labelledby="project-marketing-roi-title" data-start="2023.10" data-skills="r sql statistics statistical-modeling applied-statistics">
+              <article id="project-marketing-roi" class="project-info" data-category="marketing-customer" aria-labelledby="project-marketing-roi-title" data-start="2023.10" data-skills="r sql statistics statistical-modeling applied-statistics">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2303.png" alt="마케팅 비용 한계 효용 분석 프로젝트 이미지" loading="lazy" decoding="async" width="450" height="386">
                 </div>
@@ -457,7 +459,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-hr-demographics" class="project-info" data-category="hr-people dashboard business-axdx" aria-labelledby="project-hr-demographics-title" data-start="2023.06" data-skills="r sql quarto tidyverse people-analytics hr-data-strategy bi-ai-reporting data-quality">
+              <article id="project-hr-demographics" class="project-info" data-category="people-analytics" aria-labelledby="project-hr-demographics-title" data-start="2023.06" data-skills="r sql quarto tidyverse people-analytics hr-data-strategy bi-ai-reporting data-quality">
                 <div class="project-media">
                   <img class="project-img" src="img/project_workforce_analytics.png" alt="인력 구성과 프로젝트별 투입 현황을 표현한 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
                 </div>
@@ -495,7 +497,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-meal-forecast" class="project-info" data-category="hr-people forecasting optimization" aria-labelledby="project-meal-forecast-title" data-start="2023.05" data-skills="r sql statistics statistical-modeling applied-statistics people-analytics">
+              <article id="project-meal-forecast" class="project-info" data-category="business-finance" aria-labelledby="project-meal-forecast-title" data-start="2023.05" data-skills="r sql statistics statistical-modeling applied-statistics people-analytics">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2301.png" alt="일별 시설별 식수량 과소 예측 보정 프로젝트 이미지" loading="lazy" decoding="async" width="706" height="326">
                 </div>
@@ -533,7 +535,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-remote-work" class="project-info" data-category="hr-people" aria-labelledby="project-remote-work-title" data-start="2022.04" data-skills="r sql tidyverse ggplot2 statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
+              <article id="project-remote-work" class="project-info" data-category="people-analytics" aria-labelledby="project-remote-work-title" data-start="2022.04" data-skills="r sql tidyverse ggplot2 statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2202.png" alt="재택근무 근로 패턴 분석 프로젝트 이미지" loading="lazy" decoding="async" width="548" height="339">
                 </div>
@@ -571,7 +573,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-hr-saas" class="project-info" data-category="hr-people dashboard" aria-labelledby="project-hr-saas-title" data-start="2021.12" data-skills="people-analytics hr-data-strategy bi-ai-reporting">
+              <article id="project-hr-saas" class="project-info" data-category="people-analytics" aria-labelledby="project-hr-saas-title" data-start="2021.12" data-skills="people-analytics hr-data-strategy bi-ai-reporting">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2201.png" alt="HR SaaS 솔루션 기획 및 개발 프로젝트 이미지" loading="lazy" decoding="async" width="592" height="425">
                 </div>
@@ -608,7 +610,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-ai-assessment" class="project-info" data-category="hr-people forecasting" aria-labelledby="project-ai-assessment-title" data-start="2021.09" data-skills="r python sql tensorflow statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
+              <article id="project-ai-assessment" class="project-info" data-category="people-analytics" aria-labelledby="project-ai-assessment-title" data-start="2021.09" data-skills="r python sql tensorflow statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2102.png" alt="AI 역량검사 데이터 기반 예측모형 개발 프로젝트 이미지" loading="lazy" decoding="async" width="437" height="411">
                 </div>
@@ -647,7 +649,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-network-analysis" class="project-info" data-category="hr-people" aria-labelledby="project-network-analysis-title" data-start="2021.08" data-skills="r sql statistics applied-statistics people-analytics hr-data-strategy">
+              <article id="project-network-analysis" class="project-info" data-category="people-analytics" aria-labelledby="project-network-analysis-title" data-start="2021.08" data-skills="r sql statistics applied-statistics people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2101.png" alt="조직 네트워크 분석 및 커뮤니케이션 개선 프로젝트 이미지" loading="lazy" decoding="async" width="474" height="439">
                 </div>
@@ -685,7 +687,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-hr-decision" class="project-info" data-category="hr-people management" aria-labelledby="project-hr-decision-title" data-start="2020.01" data-skills="r sql ggplot2 tidyverse statistics statistical-modeling applied-statistics clustering people-analytics hr-data-strategy bi-ai-reporting">
+              <article id="project-hr-decision" class="project-info" data-category="people-analytics" aria-labelledby="project-hr-decision-title" data-start="2020.01" data-skills="r sql ggplot2 tidyverse statistics statistical-modeling applied-statistics clustering people-analytics hr-data-strategy bi-ai-reporting">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2002.png" alt="HR 데이터 기반 경영 의사결정 지원 프로젝트 이미지" loading="lazy" decoding="async" width="470" height="403">
                 </div>
@@ -724,7 +726,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-talent-optimization" class="project-info" data-category="hr-people optimization forecasting" aria-labelledby="project-talent-optimization-title" data-start="2020.01" data-skills="r sql ggplot2 tidyverse statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
+              <article id="project-talent-optimization" class="project-info" data-category="people-analytics" aria-labelledby="project-talent-optimization-title" data-start="2020.01" data-skills="r sql ggplot2 tidyverse statistics statistical-modeling applied-statistics people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2001.png" alt="직무 추천과 이탈 예측 모델 개발 프로젝트 이미지" loading="lazy" decoding="async" width="617" height="253">
                 </div>
@@ -763,7 +765,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-attendance-system" class="project-info" data-category="hr-people dashboard" aria-labelledby="project-attendance-system-title" data-start="2019.08" data-skills="r sql people-analytics hr-data-strategy">
+              <article id="project-attendance-system" class="project-info" data-category="people-analytics" aria-labelledby="project-attendance-system-title" data-start="2019.08" data-skills="r sql people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_attendance_analytics.png" alt="근무 시간과 연차 사용 패턴을 표현한 근태 분석 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
                 </div>
@@ -800,7 +802,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-hris-performance" class="project-info" data-category="hr-people" aria-labelledby="project-hris-performance-title" data-start="2019.05" data-skills="people-analytics hr-data-strategy">
+              <article id="project-hris-performance" class="project-info" data-category="people-analytics" aria-labelledby="project-hris-performance-title" data-start="2019.05" data-skills="people-analytics hr-data-strategy">
                 <div class="project-media">
                   <img class="project-img" src="img/project_1901.png" alt="HRIS 성과관리와 다면진단 개선 프로젝트 이미지" loading="lazy" decoding="async" width="368" height="407">
                 </div>
@@ -917,7 +919,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-pm10-forecast" class="project-info project-info--research" data-category="research forecasting" aria-labelledby="project-pm10-forecast-title" data-start="2017.10" data-skills="statistics statistical-modeling applied-statistics">
+              <article id="project-pm10-forecast" class="project-info project-info--research" data-category="research" aria-labelledby="project-pm10-forecast-title" data-start="2017.10" data-skills="statistics statistical-modeling applied-statistics">
                 <figure class="project-figure">
                   <a class="project-media" href="img/project_pm10_forecast.png" target="_blank" rel="noopener noreferrer" aria-label="서울시 미세먼지 관측값과 모형별 예측값 비교 그림 크게 보기 (새 창)">
                     <img class="project-img" src="img/project_pm10_forecast.png" alt="논문 Figure 4: 2014년과 2015년 서울시 월평균 PM10 관측값과 여섯 시계열 모형의 예측값 비교" loading="lazy" decoding="async" width="2400" height="2070">

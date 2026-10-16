@@ -24,6 +24,12 @@
   document.querySelector('.project-workspace').classList.add('is-interactive');
   document.querySelector('.project-results-bar').hidden = false;
   const validFilters = new Set(buttons.map(button => button.dataset.filter));
+  // Preserve bookmarked domain filters after renaming the categories.
+  const legacyFilters = new Map([
+    ['management', 'business-finance'],
+    ['marketing', 'marketing-customer'],
+    ['hr-people', 'people-analytics'],
+  ]);
   const validSkills = new Set(Array.from(skillSelect.options, option => option.value));
   const projectSkills = new Map(projects.map(project => [project, new Set((project.dataset.skills || '').split(/\s+/).filter(Boolean))]));
   const searchableText = new Map(projects.map(project => [project, project.textContent.normalize('NFKC').toLocaleLowerCase()]));
@@ -49,7 +55,7 @@
     const terms = search.value.normalize('NFKC').toLocaleLowerCase().trim().split(/\s+/).filter(Boolean);
     let visible = 0;
     for (const project of projects) {
-      const matchesCategory = filter === 'all' || project.dataset.category.split(' ').includes(filter);
+      const matchesCategory = filter === 'all' || project.dataset.category === filter;
       const matchesSkill = skill === 'all' || projectSkills.get(project).has(skill);
       const matchesSearch = terms.every(term => searchableText.get(project).includes(term));
       project.hidden = !(matchesCategory && matchesSkill && matchesSearch);
@@ -77,11 +83,14 @@
 
   function readUrl() {
     const params = new URLSearchParams(location.search);
-    filter = validFilters.has(params.get('category')) ? params.get('category') : 'all';
+    const requestedCategory = params.get('category');
+    const resolvedCategory = legacyFilters.get(requestedCategory) || requestedCategory;
+    filter = validFilters.has(resolvedCategory) ? resolvedCategory : 'all';
     skill = validSkills.has(params.get('skill')) ? params.get('skill') : 'all';
     search.value = params.get('q') || '';
     sort.value = params.get('sort') === 'oldest' ? 'oldest' : 'newest';
     render();
+    if (requestedCategory && requestedCategory !== filter) updateUrl();
   }
 
   function revealHash() {
