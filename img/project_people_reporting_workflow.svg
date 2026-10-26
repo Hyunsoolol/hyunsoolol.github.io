@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="630" viewBox="0 0 1120 630" role="img" aria-labelledby="title desc">
+  <title id="title">Performance management and reporting</title>
+  <desc id="desc">A conceptual diagram connecting performance and feedback data to individual and organizational reporting. No employee profiles, scores, organization names or product screens are included.</desc>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M1 1 8 5 1 9" fill="none" stroke="#68686e" stroke-width="1.5"/></marker></defs>
+  <rect width="1120" height="630" fill="#fff"/>
+  <g font-family="Arial, sans-serif" fill="#1d1d1f">
+    <text x="60" y="69" font-size="19" fill="#28695f">PEOPLE ANALYTICS</text>
+    <text x="60" y="130" font-size="40" font-weight="700">Performance data to reporting</text>
+    <path d="M60 163H1060" stroke="#e5e5e8" stroke-width="2"/>
+    <g fill="#f5f5f7" stroke="#e5e5e8" stroke-width="2"><rect x="60" y="240" width="290" height="145" rx="6"/><rect x="410" y="240" width="290" height="145" rx="6"/><rect x="760" y="210" width="300" height="95" rx="6"/><rect x="760" y="335" width="300" height="95" rx="6"/></g>
+    <g font-size="28" font-weight="700"><text x="85" y="296">Performance</text><text x="85" y="336">and feedback</text><text x="435" y="296">Metric definitions</text><text x="435" y="336">and interpretation</text><text x="785" y="269">Individual view</text><text x="785" y="394">Organization view</text></g>
+    <g stroke="#68686e" stroke-width="2" fill="none" marker-end="url(#arrow)"><path d="M355 312H399"/><path d="M705 312H730V258H749"/><path d="M730 312V382H749"/></g>
+    <path d="M60 468V535" stroke="#b73553" stroke-width="5"/>
+    <text x="85" y="508" font-size="28">Support performance review and talent decisions</text>
+    <text x="60" y="591" font-size="19" fill="#68686e">CONCEPTUAL OVERVIEW / NO EMPLOYEE DATA OR PRODUCT SCREENS</text>
+  </g>
+</svg>

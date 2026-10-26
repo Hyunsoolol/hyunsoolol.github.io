@@ -71,6 +71,7 @@ main:focus { outline: none; }
 .intro { margin-top: 10px; font-size: 52px; font-weight: 700; line-height: 1.15; }
 .intro > span { display: inline-block; margin-left: 14px; color: var(--muted); font-size: 29px; font-weight: 400; }
 .description { display: flex; flex-wrap: wrap; gap: 4px 22px; margin-top: 16px; font-size: 15px; }
+.intro-summary { max-width: 720px; margin-top: 14px; font-size: 15px; line-height: 1.8; color: var(--muted); word-break: keep-all; overflow-wrap: anywhere; }
 .intro-bottom { display: grid; gap: 8px; margin-top: 24px; }
 .current-role { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; font-size: 13px; overflow-wrap: anywhere; }
 .current-role > strong { font-weight: 650; }
@@ -78,13 +79,14 @@ main:focus { outline: none; }
 .featured-projects { margin-top: 64px; padding-top: 32px; border-top: 1px solid var(--line); }
 .featured-projects .section-header { flex-wrap: wrap; row-gap: 8px; margin-bottom: 24px; }
 .featured-projects .section-header .second-label { margin-bottom: 0; }
-.featured-project-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.featured-project-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 32px; }
 .featured-project-item { min-width: 0; }
 .featured-media { display: block; position: relative; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
 .featured-media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; }
 .featured-media--typographic { display: flex; flex-direction: column; justify-content: center; padding: 28px; }
 .featured-media--typographic .media-title { font-size: 28px; }
 .featured-project-copy { padding-top: 20px; }
+.featured-kind { margin-bottom: 8px; color: var(--teal); font-size: 11px; font-weight: 500; }
 .featured-project-title { font-size: 17px; line-height: 1.6; font-weight: 650; word-break: keep-all; overflow-wrap: anywhere; }
 .featured-project-title a { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
 .featured-project-title a:hover { color: var(--accent); }
@@ -123,6 +125,7 @@ main:focus { outline: none; }
 .project-heading { padding-bottom: 28px; }
 .project-heading h1 { margin-top: 10px; font-size: 40px; font-weight: 650; line-height: 1.2; }
 .page-description { margin-top: 14px; color: var(--muted); font-size: 14px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
+.disclosure-note { max-width: 800px; margin-top: 10px; color: var(--muted); font-size: 12px; line-height: 1.8; word-break: keep-all; overflow-wrap: anywhere; }
 .project-toolbar { display: flex; align-items: center; gap: 20px; padding-block: 20px; border-block: 1px solid var(--line); margin-bottom: 28px; }
 .project-search { display: flex; align-items: center; gap: 10px; width: 100%; max-width: 440px; min-height: 44px; padding: 5px 12px; background: var(--surface); border: 1px solid transparent; border-radius: 6px; }
 .project-search > .icon { width: 18px; height: 18px; flex-basis: 18px; color: var(--muted); }
@@ -182,6 +185,16 @@ main:focus { outline: none; }
 .project-details[open] summary .icon { transform: rotate(180deg); }
 .project-role { margin-top: 4px; padding-left: 18px; list-style-type: "-  "; }
 .project-role li { margin-top: 8px; font-size: 13px; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
+.case-study { margin: 4px 0 0; }
+.case-study > div { padding-block: 14px; }
+.case-study > div + div { border-top: 1px solid var(--line); }
+.case-study dt { margin-bottom: 6px; font-size: 12px; font-weight: 650; color: var(--ink); }
+.case-study dd { margin: 0; font-size: 13px; line-height: 1.85; color: var(--muted); word-break: keep-all; overflow-wrap: anywhere; }
+.analysis-flow { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
+.analysis-flow figcaption { font-size: 11px; color: var(--muted); line-height: 1.7; }
+.analysis-flow ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; margin: 16px 0 0; padding: 0; list-style: none; counter-reset: analysis-step; }
+.analysis-flow li { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: baseline; gap: 8px; font-size: 12px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
+.analysis-flow li::before { content: counter(analysis-step, decimal-leading-zero); counter-increment: analysis-step; color: var(--teal); font-size: 11px; font-variant-numeric: tabular-nums; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 18px; color: var(--teal); font-size: 11px; overflow-wrap: anywhere; }
 .project-media--typographic { flex-direction: column; align-items: flex-start; justify-content: center; padding: 24px; }
 .media-label { color: var(--teal); font-size: 10px; font-weight: 500; }

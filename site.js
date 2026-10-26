@@ -31,6 +31,10 @@
     ['hr-people', 'people-analytics'],
   ]);
   const validSkills = new Set(Array.from(skillSelect.options, option => option.value));
+  const legacySkills = new Map([
+    ['statistics', 'statistical-modeling'],
+    ['applied-statistics', 'statistical-modeling'],
+  ]);
   const projectSkills = new Map(projects.map(project => [project, new Set((project.dataset.skills || '').split(/\s+/).filter(Boolean))]));
   const searchableText = new Map(projects.map(project => [project, project.textContent.normalize('NFKC').toLocaleLowerCase()]));
   let filter = 'all';
@@ -86,11 +90,13 @@
     const requestedCategory = params.get('category');
     const resolvedCategory = legacyFilters.get(requestedCategory) || requestedCategory;
     filter = validFilters.has(resolvedCategory) ? resolvedCategory : 'all';
-    skill = validSkills.has(params.get('skill')) ? params.get('skill') : 'all';
+    const requestedSkill = params.get('skill');
+    const resolvedSkill = legacySkills.get(requestedSkill) || requestedSkill;
+    skill = validSkills.has(resolvedSkill) ? resolvedSkill : 'all';
     search.value = params.get('q') || '';
     sort.value = params.get('sort') === 'oldest' ? 'oldest' : 'newest';
     render();
-    if (requestedCategory && requestedCategory !== filter) updateUrl();
+    if ((requestedCategory && requestedCategory !== filter) || (requestedSkill && requestedSkill !== skill)) updateUrl();
   }
 
   function revealHash() {

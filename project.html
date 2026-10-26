@@ -22,17 +22,17 @@
     <meta name="twitter:description" content="신현수가 진행한 매출 예측, 마케팅 분석, 인프라 운영, HR 분석, 리포트 자동화 프로젝트와 통계학 연구입니다.">
     <meta name="twitter:image" content="/meta/cover.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css?display=swap">
-    <link rel="stylesheet" href="styles.css?v=20261016-domains">
-    <script src="site.js?v=20261016-domains" defer=""></script>
+    <link rel="stylesheet" href="styles.css?v=20261026-case-studies">
+    <script src="site.js?v=20261026-case-studies" defer=""></script>
   </head>
   <body class="projects-page">
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
     <nav class="nav" aria-label="주 메뉴">
       <div class="nav-container">
-        <a class="nav-brand" href="index.html?v=20261016-domains">Hyunsoo Shin</a>
+        <a class="nav-brand" href="index.html?v=20261026-case-studies">Hyunsoo Shin</a>
         <ul class="nav-links">
-          <li><a href="index.html?v=20261016-domains">Home</a></li>
-          <li><a href="project.html?v=20261016-domains" class="active" aria-current="page">Projects</a></li>
+          <li><a href="index.html?v=20261026-case-studies">Home</a></li>
+          <li><a href="project.html?v=20261026-case-studies" class="active" aria-current="page">Projects</a></li>
           <li class="nav-external"><a href="https://github.com/hyunsoolol" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
         </ul>
       </div>
@@ -42,7 +42,8 @@
         <header class="project-heading">
           <p class="eyebrow">2017 - PRESENT</p>
           <h1>Projects</h1>
-          <p class="page-description">회사에서 진행한 데이터 분석 프로젝트와 대학원 연구를 정리했습니다.</p>
+          <p class="page-description">사업 문제를 분석 과제로 정의하고, 통계 모형과 리포트로 의사결정을 지원한 경험입니다.</p>
+          <p class="disclosure-note">업무 사례는 공개 가능한 목적, 방법, 활용 범위 중심으로 요약했습니다. 원본 데이터, 내부 쿼리와 상세 성과 수치는 공개하지 않습니다.</p>
         </header>
         <div class="project-toolbar" hidden="">
           <div class="project-search" role="search" aria-label="프로젝트 검색">
@@ -71,11 +72,12 @@
               <option value="sql">SQL</option>
               <option value="bigquery">BigQuery</option>
               <option value="tidyverse">Tidyverse</option>
-              <option value="statistics">Statistics</option>
               <option value="statistical-modeling">Statistical Modeling</option>
-              <option value="applied-statistics">Applied Statistics</option>
+              <option value="time-series">Time Series Forecasting</option>
+              <option value="mixture-models">Mixture Models</option>
               <option value="clustering">Clustering</option>
-              <option value="mmm">Marketing Mix Modeling (MMM)</option>
+              <option value="network-analysis">Network Analysis</option>
+              <option value="mmm">MMM Planning</option>
               <option value="tensorflow">TensorFlow</option>
               <option value="people-analytics">People Analytics</option>
               <option value="hr-data-strategy">HR Data Strategy</option>
@@ -84,11 +86,11 @@
               <option value="quarto">Quarto</option>
               <option value="grafana">Grafana</option>
               <option value="promql">PromQL</option>
-              <option value="bi-ai-reporting">BI/AI Reporting</option>
+              <option value="bi-ai-reporting">BI Reporting</option>
               <option value="data-quality">Data Quality</option>
               <option value="claude-code">Claude Code</option>
               <option value="openai-codex">OpenAI Codex</option>
-              <option value="ai-automation">AI-assisted analytics automation</option>
+              <option value="ai-automation">AI-assisted Automation</option>
             </select>
           </div>
           <div class="project-sort">
@@ -113,11 +115,14 @@
               <p id="project-count" role="status" aria-live="polite" aria-atomic="true">전체 22개 프로젝트</p>
             </div>
             <div class="project-grid" id="project-grid">
-              <article id="project-ai-tf-automation" class="project-info project-info--featured" data-category="marketing-customer" aria-labelledby="project-ai-tf-automation-title" data-start="2026.04" data-status="ongoing" data-skills="r python sql bigquery applied-statistics quarto bi-ai-reporting data-quality claude-code openai-codex ai-automation">
+              <article id="project-ai-tf-automation" class="project-info project-info--featured" data-category="marketing-customer" aria-labelledby="project-ai-tf-automation-title" data-start="2026.04" data-status="ongoing" data-skills="r python sql bigquery quarto bi-ai-reporting data-quality claude-code openai-codex ai-automation">
+                <figure class="project-figure">
                 <div class="project-media">
                   <img class="project-img" src="img/project_ai_automation.png" alt="Claude Code와 Codex를 활용한 데이터 분석과 리포팅 흐름의 개념 이미지" loading="eager" decoding="async" width="1672" height="941">
                   <span class="project-badge">AI TF 진행 중</span>
                 </div>
+                  <figcaption>분석 자동화를 표현한 개념 이미지. 실제 업무 화면이 아닙니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -142,17 +147,20 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>현업의 요청을 분석 과제로 구체화하고 성과 지표, 데이터 기준, 결과물 형식 정의</li>
-                      <li>BigQuery와 SQL을 활용해 사업과 마케팅 데이터를 조회하고 분석용으로 정리</li>
-                      <li>Claude Code와 Codex를 분석 코드 작성, 데이터 정리, 리포트 초안과 시각화 생성에 활용</li>
-                      <li>사업 현황과 마케팅 성과, 고객 및 서비스 지표를 BI 리포트와 AI 분석에서 재사용할 수 있도록 정리</li>
-                      <li>반복 리포트의 작성 절차와 데이터 품질 점검 기준을 정리하고 분석 업무에 적용</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>사업과 마케팅 성과를 반복 점검하는 과정에서 데이터 정리, 분석 코드 작성, 리포트 생성 절차를 일관되게 운영할 필요가 있었습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>현업 요청을 분석 과제로 구체화하고 성과 지표, 데이터 기준, 산출물 형식을 정의합니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>BigQuery와 SQL로 분석용 데이터를 정리합니다. Claude Code와 Codex는 반복 코드, 시각화, 리포트 초안 작성을 보조하는 도구로 활용합니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>성과 지표의 정의와 데이터 품질 점검 기준을 작성 절차에 반영합니다. AI의 코드 생성과 분석 결과의 판단을 구분합니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>정기 리포트와 후속 분석에 재사용할 수 있도록 산출물과 작성 절차를 정리하고 있습니다. 현재 진행 중인 업무입니다.</dd></div>
+                    </dl>
+                    <figure class="analysis-flow">
+                      <figcaption>접근 흐름 요약 / 실제 데이터 미포함</figcaption>
+                      <ol><li>지표 정의</li><li>데이터 정리</li><li>AI 작성 보조</li><li>검토와 리포팅</li></ol>
+                    </figure>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>AI-assisted Analytics Automation</li>
                       <li>Business AX/DX</li>
-                      <li>Applied Statistics</li>
                       <li>BI/AI Reporting</li>
                       <li>Data Quality</li>
                       <li>Decision Support</li>
@@ -200,9 +208,12 @@
                 </div>
               </article>
               <article id="project-idle-resource" class="project-info" data-category="infrastructure" aria-labelledby="project-idle-resource-title" data-start="2025.04" data-skills="python grafana promql ai-automation data-quality bi-ai-reporting">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_2501.png" alt="AI 기반 유휴 리소스 감지 시스템 구축 프로젝트 이미지" loading="eager" decoding="async" width="354" height="220">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_resource_workflow.svg" alt="운영 메트릭에서 고정 임계값 판정과 예외 검토를 거쳐 회수 리포트로 이어지는 절차도" loading="lazy" decoding="async" width="1120" height="630">
+                  </div>
+                  <figcaption>공개용 절차도. 내부 모니터링 화면과 임계값은 포함하지 않았습니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -212,9 +223,9 @@
                       2025.04 - 2025.08
                     </div>
                   </div>
-                  <h2 class="project-title" id="project-idle-resource-title"><a href="#project-idle-resource">AI 기반 유휴 리소스 감지 시스템 구축</a></h2>
+                  <h2 class="project-title" id="project-idle-resource-title"><a href="#project-idle-resource">유휴 리소스 탐지와 회수 리포팅 자동화</a></h2>
                   <div class="project-description">
-                    Atlas 메트릭과 PromQL로 유휴 인스턴스를 탐지하고, AI 도구를 쿼리 점검과 회수 리포트 작성에 활용했습니다.
+                    운영 메트릭과 고정 임계값으로 유휴 리소스를 탐지했습니다. AI 도구는 쿼리 점검과 회수 리포트 작성에 활용했습니다.
                   </div>
                   <ul class="project-tools" aria-label="사용 기술">
                     <li>Python</li>
@@ -224,12 +235,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>Atlas 메트릭을 이용해 인스턴스별 유휴 상태를 판별하는 자동 탐지 흐름 구축</li>
-                      <li>고정 임계값(Static threshold) 기반 탐지 기준을 설계하고 PromQL로 구현</li>
-                      <li>탐지 결과를 주간 회수 리포트로 정리하고 반납 가이드와 예외 처리 절차 마련</li>
-                      <li>AI 도구로 반복 쿼리 작성과 탐지 로직 점검을 보조하고 리포트 초안과 예외 사례 정리에 활용</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>활용도가 낮은 리소스를 찾아 회수 검토에 필요한 근거와 처리 절차를 마련해야 했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>탐지 기준과 주간 회수 리포트, 반납 가이드, 예외 처리 절차를 설계했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>운영 메트릭에 고정 임계값(Static threshold)을 적용하고 PromQL로 탐지 로직을 구현했습니다. AI는 반복 쿼리와 리포트 초안 작성에 보조적으로 활용했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>탐지 결과와 회수 결정을 구분하고, 예외 사례를 검토할 수 있도록 정리했습니다. 탐지 방식은 학습 기반 AI 모델이 아닌 규칙 기반 방식입니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>운영 지표를 주간 회수 검토와 리소스 배분 의사결정에 연결했습니다. 실제 임계값, 리소스 식별자와 비용 수치는 공개하지 않습니다.</dd></div>
+                    </dl>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Infrastructure Analytics</li>
                       <li>Idle Resource Detection</li>
@@ -242,9 +254,12 @@
                 </div>
               </article>
               <article id="project-hq-cost" class="project-info" data-category="business-finance" aria-labelledby="project-hq-cost-title" data-start="2024.01" data-skills="r sql quarto bi-ai-reporting">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_hq_cost_allocation.png" alt="HQ 비용 구성과 인력 투입 공수(MM)의 배분 관계를 표현한 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_hq_cost_allocation.png" alt="HQ 비용 구성과 인력 투입 공수(MM)의 배분 관계를 표현한 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
+                  </div>
+                  <figcaption>비용 배분의 개념 이미지. 실제 비용과 인력 구성은 반영하지 않았습니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -265,11 +280,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>관리회계 데이터를 기준으로 부서, 서비스, 프로젝트별 비용 구조 비교</li>
-                      <li>공통 업무에 투입된 MM과 간접비 배분 로직을 검토해 비용 산정 근거 확인</li>
-                      <li>비용 상세 내역과 분석 결과를 예산 검토 자료로 정리</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>부서와 서비스별 비용을 해석하기 위해 직접 비용뿐 아니라 공통 업무와 간접비의 배분 근거를 함께 살펴볼 필요가 있었습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>관리회계 데이터 분석, 투입 공수(MM)와 간접비 배분 로직 검토, 예산 검토 자료 작성을 담당했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>부서, 서비스, 프로젝트 단위로 비용 구성을 비교하고 공통 업무에 투입된 인력 공수를 함께 분석했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>배분 기준에 따라 비용의 의미가 달라질 수 있어 비용 규모와 산정 근거를 구분해 검토했습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>비용 구조와 배분 근거를 예산 검토 자료로 제공했습니다. 내부 배분식, 인력 규모와 비용 상세 내역은 공개하지 않습니다.</dd></div>
+                    </dl>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Management Analytics</li>
                       <li>Cost Analysis</li>
@@ -279,9 +296,12 @@
                 </div>
               </article>
               <article id="project-marketing-mmm" class="project-info" data-category="marketing-customer" aria-labelledby="project-marketing-mmm-title" data-start="2024.08" data-skills="r python statistics statistical-modeling applied-statistics mmm">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_2403.png" alt="마케팅 최적화 모델 개발 기획 프로젝트 이미지" loading="lazy" decoding="async" width="640" height="319">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_mmm_planning.svg" alt="사업 질문에서 데이터 요건 검토와 MMM 모델 기획으로 이어지는 개념도" loading="lazy" decoding="async" width="1120" height="630">
+                  </div>
+                  <figcaption>모델 기획의 접근 흐름. 추정 결과나 실제 예산 배분안이 아닙니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -302,10 +322,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>Meta의 Robyn을 참고해 보유 데이터와 사업 특성에 맞는 모델 개발 방향 검토</li>
-                      <li>모델에 필요한 입력 변수와 성과 지표를 정의하고 검토용 시각화 자료 작성</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>마케팅 예산 배분에 활용할 수 있는 모델의 적용 범위와 데이터 요건을 검토해야 했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>MMM 개발 방향과 입력 변수, 성과 지표를 정의하고 검토용 시각화 자료를 작성했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>Meta의 Robyn을 참고해 보유 데이터와 사업 특성에 맞는 모델 개발 요건을 정리했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>담당 범위는 모델 적용 가능성과 데이터 요건을 검토한 기획 단계입니다. 운영 배포와 예산 최적화 효과 검증은 포함하지 않습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>후속 모델 개발을 논의하기 위한 입력 요건과 검토 자료를 정리했습니다.</dd></div>
+                    </dl>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Marketing Analytics</li>
                       <li>Marketing Mix Modeling</li>
@@ -314,10 +337,13 @@
                   </details>
                 </div>
               </article>
-              <article id="project-lineage-forecast" class="project-info" data-category="business-finance" aria-labelledby="project-lineage-forecast-title" data-start="2024.07" data-skills="r python sql statistics statistical-modeling applied-statistics">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_2402.png" alt="리니지IP 사용자 수 및 매출 예측 프로젝트 이미지" loading="lazy" decoding="async" width="1412" height="717">
-                </div>
+              <article id="project-lineage-forecast" class="project-info" data-category="business-finance" aria-labelledby="project-lineage-forecast-title" data-start="2024.07" data-skills="r python sql statistics statistical-modeling applied-statistics time-series">
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_forecasting_workflow.svg" alt="매출과 이용자 시계열을 GAM으로 예측하고 실적과 비교해 성과 검토에 활용하는 절차도" loading="lazy" decoding="async" width="1120" height="630">
+                  </div>
+                  <figcaption>예측과 성과 검토의 절차도. 실제 매출과 예측 결과는 포함하지 않았습니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -338,12 +364,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>일반화 가법 모형(GAM)을 이용해 일별 활성 이용자 수(DAU)와 매출 예측</li>
-                      <li>리니지M 에피소드제로, 리니지2M 신서버 에덴, 리니지W 해골 업데이트의 성과 분석</li>
-                      <li>업데이트 이후 실적과 예측 기준선을 비교해 이용자 반응과 매출 변화 정량화</li>
-                      <li>고객 유형별 마케팅 지표의 추이를 확인하고 분석 결과를 CEO와 경영진 보고 자료로 작성</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>서비스 업데이트 이후의 매출과 이용자 변화를 해석할 비교 기준이 필요했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>일별 매출과 이용자 수 예측, 업데이트 성과 분석, 경영진 보고 자료 작성을 담당했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>GAM 기반 시계열 모델로 예측 기준선을 구성하고, 이후 실적과 비교해 변화의 크기와 흐름을 살폈습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>실적과 예측 기준선의 차이로 변화의 규모와 흐름을 비교했습니다. 이 비교만으로 업데이트의 순수 인과효과를 판단할 수는 없습니다. 상세 평가 조건과 수치는 공개 범위에서 제외했습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>업데이트별 이용자 반응과 매출 변화 분석을 경영진의 성과 검토 자료로 제공했습니다.</dd></div>
+                    </dl>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Forecasting</li>
                       <li>GAM</li>
@@ -388,9 +415,12 @@
                 </div>
               </article>
               <article id="project-management-report" class="project-info" data-category="business-finance" aria-labelledby="project-management-report-title" data-start="2022.10" data-skills="r sql shiny quarto ggplot2 bi-ai-reporting">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_financial_reporting.png" alt="분기별 비용 추이와 배분 내역을 표현한 관리회계 리포트 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_financial_reporting.png" alt="분기별 비용 추이와 배분 내역을 표현한 관리회계 리포트 개념 이미지" loading="lazy" decoding="async" width="1672" height="941">
+                  </div>
+                  <figcaption>관리회계 리포트의 개념 이미지. 실제 지표와 업무 화면이 아닙니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -413,11 +443,17 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>인사, 관리회계, 게임 데이터를 결합해 서비스와 프로젝트 단위의 비용 및 성과 분석</li>
-                      <li>비용 집행 현황과 주요 경영 지표를 시각화해 분기별 의사결정 자료로 제공</li>
-                      <li>Shiny와 Quarto로 정기 리포트 생성을 자동화하고 대시보드 개발</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>서로 다른 업무 데이터를 서비스와 프로젝트 단위로 연결해 비용 집행과 성과를 함께 파악할 필요가 있었습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>관리회계, 인사, 게임 데이터의 통합 분석과 분기 리포트, 대시보드 개발을 담당했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>SQL과 R로 분석용 데이터를 구성하고, Shiny와 Quarto로 비용 구조와 주요 경영 지표를 시각화했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>서비스별 비용과 성과, 프로젝트별 집행 현황을 구분해 살폈습니다. 비용 배분의 맥락을 함께 설명하는 데 초점을 맞췄습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>정기 리포트 생성을 자동화하고 분기별 경영 검토 자료로 제공했습니다. 내부 회계 항목, 배분식과 금액은 공개하지 않습니다.</dd></div>
+                    </dl>
+                    <figure class="analysis-flow">
+                      <figcaption>분석 단위와 산출물의 관계 / 실제 데이터 미포함</figcaption>
+                      <ol><li>업무 데이터</li><li>서비스 / 프로젝트</li><li>비용과 성과</li><li>분기 리포트</li></ol>
+                    </figure>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Management Analytics</li>
                       <li>Dashboard</li>
@@ -488,11 +524,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>데이터 웨어하우스의 인사 정보와 프로젝트 투입 데이터를 연결해 인력 현황 리포트 작성</li>
-                      <li>직종, 경력, 근속연수별 인력 구성과 프로젝트별 투입 패턴 비교</li>
-                      <li>직접 투입 MM 데이터의 정확성을 검증하고 간접 투입 MM으로 지원 인력 배분 현황 파악</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>프로젝트별 인력 구성을 이해하려면 인사 정보와 실제 투입 공수를 함께 살펴봐야 했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>인사 정보와 프로젝트 투입 데이터의 결합, 공수 검증, 인력 현황 리포트 작성을 담당했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>직종, 경력, 근속연수별 인력 구성을 비교하고 직접 투입과 지원 업무의 공수(MM)를 구분했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>직접 투입 MM의 정확성을 검증하고, 간접 투입 MM을 통해 지원 인력의 배분 상태를 파악했습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>프로젝트별 인력 운영을 검토할 수 있는 리포트를 제공했습니다. 개인별 정보와 조직별 실제 인원, 투입량은 공개하지 않습니다.</dd></div>
+                    </dl>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Workforce Analytics</li>
@@ -516,7 +554,7 @@
                   </div>
                   <h2 class="project-title" id="project-meal-forecast-title"><a href="#project-meal-forecast">구내식당 식수 예측의 오차와 과소 추정 개선</a></h2>
                   <div class="project-description">
-                    Random Forest와 편향 보정으로 식수 예측 RMSE를 166에서 110으로 낮추고, 보정 결과를 식당 발주량 결정에 활용했습니다.
+                    Random Forest와 편향 보정으로 식수 예측의 오차와 과소 추정을 개선하고, 보정 결과를 발주량 결정에 활용했습니다.
                   </div>
                   <ul class="project-tools" aria-label="사용 기술">
                     <li>R</li>
@@ -524,12 +562,17 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>일별 시설별 식수량이 실제보다 적게 예측되는 문제를 분석하고 조기 품절 완화를 위한 보정 수행</li>
-                      <li>Random Forest와 상향 편향 조정을 적용해 과소 예측 보정</li>
-                      <li>RMSE를 166에서 110으로, 과소 추정 비율을 89.5%에서 29.0%로 개선</li>
-                      <li>보정된 예측값을 하반기 위탁 업체의 발주량 결정에 활용</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>식수량을 실제보다 적게 예측하는 경향이 있어 조기 품절을 줄일 수 있는 보정이 필요했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>과소 예측 문제 분석, Random Forest 기반 예측과 편향 보정, 결과 비교를 수행했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>전체 예측 오차뿐 아니라 과소 추정의 발생 방향을 함께 고려해 상향 편향 조정을 적용했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>보정 전후의 RMSE와 과소 추정 비율을 비교했습니다. 전체 오차와 운영상 문제가 되는 과소 추정을 함께 살폈으며, 상세 평가 수치는 공개하지 않습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>예측 오차와 과소 추정 비율을 개선하고 보정된 예측값을 발주량 결정에 활용했습니다.</dd></div>
+                    </dl>
+                    <figure class="analysis-flow">
+                      <figcaption>보정과 평가의 관계 / 실제 수치 미포함</figcaption>
+                      <ol><li>과소 예측 확인</li><li>모형과 편향 보정</li><li>오차 / 방향 평가</li><li>발주량 검토</li></ol>
+                    </figure>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>People Analytics</li>
                       <li>Forecasting</li>
@@ -578,9 +621,12 @@
                 </div>
               </article>
               <article id="project-hr-saas" class="project-info" data-category="people-analytics" aria-labelledby="project-hr-saas-title" data-start="2021.12" data-skills="people-analytics hr-data-strategy bi-ai-reporting">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_2201.png" alt="HR SaaS 솔루션 기획 및 개발 프로젝트 이미지" loading="lazy" decoding="async" width="592" height="425">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_people_reporting_workflow.svg" alt="성과와 피드백 정보를 개인 및 조직 단위로 해석하는 HR 리포팅 개념도" loading="lazy" decoding="async" width="1120" height="630">
+                  </div>
+                  <figcaption>성과관리 정보의 개념도. 실제 제품 화면과 임직원 정보는 포함하지 않았습니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -653,7 +699,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-network-analysis" class="project-info" data-category="people-analytics" aria-labelledby="project-network-analysis-title" data-start="2021.08" data-skills="r sql statistics applied-statistics people-analytics hr-data-strategy">
+              <article id="project-network-analysis" class="project-info" data-category="people-analytics" aria-labelledby="project-network-analysis-title" data-start="2021.08" data-skills="r sql statistics applied-statistics people-analytics hr-data-strategy network-analysis">
                 <div class="project-media">
                   <img class="project-img" src="img/project_2101.png" alt="조직 네트워크 분석 및 커뮤니케이션 개선 프로젝트 이미지" loading="lazy" decoding="async" width="474" height="439">
                 </div>
@@ -681,7 +727,7 @@
                       <li>개인과 부서별 소통 지표를 정의하고 커뮤니케이션 패턴 분석</li>
                       <li>네트워크 분석으로 부서 간 협업 관계를 정량화하고 시각화</li>
                       <li>협업 지표와 분석 결과를 HR 시스템에 반영해 조직 현황 점검에 활용</li>
-                      <li>팀 정렬도 25% 향상, 부서 간 협업 수준 20% 증가</li>
+                      <li>조직 간 협업 구조를 검토할 수 있도록 지표와 시각화 결과 제공</li>
                     </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>People Analytics</li>
@@ -756,7 +802,7 @@
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
                     <ul class="project-role">
-                      <li>R 기반 직무 추천 모델로 개인별 직무 적합성을 평가하고 약 90%의 정확도 달성</li>
+                      <li>R 기반 직무 추천 모델로 개인별 직무 적합성 평가</li>
                       <li>우수인력 선별과 퇴사 예측 모델 개발</li>
                       <li>분석 모델을 HRIS에 적용해 인사 업무에 활용</li>
                     </ul>
@@ -807,9 +853,12 @@
                 </div>
               </article>
               <article id="project-hris-performance" class="project-info" data-category="people-analytics" aria-labelledby="project-hris-performance-title" data-start="2019.05" data-skills="people-analytics hr-data-strategy">
-                <div class="project-media">
-                  <img class="project-img" src="img/project_1901.png" alt="HRIS 성과관리와 다면진단 개선 프로젝트 이미지" loading="lazy" decoding="async" width="368" height="407">
-                </div>
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_people_reporting_workflow.svg" alt="성과관리와 다면 피드백의 지표 정의 및 결과 활용 관계를 요약한 개념도" loading="lazy" decoding="async" width="1120" height="630">
+                  </div>
+                  <figcaption>성과관리 정보의 개념도. 실제 시스템 화면과 평가 데이터가 아닙니다.</figcaption>
+                </figure>
                 <div class="project-copy">
                   <div class="project-meta">
                     <div class="project-platform">
@@ -841,7 +890,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-vmf-research" class="project-info project-info--research" data-category="research" aria-labelledby="project-vmf-research-title" data-start="" data-status="ongoing" data-skills="r statistics statistical-modeling applied-statistics clustering">
+              <article id="project-vmf-research" class="project-info project-info--research" data-category="research" aria-labelledby="project-vmf-research-title" data-start="" data-status="ongoing" data-skills="r statistics statistical-modeling applied-statistics clustering mixture-models">
                 <figure class="project-figure">
                   <a class="project-media" href="img/project_vmf_distribution.png" target="_blank" rel="noopener noreferrer" aria-label="vMF 분포 설명용 그림 크게 보기 (새 창)">
                     <img class="project-img" src="img/project_vmf_distribution.png" alt="구면 위에 평균 방향과 집중도가 다른 세 vMF 분포의 모의 표본을 표시한 그림" loading="lazy" decoding="async" width="1600" height="1440">
@@ -865,11 +914,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>von Mises-Fisher 혼합모형에서 군집 간 차이를 설명하는 변수 선택 방법 연구</li>
-                      <li>중심화 자연모수의 그룹 벌점을 이용해 공통 배경 정보와 군집 간 차이 분리</li>
-                      <li>시뮬레이션과 문서 군집화 자료로 변수 선택의 안정성과 해석 가능성 검토</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>연구 질문</dt><dd>고차원 방향성 데이터에서 공통적인 배경 정보와 군집을 구분하는 변수를 어떻게 분리할 수 있을까?</dd></div>
+                      <div><dt>연구 역할</dt><dd>통계학 박사 과정에서 vMF 혼합모형의 변수 선택 방법과 군집 해석을 연구하고 있습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>군집 간 차이를 설명하는 변수 선택에 그룹 벌점을 활용합니다. 예측이나 군집 배정뿐 아니라 어떤 변수가 차이를 만드는지 해석하는 데 초점을 둡니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>시뮬레이션과 문서 군집화 자료로 변수 선택의 안정성과 해석 가능성을 검토하고 있습니다. 대표 이미지는 설명용 모의 표본이며 논문 실험 결과가 아닙니다.</dd></div>
+                      <div><dt>연구 상태</dt><dd>Working paper 단계에서 변수 선택 방법과 군집 해석을 검토 중이며, 현재 미게재 상태입니다.</dd></div>
+                    </dl>
                     <p class="project-publication"><strong>Working paper</strong><span lang="en">Centered Natural-Parameter Group Selection for Posterior-Score Contrast Support in von Mises-Fisher Mixtures</span><span>Hyunsoo Shin, Byungtae Seo</span><span>논문 연구 진행 중 / 미게재</span></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Directional Statistics</li>
@@ -882,7 +933,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-latent-class-text" class="project-info project-info--research" data-category="research" aria-labelledby="project-latent-class-text-title" data-start="2018.04" data-skills="r statistics statistical-modeling applied-statistics clustering">
+              <article id="project-latent-class-text" class="project-info project-info--research" data-category="research" aria-labelledby="project-latent-class-text-title" data-start="2018.04" data-skills="r statistics statistical-modeling applied-statistics clustering mixture-models">
                 <figure class="project-figure">
                   <a class="project-media" href="img/project_latent_class_paper.png" target="_blank" rel="noopener noreferrer" aria-label="잠재범주별 주요 단어 그림 크게 보기 (새 창)">
                     <img class="project-img" src="img/project_latent_class_paper.png" alt="논문 Figure 4.1: 다섯 잠재범주별 의약품 후기의 주요 단어 10개와 추정 평균 빈도" loading="lazy" decoding="async" width="1170" height="835">
@@ -908,11 +959,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>범주형 응답과 텍스트 단어 빈도를 함께 다루는 혼합모드 잠재범주모형 적용</li>
-                      <li>범주형 응답만 사용한 모형과 비교해 텍스트 정보가 더해 주는 해석상의 차이 검토</li>
-                      <li>잠재범주별 주요 단어의 추정 빈도와 워드클라우드로 후기의 세부 특성 비교</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>연구 질문</dt><dd>범주형 응답과 텍스트를 함께 분석하면 응답만으로 구분하기 어려운 집단의 특성을 설명할 수 있을까?</dd></div>
+                      <div><dt>연구 역할</dt><dd>석사 연구에서 데이터 정제, 모형 설계, 추정 결과 해석과 논문 작성을 수행했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>의약품 사용 후기의 범주형 응답과 단어 빈도를 혼합모드 잠재범주모형으로 함께 분석했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>범주형 응답만 사용한 모형과 비교하고, 잠재범주별 주요 단어의 추정 빈도로 텍스트 정보가 더하는 해석상의 차이를 살폈습니다.</dd></div>
+                      <div><dt>연구 결과</dt><dd>잠재범주별 후기의 특징을 해석한 결과를 학술지에 게재했습니다. 대표 그림은 논문 Figure 4.1이며 원문에서 분석 조건을 확인할 수 있습니다.</dd></div>
+                    </dl>
                     <p class="project-publication"><strong>Published paper</strong><span lang="en">Latent class model for mixed variables with applications to text data</span><span>Hyun Soo Shin, Byungtae Seo</span><span>The Korean Journal of Applied Statistics, 32(6), 837-849 (2019)</span><a href="https://koreascience.or.kr/article/JAKO201910861318138.pdf" target="_blank" rel="noopener noreferrer">논문 원문 보기 (PDF)</a></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Latent Class Model</li>
@@ -923,7 +976,7 @@
                   </details>
                 </div>
               </article>
-              <article id="project-pm10-forecast" class="project-info project-info--research" data-category="research" aria-labelledby="project-pm10-forecast-title" data-start="2017.10" data-skills="statistics statistical-modeling applied-statistics">
+              <article id="project-pm10-forecast" class="project-info project-info--research" data-category="research" aria-labelledby="project-pm10-forecast-title" data-start="2017.10" data-skills="statistics statistical-modeling applied-statistics time-series">
                 <figure class="project-figure">
                   <a class="project-media" href="img/project_pm10_forecast.png" target="_blank" rel="noopener noreferrer" aria-label="서울시 미세먼지 관측값과 모형별 예측값 비교 그림 크게 보기 (새 창)">
                     <img class="project-img" src="img/project_pm10_forecast.png" alt="논문 Figure 4: 2014년과 2015년 서울시 월평균 PM10 관측값과 여섯 시계열 모형의 예측값 비교" loading="lazy" decoding="async" width="2400" height="2070">
@@ -947,11 +1000,13 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <ul class="project-role">
-                      <li>2001년부터 2015년까지의 서울시 월평균 PM10 농도를 대상으로 시계열 분석 수행</li>
-                      <li>시계열 회귀, 지수평활, ARIMA, ETS, STL 모형의 적합도와 예측 오차 비교</li>
-                      <li>2014년과 2015년 예측을 비교해 고농도 발생 등 관측 패턴 변화에 따른 성능 차이 검토</li>
-                    </ul>
+                    <dl class="case-study">
+                      <div><dt>연구 질문</dt><dd>월별 미세먼지 농도의 계절성과 관측 패턴 변화에 따라 시계열 모형의 예측 성능은 어떻게 달라질까?</dd></div>
+                      <div><dt>연구 역할</dt><dd>서울시 PM10 농도의 단변량 시계열 예측 연구에 공동저자로 참여했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>2001년부터 2015년까지의 월평균 농도에 시계열 회귀, 지수평활, ARIMA, ETS, STL 모형을 적용했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>2014년과 2015년의 관측값과 예측값을 비교해 모형별 오차와 관측 패턴 변화에 따른 차이를 검토했습니다.</dd></div>
+                      <div><dt>연구 결과</dt><dd>모형별 예측 성능과 적용상의 차이를 학술지에 정리했습니다. 대표 그림은 논문 Figure 4의 관측값과 예측값 비교입니다.</dd></div>
+                    </dl>
                     <p class="project-publication"><strong>Published paper</strong><span lang="en">Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach</span><span>Jongmin Oh, Hyunsoo Shin, Yeseul Shin, Hyeongcheol Jeong</span><span>Journal of the Korean Data Analysis Society, 19(5), 2457-2468 (2017)</span><a href="https://doi.org/10.37727/jkdas.2017.19.5.2457" target="_blank" rel="noopener noreferrer">논문 상세 보기</a></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Time Series</li>
