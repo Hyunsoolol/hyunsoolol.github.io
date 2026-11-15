@@ -183,18 +183,8 @@ main:focus { outline: none; }
 .details-open, .project-details[open] .details-closed { display: none; }
 .project-details[open] .details-open { display: inline; }
 .project-details[open] summary .icon { transform: rotate(180deg); }
-.project-role { margin-top: 4px; padding-left: 18px; list-style-type: "-  "; }
-.project-role li { margin-top: 8px; font-size: 13px; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
-.case-study { margin: 4px 0 0; }
-.case-study > div { padding-block: 14px; }
-.case-study > div + div { border-top: 1px solid var(--line); }
-.case-study dt { margin-bottom: 6px; font-size: 12px; font-weight: 650; color: var(--ink); }
-.case-study dd { margin: 0; font-size: 13px; line-height: 1.85; color: var(--muted); word-break: keep-all; overflow-wrap: anywhere; }
-.analysis-flow { margin: 20px 0 0; padding-top: 16px; border-top: 1px solid var(--line); }
-.analysis-flow figcaption { font-size: 11px; color: var(--muted); line-height: 1.7; }
-.analysis-flow ol { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px 20px; margin: 16px 0 0; padding: 0; list-style: none; counter-reset: analysis-step; }
-.analysis-flow li { display: grid; grid-template-columns: 22px minmax(0, 1fr); align-items: baseline; gap: 8px; font-size: 12px; line-height: 1.7; word-break: keep-all; overflow-wrap: anywhere; }
-.analysis-flow li::before { content: counter(analysis-step, decimal-leading-zero); counter-increment: analysis-step; color: var(--teal); font-size: 11px; font-variant-numeric: tabular-nums; }
+.project-role { margin-top: 12px; padding-left: 18px; list-style-type: "-  "; color: var(--muted); }
+.project-role li { margin-top: 10px; font-size: 13px; line-height: 1.85; word-break: keep-all; overflow-wrap: anywhere; }
 .project-tags { display: flex; flex-wrap: wrap; gap: 5px 12px; margin-top: 18px; color: var(--teal); font-size: 11px; overflow-wrap: anywhere; }
 .project-media--typographic { flex-direction: column; align-items: flex-start; justify-content: center; padding: 24px; }
 .media-label { color: var(--teal); font-size: 10px; font-weight: 500; }

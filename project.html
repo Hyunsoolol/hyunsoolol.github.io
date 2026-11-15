@@ -22,17 +22,17 @@
     <meta name="twitter:description" content="신현수가 진행한 매출 예측, 마케팅 분석, 인프라 운영, HR 분석, 리포트 자동화 프로젝트와 통계학 연구입니다.">
     <meta name="twitter:image" content="/meta/cover.png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css?display=swap">
-    <link rel="stylesheet" href="styles.css?v=20261115-data-science">
-    <script src="site.js?v=20261115-data-science" defer=""></script>
+    <link rel="stylesheet" href="styles.css?v=20261115-project-bullets">
+    <script src="site.js?v=20261115-project-bullets" defer=""></script>
   </head>
   <body class="projects-page">
     <a class="skip-link" href="#main-content">본문으로 바로가기</a>
     <nav class="nav" aria-label="주 메뉴">
       <div class="nav-container">
-        <a class="nav-brand" href="index.html?v=20261115-data-science">Hyunsoo Shin</a>
+        <a class="nav-brand" href="index.html?v=20261115-project-bullets">Hyunsoo Shin</a>
         <ul class="nav-links">
-          <li><a href="index.html?v=20261115-data-science">Home</a></li>
-          <li><a href="project.html?v=20261115-data-science" class="active" aria-current="page">Projects</a></li>
+          <li><a href="index.html?v=20261115-project-bullets">Home</a></li>
+          <li><a href="project.html?v=20261115-project-bullets" class="active" aria-current="page">Projects</a></li>
           <li class="nav-external"><a href="https://github.com/hyunsoolol" target="_blank" rel="noopener noreferrer">GitHub <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"></path><path d="M7 17 17 7"></path></svg></a></li>
         </ul>
       </div>
@@ -134,13 +134,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>캠페인별로 매출 양상이 달라, 관측된 패턴을 일관된 기준으로 분석하고 해석할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>데이터 품질 점검, 통계 모형 설계, 결과 검증과 분석 리포팅을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>LOESS 기반 비모수 회귀로 캠페인의 비선형 매출 패턴을 추정하고, 분석 목적에 맞는 모델링 방식을 설계했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>표본 수와 관측 범위를 바탕으로 모형의 적용 조건을 점검했습니다. 관측 자료에 대한 사후 분석과 사전 예측을 구분하고, 결과의 해석 범위를 명시했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>모델링 결과를 캠페인 성과 분석과 리포팅에 활용하고, 데이터 정합성 검증을 자동화했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>캠페인별 매출 양상을 일관되게 분석하기 위해 데이터 품질 점검과 통계 모형 설계를 수행했습니다.</li>
+                      <li>LOESS 기반 비모수 회귀로 비선형 매출 패턴을 추정했습니다.</li>
+                      <li>표본 수와 관측 범위에 따른 적용 조건을 점검하고, 사후 분석과 사전 예측의 해석 범위를 구분했습니다.</li>
+                      <li>모델링 결과를 성과 분석과 리포팅에 활용하고, 데이터 정합성 검증을 자동화했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야"><li>Statistical Learning</li><li>Nonparametric Regression</li></ul>
                   </details>
                 </div>
@@ -177,17 +176,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>사업과 마케팅 성과를 반복 점검하는 과정에서 데이터 정리, 분석 코드 작성, 리포트 생성 절차를 일관되게 운영할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>현업 요청을 분석 과제로 구체화하고 성과 지표, 데이터 기준, 산출물 형식을 정의합니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>BigQuery와 SQL로 분석용 데이터를 정리합니다. Claude Code와 Codex는 반복 코드, 시각화, 리포트 초안 작성을 보조하는 도구로 활용합니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>성과 지표의 정의와 데이터 품질 점검 기준을 작성 절차에 반영합니다. AI의 코드 생성과 분석 결과의 판단을 구분합니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>정기 리포트와 후속 분석에 재사용할 수 있도록 산출물과 작성 절차를 정리하고 있습니다. 현재 진행 중인 업무입니다.</dd></div>
-                    </dl>
-                    <figure class="analysis-flow">
-                      <figcaption>접근 흐름 요약 / 실제 데이터 미포함</figcaption>
-                      <ol><li>지표 정의</li><li>데이터 정리</li><li>AI 작성 보조</li><li>검토와 리포팅</li></ol>
-                    </figure>
+                    <ul class="project-role">
+                      <li>사업과 마케팅 현업의 요청을 분석 과제로 구체화하고, 성과 지표와 데이터 기준, 산출물 형식을 정의합니다.</li>
+                      <li>BigQuery와 SQL로 데이터를 정리하고, Claude Code와 Codex를 반복 코드, 시각화와 리포트 초안 작성에 활용합니다.</li>
+                      <li>지표 정의와 데이터 품질 점검을 작성 절차에 반영하며, AI의 코드 생성과 분석 결과의 판단을 구분합니다.</li>
+                      <li>정기 리포트와 후속 분석에서 재사용할 수 있도록 산출물과 작성 절차를 표준화하고 있습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>AI-assisted Analytics Automation</li>
                       <li>Business AX/DX</li>
@@ -221,13 +215,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>개발과 출시 준비에 필요한 인프라 현황과 운영 이슈를 함께 파악할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>리소스 현황과 운영 지표 정리, 유관 부서 요청과 이슈 공유를 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>개발 단계별 리소스 현황을 정리하고 개발, 서비스, 인프라 부서의 요청 사항을 함께 살폈습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>확인된 운영 이슈를 바탕으로 대응 우선순위와 위험 요인 검토를 지원했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>인프라 준비 상태를 확인하고 관련 부서의 대응을 논의하는 자료로 제공했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>개발 단계별 리소스 현황과 운영 지표를 정리해 출시를 위한 인프라 준비 상태를 확인했습니다.</li>
+                      <li>개발, 서비스, 인프라 부서의 요청과 운영 이슈를 정리하고 관련 부서에 공유했습니다.</li>
+                      <li>확인된 이슈를 바탕으로 대응 우선순위와 위험 요인 검토를 지원하고, 부서 간 대응을 논의하는 자료를 제공했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Infrastructure Analytics</li>
                       <li>Launch Support</li>
@@ -267,13 +259,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>활용도가 낮은 리소스를 찾아 회수 검토에 필요한 근거와 처리 절차를 마련해야 했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>탐지 기준과 주간 회수 리포트, 반납 가이드, 예외 처리 절차를 설계했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>운영 메트릭에 고정 임계값(Static threshold)을 적용하고 PromQL로 탐지 로직을 구현했습니다. AI는 반복 쿼리와 리포트 초안 작성에 보조적으로 활용했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>탐지 결과와 회수 결정을 구분하고, 예외 사례를 검토할 수 있도록 정리했습니다. 탐지 방식은 학습 기반 AI 모델이 아닌 규칙 기반 방식입니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>운영 지표를 주간 회수 검토와 리소스 배분 의사결정에 연결했습니다. 실제 임계값, 리소스 식별자와 비용 수치는 공개하지 않습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>운영 메트릭에 고정 임계값(Static threshold)을 적용하고 PromQL로 유휴 리소스 탐지 로직을 구현했습니다. 학습 기반 AI 모델이 아닌 규칙 기반 방식입니다.</li>
+                      <li>주간 회수 리포트와 반납 가이드, 예외 처리 절차를 설계하고, AI 도구를 반복 쿼리와 리포트 초안 작성에 보조적으로 활용했습니다.</li>
+                      <li>탐지 결과와 실제 회수 결정을 구분하고 예외 사례를 검토할 수 있도록 정리했습니다.</li>
+                      <li>운영 지표를 주간 회수 검토와 리소스 배분 의사결정에 연결했습니다. 실제 임계값, 리소스 식별자와 비용 수치는 공개하지 않습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Infrastructure Analytics</li>
                       <li>Idle Resource Detection</li>
@@ -312,13 +303,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>부서와 서비스별 비용을 해석하기 위해 직접 비용뿐 아니라 공통 업무와 간접비의 배분 근거를 함께 살펴볼 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>관리회계 데이터 분석, 투입 공수(MM)와 간접비 배분 로직 검토, 예산 검토 자료 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>부서, 서비스, 프로젝트 단위로 비용 구성을 비교하고 공통 업무에 투입된 인력 공수를 함께 분석했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>배분 기준에 따라 비용의 의미가 달라질 수 있어 비용 규모와 산정 근거를 구분해 검토했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>비용 구조와 배분 근거를 예산 검토 자료로 제공했습니다. 내부 배분식, 인력 규모와 비용 상세 내역은 공개하지 않습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>관리회계 데이터를 분석하고 투입 공수(MM)와 간접비 배분 로직을 검토했습니다.</li>
+                      <li>부서, 서비스, 프로젝트별 비용 구성과 공통 업무에 투입된 인력 공수를 함께 비교했습니다.</li>
+                      <li>배분 기준에 따라 비용의 의미가 달라질 수 있어 규모와 산정 근거를 구분해 해석했습니다.</li>
+                      <li>비용 구조와 배분 근거를 예산 검토 자료로 제공했습니다. 내부 배분식, 인력 규모와 비용 상세 내역은 공개하지 않습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Management Analytics</li>
                       <li>Cost Analysis</li>
@@ -354,13 +344,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>마케팅 예산 배분에 활용할 수 있는 모델의 적용 범위와 데이터 요건을 검토해야 했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>MMM 개발 방향과 입력 변수, 성과 지표를 정의하고 검토용 시각화 자료를 작성했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>Meta의 Robyn을 참고해 보유 데이터와 사업 특성에 맞는 모델 개발 요건을 정리했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>담당 범위는 모델 적용 가능성과 데이터 요건을 검토한 기획 단계입니다. 운영 배포와 예산 최적화 효과 검증은 포함하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>후속 모델 개발을 논의하기 위한 입력 요건과 검토 자료를 정리했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>마케팅 예산 배분을 위한 MMM의 개발 방향과 입력 변수, 성과 지표를 정의했습니다.</li>
+                      <li>Meta의 Robyn을 참고해 보유 데이터와 사업 특성에 맞는 모델 적용 범위와 데이터 요건을 검토했습니다.</li>
+                      <li>후속 모델 개발을 논의할 수 있도록 입력 요건과 검토용 시각화 자료를 정리했습니다.</li>
+                      <li>담당 범위는 기획 단계이며, 모델의 운영 배포나 예산 최적화 효과 검증은 포함하지 않습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Marketing Analytics</li>
                       <li>Marketing Mix Modeling</li>
@@ -396,13 +385,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>서비스 업데이트 이후의 매출과 이용자 변화를 해석할 비교 기준이 필요했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>일별 매출과 이용자 수 예측, 업데이트 성과 분석, 경영진 보고 자료 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>GAM 기반 시계열 모델로 예측 기준선을 구성하고, 이후 실적과 비교해 변화의 크기와 흐름을 살폈습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>실적과 예측 기준선의 차이로 변화의 규모와 흐름을 비교했습니다. 이 비교만으로 업데이트의 순수 인과효과를 판단할 수는 없습니다. 상세 평가 조건과 수치는 공개 범위에서 제외했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>업데이트별 이용자 반응과 매출 변화 분석을 경영진의 성과 검토 자료로 제공했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>GAM 기반 시계열 모델로 일별 매출과 이용자 수의 예측 기준선을 구성했습니다.</li>
+                      <li>업데이트 이후 실적을 예측 기준선과 비교해 변화의 규모와 흐름을 분석했습니다.</li>
+                      <li>기준선과의 차이만으로 업데이트의 순수 인과효과를 판단할 수는 없습니다. 상세 평가 조건과 수치는 공개 범위에서 제외했습니다.</li>
+                      <li>업데이트별 이용자 반응과 매출 변화 분석을 경영진의 성과 검토 자료로 제공했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Forecasting</li>
                       <li>GAM</li>
@@ -434,13 +422,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>고객의 결제 행동을 집단별로 구분해 특성과 변화를 파악할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>고객 분류 모형 구성과 고객군별 결제 패턴 분석을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>과금 유형과 결제 패턴을 기준으로 고객을 분류하고, 집단별 특성과 월별 추이를 비교했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>고객군의 특성뿐 아니라 유형 간 전환 현황을 함께 살폈습니다. 고객 분류를 미래 행동의 예측으로 해석하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>고객군별 결제 양상과 변화를 정리해 고객 행동을 이해하는 분석 자료로 제공했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>과금 유형과 결제 패턴을 기준으로 고객 분류 모형을 구성하고, 집단별 특성과 월별 추이를 비교했습니다.</li>
+                      <li>고객 유형 간 전환 현황을 함께 살폈으며, 관측된 고객 분류와 미래 행동의 예측을 구분했습니다.</li>
+                      <li>고객군별 결제 양상과 변화를 정리해 고객 행동을 이해하는 분석 자료로 제공했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Business Analytics</li>
                       <li>Customer Segmentation</li>
@@ -478,17 +464,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>서로 다른 업무 데이터를 서비스와 프로젝트 단위로 연결해 비용 집행과 성과를 함께 파악할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>관리회계, 인사, 게임 데이터의 통합 분석과 분기 리포트, 대시보드 개발을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>SQL과 R로 분석용 데이터를 구성하고, Shiny와 Quarto로 비용 구조와 주요 경영 지표를 시각화했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>서비스별 비용과 성과, 프로젝트별 집행 현황을 구분해 살폈습니다. 비용 배분의 맥락을 함께 설명하는 데 초점을 맞췄습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>정기 리포트 생성을 자동화하고 분기별 경영 검토 자료로 제공했습니다. 내부 회계 항목, 배분식과 금액은 공개하지 않습니다.</dd></div>
-                    </dl>
-                    <figure class="analysis-flow">
-                      <figcaption>분석 단위와 산출물의 관계 / 실제 데이터 미포함</figcaption>
-                      <ol><li>업무 데이터</li><li>서비스 / 프로젝트</li><li>비용과 성과</li><li>분기 리포트</li></ol>
-                    </figure>
+                    <ul class="project-role">
+                      <li>관리회계, 인사, 게임 데이터를 서비스와 프로젝트 단위로 연결해 통합 분석과 분기 리포트 개발을 담당했습니다.</li>
+                      <li>SQL과 R로 분석용 데이터를 구성하고 Shiny와 Quarto로 비용 구조와 주요 경영 지표를 시각화했습니다.</li>
+                      <li>서비스별 비용과 성과, 프로젝트별 집행 현황을 구분하고 비용 배분의 맥락을 함께 설명했습니다.</li>
+                      <li>정기 리포트 생성을 자동화해 분기별 경영 검토 자료로 제공했습니다. 내부 회계 항목, 배분식과 금액은 공개하지 않습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Management Analytics</li>
                       <li>Dashboard</li>
@@ -521,13 +502,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>마케팅 투자 규모와 매출 변화의 관계를 분석해 예산 검토에 활용할 근거가 필요했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>마케팅비와 매출 변화 분석, 한계효용 추정과 검토 자료 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>월별 마케팅비와 이후 매출 변화를 분석하고 추가 투자에 따른 매출 기여도를 검토했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>투자와 매출의 관계를 예산 논의의 참고 근거로 해석합니다. 관측 자료의 분석만으로 순수 인과효과를 주장하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>예산 배분과 신규 서비스 출시 시 참고할 분석 자료로 제공했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>월별 마케팅비와 이후 매출 변화를 분석하고, 한계효용을 추정해 추가 투자에 따른 매출 기여도를 검토했습니다.</li>
+                      <li>관측 자료에서 나타나는 투자와 매출의 관계를 예산 논의의 참고 근거로 해석하며, 순수 인과효과와는 구분합니다.</li>
+                      <li>분석 결과를 예산 배분과 신규 서비스 출시 시 참고할 자료로 제공했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Marketing Analytics</li>
                       <li>ROI Analysis</li>
@@ -561,13 +540,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>프로젝트별 인력 구성을 이해하려면 인사 정보와 실제 투입 공수를 함께 살펴봐야 했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>인사 정보와 프로젝트 투입 데이터의 결합, 공수 검증, 인력 현황 리포트 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>직종, 경력, 근속연수별 인력 구성을 비교하고 직접 투입과 지원 업무의 공수(MM)를 구분했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>직접 투입 MM의 정확성을 검증하고, 간접 투입 MM을 통해 지원 인력의 배분 상태를 파악했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>프로젝트별 인력 운영을 검토할 수 있는 리포트를 제공했습니다. 개인별 정보와 조직별 실제 인원, 투입량은 공개하지 않습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>인사 정보와 프로젝트 투입 데이터를 결합해 인력 현황 분석과 리포트 작성을 담당했습니다.</li>
+                      <li>직종, 경력, 근속연수별 인력 구성을 비교하고 직접 투입과 지원 업무의 공수(MM)를 구분했습니다.</li>
+                      <li>직접 투입 MM의 정확성을 검증하고, 간접 투입 MM으로 지원 인력의 배분 상태를 파악했습니다.</li>
+                      <li>프로젝트별 인력 운영을 검토할 수 있는 리포트를 제공했습니다. 개인별 정보와 실제 인원, 투입량은 공개하지 않습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Workforce Analytics</li>
@@ -599,17 +577,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>식수량을 실제보다 적게 예측하는 경향이 있어 조기 품절을 줄일 수 있는 보정이 필요했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>과소 예측 문제 분석, Random Forest 기반 예측과 편향 보정, 결과 비교를 수행했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>전체 예측 오차뿐 아니라 과소 추정의 발생 방향을 함께 고려해 상향 편향 조정을 적용했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>보정 전후의 RMSE와 과소 추정 비율을 비교했습니다. 전체 오차와 운영상 문제가 되는 과소 추정을 함께 살폈으며, 상세 평가 수치는 공개하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>예측 오차와 과소 추정 비율을 개선하고 보정된 예측값을 발주량 결정에 활용했습니다.</dd></div>
-                    </dl>
-                    <figure class="analysis-flow">
-                      <figcaption>보정과 평가의 관계 / 실제 수치 미포함</figcaption>
-                      <ol><li>과소 예측 확인</li><li>모형과 편향 보정</li><li>오차 / 방향 평가</li><li>발주량 검토</li></ol>
-                    </figure>
+                    <ul class="project-role">
+                      <li>조기 품절로 이어질 수 있는 과소 예측 문제를 분석하고, Random Forest 기반 예측과 편향 보정을 수행했습니다.</li>
+                      <li>전체 예측 오차와 과소 추정의 발생 방향을 함께 고려해 상향 편향 조정을 적용했습니다.</li>
+                      <li>보정 전후의 RMSE와 과소 추정 비율을 비교해 전체 오차와 운영상 문제를 함께 검토했습니다. 상세 평가 수치는 공개하지 않습니다.</li>
+                      <li>예측 오차와 과소 추정 비율을 개선하고, 보정된 예측값을 발주량 결정에 활용했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>People Analytics</li>
                       <li>Forecasting</li>
@@ -644,13 +617,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>재택근무 정책 변화에 따라 근무 패턴과 제도 활용 양상이 어떻게 달라지는지 파악할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>근태와 조직 데이터 분석, 근무 유형별 비교와 제도 검토 자료 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>조직, 직무, 직책별 원격근무 활용 수준을 비교하고 정책 시행 전후와 시행 기간의 근무 패턴을 분석했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>집단별 활용 수준과 근무 패턴의 차이를 정량화했습니다. 근태 패턴만으로 생산성이나 정책의 인과효과를 단정하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>분석 결과를 업무 방식과 제도 개선을 논의하는 내부 의사결정 자료로 제공했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>근태와 조직 데이터를 활용해 조직, 직무, 직책별 원격근무 활용 수준과 정책 시행 전후의 근무 패턴을 비교했습니다.</li>
+                      <li>집단별 활용 수준과 근무 패턴의 차이를 정량화했습니다. 근태 패턴만으로 생산성이나 정책의 인과효과를 단정하지 않습니다.</li>
+                      <li>분석 결과를 업무 방식과 제도 개선을 논의하는 내부 의사결정 자료로 제공했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Regression</li>
@@ -685,13 +656,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>성과관리 데이터를 관리자와 개인이 활용할 수 있는 서비스 기능으로 연결할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>HR SaaS의 분석 기능과 지표, 대시보드 및 개인 프로필을 기획했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>조직과 개인의 성과를 확인할 수 있도록 데이터와 시각화를 구성하고 기능을 설계했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>조직과 개인 단위의 성과 정보를 구분해 임원과 관리자의 검토 목적에 맞게 구성했습니다. 담당 범위는 기능과 대시보드 기획입니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>임원과 관리자의 성과 검토에 필요한 데이터 활용 구조를 서비스 기획에 반영했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>HR 성과관리 SaaS의 분석 기능과 주요 지표, 대시보드 및 개인 프로필을 기획했습니다.</li>
+                      <li>조직과 개인 단위의 성과 정보를 구분하고, 임원과 관리자의 검토 목적에 맞게 데이터와 시각화를 구성했습니다.</li>
+                      <li>성과 데이터를 업무 판단에 활용할 수 있는 구조를 서비스 기획에 반영했습니다. 담당 범위는 기능과 대시보드 기획입니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Product Management</li>
                       <li>HR Analytics</li>
@@ -727,13 +696,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>역량검사 데이터를 개인별 강점과 개발 영역을 설명하는 지표로 연결할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>개인별 역량 평가를 자동화하는 예측 모델 개발과 분석 결과의 기능 요건 정리를 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>AI 역량검사 데이터에 머신러닝을 적용하고 개인별 강점과 개발 영역을 정량 지표로 구성했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>검사 데이터에서 도출한 지표를 개인의 강점과 개발 영역을 살피는 자료로 해석합니다. 실제 업무 성과의 예측과는 구분합니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>분석 결과를 성과관리 서비스와 의사결정에 활용할 수 있도록 기능 요건으로 정리했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>AI 역량검사 데이터에 머신러닝을 적용해 개인별 역량 평가를 자동화하는 예측 모델을 개발했습니다.</li>
+                      <li>강점과 개발 영역을 정량 지표로 구성했습니다. 검사 데이터에 기반한 역량 해석과 실제 업무 성과의 예측은 구분합니다.</li>
+                      <li>분석 결과를 성과관리 서비스와 의사결정에 활용할 수 있도록 기능 요건으로 정리했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>People Analytics</li>
                       <li>Predictive Modeling</li>
@@ -766,13 +733,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>조직 내 소통과 부서 간 협업 구조를 데이터로 파악할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>소통 지표 정의, 네트워크 분석과 협업 관계 시각화를 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>개인과 부서별 커뮤니케이션 패턴을 분석하고 네트워크 분석으로 부서 간 관계를 정량화했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>지표와 시각화로 협업 구조를 살폈습니다. 소통 빈도나 연결 관계만으로 협업의 질과 개인 성과를 단정하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>협업 지표와 분석 결과를 HR 시스템에 반영해 조직 현황 점검에 활용했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>개인과 부서별 소통 지표를 정의하고, 네트워크 분석으로 부서 간 협업 관계를 정량화하고 시각화했습니다.</li>
+                      <li>지표와 시각화로 협업 구조를 살폈으며, 소통 빈도나 연결 관계만으로 협업의 질과 개인 성과를 단정하지 않습니다.</li>
+                      <li>협업 지표와 분석 결과를 HR 시스템에 반영해 조직 현황 점검에 활용했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>People Analytics</li>
                       <li>Network Analysis</li>
@@ -806,13 +771,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>평가와 다면 피드백을 핵심인재 관리와 승계계획의 검토 근거로 정리할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>인재 분석 모델과 주요 지표 개발, 경영진 보고 자료 작성을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>평가와 360도 피드백 데이터를 분석해 핵심인재 관리, 고성과자 식별과 승계계획에 참고할 지표를 구성했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>핵심인재 관리와 승계계획에 참고할 지표로 정리했습니다. 평가와 피드백에 기반한 분석 결과는 인재관리 판단을 지원하는 정보로 해석합니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>분석 결과를 경영진 보고 자료와 HRIS 운영 과정에 반영했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>평가와 360도 피드백 데이터를 활용해 인재 분석 모델과 주요 지표를 개발했습니다.</li>
+                      <li>핵심인재 관리, 고성과자 식별과 승계계획에 참고할 지표를 구성하고, 인재관리 판단을 지원하는 정보로 정리했습니다.</li>
+                      <li>분석 결과를 경영진 보고 자료로 제공하고 HRIS 운영 과정에 반영했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Executive Reporting</li>
@@ -847,13 +810,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>직무 적합성과 인력 이탈 가능성을 검토하는 데 데이터 기반의 참고 지표가 필요했습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>직무 추천, 우수인력 선별과 퇴사 예측 모델 개발을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>R 기반 직무 추천 모델로 개인별 직무 적합성을 평가하고 인재관리 목적에 맞는 분석 모델을 개발했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>직무 적합성과 이탈 가능성은 서로 다른 분석 목적입니다. 모델 결과를 개인의 역량이나 퇴사를 확정하는 판단으로 해석하지 않습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>분석 모델을 HRIS 업무 흐름에 적용해 인사 업무의 판단 자료로 활용했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>R 기반 직무 추천 모델로 개인별 직무 적합성을 평가하고, 우수인력 선별과 퇴사 예측 모델을 개발했습니다.</li>
+                      <li>직무 적합성과 이탈 가능성을 서로 다른 분석 목적으로 구분했습니다. 모델 결과는 개인의 역량이나 퇴사를 확정하는 판단이 아닙니다.</li>
+                      <li>분석 모델을 HRIS 업무 흐름에 적용해 인사 업무의 판단 자료로 활용했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Job Matching</li>
@@ -887,13 +848,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>근무시간과 연차 사용 현황을 파악하고 근태 운영의 위험 요인을 점검할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>근태와 연차 데이터 분석, 모니터링 체계와 운영 절차 개선을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>조직별 근무시간과 연차 사용 현황을 비교하고 근무 형태를 분석했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>근태와 연차 운영의 위험 요인을 점검했습니다. 분석의 목적은 근무시간 관리와 제도 운영 지원입니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>데이터 기반 모니터링 체계를 도입해 주 52시간제 정착과 운영 절차 개선을 지원했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>조직별 근무시간과 연차 사용 현황을 비교하고 근무 형태를 분석했습니다.</li>
+                      <li>근태와 연차 운영의 위험 요인을 점검하고, 근무시간 관리와 제도 운영을 위한 절차를 개선했습니다.</li>
+                      <li>데이터 기반 모니터링 체계를 도입해 주 52시간제 정착을 지원했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Attendance Analytics</li>
@@ -927,13 +886,11 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>문제</dt><dd>성과관리와 다면진단 결과를 인사 업무에서 활용할 수 있도록 운영 절차를 개선할 필요가 있었습니다.</dd></div>
-                      <div><dt>담당 역할</dt><dd>성과관리와 360도 피드백 프로세스, HRIS 운영 방식 개선을 담당했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>성과관리 운영 절차와 다면 피드백 시스템을 개선하고 모바일 이용 환경 도입을 추진했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>참여자의 시스템 이용 환경과 성과관리 결과의 업무 활용을 중심으로 운영 절차를 개선했습니다.</dd></div>
-                      <div><dt>결과와 활용</dt><dd>성과관리와 다면진단 결과를 인사 업무에서 활용할 수 있도록 운영 방식을 정리했습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>HRIS 기반 성과관리와 360도 피드백 프로세스의 운영 방식 개선을 담당했습니다.</li>
+                      <li>참여자의 시스템 이용 환경을 고려해 다면 피드백 시스템을 개선하고 모바일 이용 환경 도입을 추진했습니다.</li>
+                      <li>성과관리와 다면진단 결과를 인사 업무에서 활용할 수 있도록 운영 절차를 정리했습니다.</li>
+                    </ul>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>HR Analytics</li>
                       <li>Performance Management</li>
@@ -966,13 +923,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>연구 질문</dt><dd>고차원 방향성 데이터에서 공통적인 배경 정보와 군집을 구분하는 변수를 어떻게 분리할 수 있을까?</dd></div>
-                      <div><dt>연구 역할</dt><dd>통계학 박사 과정에서 vMF 혼합모형의 변수 선택 방법과 군집 해석을 연구하고 있습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>군집 간 차이를 설명하는 변수 선택에 그룹 벌점을 활용합니다. 예측이나 군집 배정뿐 아니라 어떤 변수가 차이를 만드는지 해석하는 데 초점을 둡니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>시뮬레이션과 문서 군집화 자료로 변수 선택의 안정성과 해석 가능성을 검토하고 있습니다. 대표 이미지는 설명용 모의 표본이며 논문 실험 결과가 아닙니다.</dd></div>
-                      <div><dt>연구 상태</dt><dd>Working paper 단계에서 변수 선택 방법과 군집 해석을 검토 중이며, 현재 미게재 상태입니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>통계학 박사 과정에서 고차원 방향성 데이터의 공통 배경 정보와 군집별 차이를 구분하는 vMF 혼합모형을 연구하고 있습니다.</li>
+                      <li>그룹 벌점을 활용한 변수 선택으로 어떤 변수가 군집 간 차이를 설명하는지 해석하는 데 초점을 둡니다.</li>
+                      <li>시뮬레이션과 문서 군집화 자료로 변수 선택의 안정성과 해석 가능성을 검토하고 있습니다. 대표 이미지는 설명용 모의 표본이며 논문 실험 결과가 아닙니다.</li>
+                      <li>현재 Working paper 단계로, 논문 연구 진행 중이며 미게재 상태입니다.</li>
+                    </ul>
                     <p class="project-publication"><strong>Working paper</strong><span lang="en">Centered Natural-Parameter Group Selection for Posterior-Score Contrast Support in von Mises-Fisher Mixtures</span><span>Hyunsoo Shin, Byungtae Seo</span><span>논문 연구 진행 중 / 미게재</span></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Directional Statistics</li>
@@ -1011,13 +967,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>연구 질문</dt><dd>범주형 응답과 텍스트를 함께 분석하면 응답만으로 구분하기 어려운 집단의 특성을 설명할 수 있을까?</dd></div>
-                      <div><dt>연구 역할</dt><dd>석사 연구에서 데이터 정제, 모형 설계, 추정 결과 해석과 논문 작성을 수행했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>의약품 사용 후기의 범주형 응답과 단어 빈도를 혼합모드 잠재범주모형으로 함께 분석했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>범주형 응답만 사용한 모형과 비교하고, 잠재범주별 주요 단어의 추정 빈도로 텍스트 정보가 더하는 해석상의 차이를 살폈습니다.</dd></div>
-                      <div><dt>연구 결과</dt><dd>잠재범주별 후기의 특징을 해석한 결과를 학술지에 게재했습니다. 대표 그림은 논문 Figure 4.1이며 원문에서 분석 조건을 확인할 수 있습니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>석사 연구에서 데이터 정제, 모형 설계, 추정 결과 해석과 논문 작성을 수행했습니다.</li>
+                      <li>의약품 사용 후기의 범주형 응답과 단어 빈도를 혼합모드 잠재범주모형으로 함께 분석했습니다.</li>
+                      <li>범주형 응답만 사용한 모형과 비교하고, 잠재범주별 주요 단어의 추정 빈도를 통해 텍스트 정보가 더하는 해석상의 차이를 살폈습니다.</li>
+                      <li>잠재범주별 후기의 특징을 해석한 결과를 학술지에 게재했습니다. 대표 그림은 논문 Figure 4.1이며 원문에서 분석 조건을 확인할 수 있습니다.</li>
+                    </ul>
                     <p class="project-publication"><strong>Published paper</strong><span lang="en">Latent class model for mixed variables with applications to text data</span><span>Hyun Soo Shin, Byungtae Seo</span><span>The Korean Journal of Applied Statistics, 32(6), 837-849 (2019)</span><a href="https://koreascience.or.kr/article/JAKO201910861318138.pdf" target="_blank" rel="noopener noreferrer">논문 원문 보기 (PDF)</a></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Latent Class Model</li>
@@ -1052,13 +1007,12 @@
                   </ul>
                   <details class="project-details">
                     <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
-                    <dl class="case-study">
-                      <div><dt>연구 질문</dt><dd>월별 미세먼지 농도의 계절성과 관측 패턴 변화에 따라 시계열 모형의 예측 성능은 어떻게 달라질까?</dd></div>
-                      <div><dt>연구 역할</dt><dd>서울시 PM10 농도의 단변량 시계열 예측 연구에 공동저자로 참여했습니다.</dd></div>
-                      <div><dt>접근 방법</dt><dd>2001년부터 2015년까지의 월평균 농도에 시계열 회귀, 지수평활, ARIMA, ETS, STL 모형을 적용했습니다.</dd></div>
-                      <div><dt>검토와 해석</dt><dd>2014년과 2015년의 관측값과 예측값을 비교해 모형별 오차와 관측 패턴 변화에 따른 차이를 검토했습니다.</dd></div>
-                      <div><dt>연구 결과</dt><dd>모형별 예측 성능과 적용상의 차이를 학술지에 정리했습니다. 대표 그림은 논문 Figure 4의 관측값과 예측값 비교입니다.</dd></div>
-                    </dl>
+                    <ul class="project-role">
+                      <li>서울시 PM10 농도의 계절성과 관측 패턴 변화를 다룬 단변량 시계열 예측 연구에 공동저자로 참여했습니다.</li>
+                      <li>2001년부터 2015년까지의 월평균 농도에 시계열 회귀, 지수평활, ARIMA, ETS, STL 모형을 적용했습니다.</li>
+                      <li>2014년과 2015년의 관측값과 예측값을 비교해 모형별 오차와 관측 패턴 변화에 따른 차이를 검토했습니다.</li>
+                      <li>모형별 예측 성능과 적용상의 차이를 학술지에 정리했습니다. 대표 그림은 논문 Figure 4의 관측값과 예측값 비교입니다.</li>
+                    </ul>
                     <p class="project-publication"><strong>Published paper</strong><span lang="en">Forecasting the Particulate Matter in Seoul using a Univariate Time Series Approach</span><span>Jongmin Oh, Hyunsoo Shin, Yeseul Shin, Hyeongcheol Jeong</span><span>Journal of the Korean Data Analysis Society, 19(5), 2457-2468 (2017)</span><a href="https://doi.org/10.37727/jkdas.2017.19.5.2457" target="_blank" rel="noopener noreferrer">논문 상세 보기</a></p>
                     <ul class="project-tags" aria-label="분석 분야">
                       <li>Time Series</li>
