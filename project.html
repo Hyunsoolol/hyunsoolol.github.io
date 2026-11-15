@@ -55,9 +55,9 @@
           <div class="project-category-mobile">
             <label class="sr-only" for="project-category">프로젝트 분야</label>
             <select id="project-category" aria-controls="project-grid">
-              <option value="all">전체 분야 (22)</option>
+              <option value="all">전체 분야 (23)</option>
               <option value="business-finance">Business &amp; Finance (4)</option>
-              <option value="marketing-customer">Marketing &amp; Customer (4)</option>
+              <option value="marketing-customer">Marketing &amp; Customer (5)</option>
               <option value="people-analytics">People Analytics (9)</option>
               <option value="infrastructure">Infrastructure (2)</option>
               <option value="research">Statistical Research (3)</option>
@@ -102,9 +102,9 @@
           <aside class="project-filter" aria-label="프로젝트 분야" hidden="">
             <h2 class="filter-heading">분야</h2>
             <div class="project-filter-list" role="group" aria-label="분야별 필터">
-              <button type="button" class="project-filter-button active" data-filter="all" aria-pressed="true" aria-controls="project-grid">전체<span class="filter-count" aria-hidden="true">22</span></button>
+              <button type="button" class="project-filter-button active" data-filter="all" aria-pressed="true" aria-controls="project-grid">전체<span class="filter-count" aria-hidden="true">23</span></button>
               <button type="button" class="project-filter-button" data-filter="business-finance" aria-pressed="false" aria-controls="project-grid">Business &amp; Finance<span class="filter-count" aria-hidden="true">4</span></button>
-              <button type="button" class="project-filter-button" data-filter="marketing-customer" aria-pressed="false" aria-controls="project-grid">Marketing &amp; Customer<span class="filter-count" aria-hidden="true">4</span></button>
+              <button type="button" class="project-filter-button" data-filter="marketing-customer" aria-pressed="false" aria-controls="project-grid">Marketing &amp; Customer<span class="filter-count" aria-hidden="true">5</span></button>
               <button type="button" class="project-filter-button" data-filter="people-analytics" aria-pressed="false" aria-controls="project-grid">People Analytics<span class="filter-count" aria-hidden="true">9</span></button>
               <button type="button" class="project-filter-button" data-filter="infrastructure" aria-pressed="false" aria-controls="project-grid">Infrastructure<span class="filter-count" aria-hidden="true">2</span></button>
               <button type="button" class="project-filter-button" data-filter="research" aria-pressed="false" aria-controls="project-grid">Statistical Research<span class="filter-count" aria-hidden="true">3</span></button>
@@ -112,9 +112,39 @@
           </aside>
           <div class="project-collection">
             <div class="project-results-bar" hidden="">
-              <p id="project-count" role="status" aria-live="polite" aria-atomic="true">전체 22개 프로젝트</p>
+              <p id="project-count" role="status" aria-live="polite" aria-atomic="true">전체 23개 프로젝트</p>
             </div>
             <div class="project-grid" id="project-grid">
+              <article id="project-campaign-allocation" class="project-info" data-category="marketing-customer" aria-labelledby="project-campaign-allocation-title" data-start="" data-status="ongoing" data-skills="statistical-modeling r python sql bigquery">
+                <figure class="project-figure">
+                  <div class="project-media">
+                    <img class="project-img" src="img/project_campaign_allocation.svg" alt="과거 캠페인 패턴을 LOESS로 모델링하고 목표 총액을 일별로 배분하는 개념도" loading="eager" decoding="async" width="900" height="420">
+                  </div>
+                  <figcaption>분석 절차를 설명한 개념 이미지입니다. 실제 업무 데이터는 포함하지 않았습니다.</figcaption>
+                </figure>
+                <div class="project-copy">
+                  <div class="project-meta">
+                    <div class="project-platform">Statistical Learning / Marketing Analytics</div>
+                    <div class="project-date">진행 중</div>
+                  </div>
+                  <h2 class="project-title" id="project-campaign-allocation-title"><a href="#project-campaign-allocation">통계적 학습 기반 캠페인 매출 패턴 모델링과 일별 목표 배분</a></h2>
+                  <div class="project-description">비모수 회귀로 과거 캠페인의 매출 패턴을 학습하고, 정해진 목표 총액을 일별로 배분하는 모델을 설계했습니다.</div>
+                  <ul class="project-tools" aria-label="사용 기술">
+                    <li>R</li><li>Python</li><li>SQL</li><li>BigQuery</li>
+                  </ul>
+                  <details class="project-details">
+                    <summary><span class="details-closed">프로젝트 자세히</span><span class="details-open">프로젝트 접기</span><svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"></path></svg></summary>
+                    <dl class="case-study">
+                      <div><dt>문제</dt><dd>캠페인마다 매출 규모와 업데이트 시점이 달라, 일별 목표와 실적을 비교할 수 있는 일관된 배분 기준이 필요했습니다.</dd></div>
+                      <div><dt>담당 역할</dt><dd>데이터 정합성 점검과 정규화, 통계적 학습 모형 설계, 예외 처리 및 검증 절차 수립을 담당했습니다.</dd></div>
+                      <div><dt>접근 방법</dt><dd>LOESS 기반 비모수 회귀로 캠페인의 비선형 매출 패턴을 모델링하고, 정해진 목표 총액을 일별로 배분하는 데 활용했습니다.</dd></div>
+                      <div><dt>검토와 해석</dt><dd>표본 수와 관측 범위를 기준으로 모형의 적용 조건을 점검했습니다. 실적을 참조한 사후 재구성과 사전 예측을 구분하고, 목표 배분 결과를 예측 성능으로 해석하지 않도록 활용 범위를 명시했습니다.</dd></div>
+                      <div><dt>결과와 활용</dt><dd>일별 목표와 실적을 비교하는 리포팅 절차를 구축하고, 목표 합계와 누적값의 정합성 검증을 자동화했습니다. 현재는 예외 처리와 적용 범위를 확장하고 있습니다.</dd></div>
+                    </dl>
+                    <ul class="project-tags" aria-label="분석 분야"><li>Statistical Learning</li><li>Nonparametric Regression</li></ul>
+                  </details>
+                </div>
+              </article>
               <article id="project-ai-tf-automation" class="project-info project-info--featured" data-category="marketing-customer" aria-labelledby="project-ai-tf-automation-title" data-start="2026.04" data-status="ongoing" data-skills="r python sql bigquery quarto bi-ai-reporting data-quality claude-code openai-codex ai-automation">
                 <figure class="project-figure">
                 <div class="project-media">

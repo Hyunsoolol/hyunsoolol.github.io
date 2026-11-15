@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420" role="img" aria-labelledby="title desc">
+  <title id="title">캠페인 패턴 모델링과 일별 목표 배분</title>
+  <desc id="desc">과거 캠페인 패턴, 비모수 회귀 모델링, 목표 총액을 보존하는 일별 배분. 모든 선과 점은 설명을 위해 독립적으로 작성했으며 실제 데이터는 포함하지 않았습니다.</desc>
+  <rect width="900" height="420" fill="#fff"/>
+  <g font-family="Pretendard, -apple-system, BlinkMacSystemFont, Segoe UI, Malgun Gothic, sans-serif" letter-spacing="0">
+    <g fill="#68686e" font-size="24"><text x="28" y="40">01</text><text x="330" y="40">02</text><text x="630" y="40">03</text></g>
+    <g fill="#1d1d1f" font-size="30" font-weight="600">
+      <text x="28" y="86">과거 캠페인의<tspan x="28" dy="38">매출 패턴</tspan></text>
+      <text x="330" y="86">비모수 회귀<tspan x="330" dy="38">모델링</tspan></text>
+      <text x="630" y="86">총액을 보존하는<tspan x="630" dy="38">일별 배분</tspan></text>
+    </g>
+    <path d="M292 208h22m-8-8 8 8-8 8M592 208h22m-8-8 8 8-8 8" fill="none" stroke="#68686e" stroke-width="2"/>
+    <g fill="none" stroke-linecap="round" stroke-width="3">
+      <path d="M30 300H270M330 300H570M630 300H870" stroke="#e5e5e8"/>
+      <path d="M36 270C65 268 74 183 110 190S166 274 202 245 244 213 265 231" stroke="#b73553"/>
+      <path d="M36 255C63 250 79 175 112 181S166 263 202 236 243 225 265 238" stroke="#28695f"/>
+      <path d="M36 282C68 274 81 201 112 204S169 283 203 255 246 235 265 246" stroke="#a1a1a8"/>
+      <path d="M337 257C366 244 378 190 410 194S464 268 504 247 544 227 565 236" stroke="#b73553" stroke-width="4"/>
+    </g>
+    <g fill="#b73553"><circle cx="110" cy="190" r="5"/><circle cx="202" cy="245" r="5"/></g>
+    <g fill="#28695f"><circle cx="112" cy="181" r="5"/><circle cx="202" cy="236" r="5"/></g>
+    <g fill="#b73553"><rect x="637" y="235" width="24" height="65"/><rect x="672" y="194" width="24" height="106"/><rect x="707" y="218" width="24" height="82"/><rect x="742" y="251" width="24" height="49"/><rect x="777" y="265" width="24" height="35"/><rect x="812" y="251" width="24" height="49"/><rect x="847" y="242" width="24" height="58"/></g>
+    <path d="M638 174v-14h232v14" fill="none" stroke="#28695f" stroke-width="2"/>
+    <g fill="#68686e" font-size="25"><text x="28" y="350">설명용 패턴</text><text x="330" y="350">LOESS</text><text x="630" y="350">배분 합계 = 목표 총액</text></g>
+    <text x="28" y="398" fill="#68686e" font-size="22">Statistical Learning / Marketing Analytics</text>
+  </g>
+</svg>
