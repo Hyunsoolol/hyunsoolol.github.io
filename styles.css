@@ -120,14 +120,10 @@ main:focus { outline: none; }
 .skill_name--linked:hover { border-color: var(--teal); color: var(--teal); }
 .skill_name--linked a:hover { text-decoration: underline; text-underline-offset: 3px; }
 
-.contact-list { display: grid; gap: 16px; }
-.intro-contact { margin-top: 16px; font-size: 13px; color: var(--muted); }
+.intro-contact { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 12px; margin-top: 16px; font-size: 13px; color: var(--muted); }
+.intro-contact strong { color: var(--ink); font-weight: 650; }
 .intro-contact a { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
 .intro-contact a:hover { color: var(--accent); text-decoration-color: currentColor; }
-.contact-list li { display: flex; align-items: baseline; flex-wrap: wrap; gap: 8px 20px; }
-.contact-label { width: 64px; color: var(--muted); font-size: 12px; }
-.contact-list a { font-size: 14px; overflow-wrap: anywhere; text-decoration: underline; text-underline-offset: 4px; text-decoration-color: var(--line); }
-.contact-list a:hover { color: var(--accent); text-decoration-color: currentColor; }
 
 /* Project browser: one toolbar, a desktop index, and the work itself. */
 .projects-page main { padding-block: 44px 80px; }
